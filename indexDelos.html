@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<title>AFragos</title>
+<link rel="icon" href="images/quasiperiodictilings.png">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="images/iSMcstyle.css" />
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<style>
+html {
+  margin-top: 100px;
+	transform: scale(1.27, 1.27);
+}</style>
+<meta name="viewport" content="width=device-width, initial-scale=0.33, 
+user-scalable=yes">
+
+  <body>
+    <div id="main">
+      <div id="headtitle"> <br><br>Πρόγραμμα Προβολής
+      </div>
+      <div id="columns">
+        <div id="menuheader"></div>
+        <a href="index.html">Αρχική</a>
+        <a href="indexFiles.html">Λίστα Αρχείων</a>
+        <a href="" style="color: black">Πρόγ/μα προβολής</a>
+        <a href="indexStuff.html">Νέα - Σεμινάρια</a>
+        <a href="indexVol.html">Ομάδα Εθελοντών</a>
+        <div id="menufooter"></div>
+      </div>
+      <div id="seccolumns">
+        <h3>Χρήση του προγράμματος</h3>
+        <div class="text_2" id="chap3">
+          Με το παρόν πρόγραμμα μπορείτε να αναπαράγετε video από την πλατφόρμα του <i>Delos</i> (σε κανονική, μειωμένη ή αυξημένη ταχύτητα). Είναι επίσης δυνατόν να κατεβάσετε βίντεο του <i>Delos</i> που σας ενδιαφέρουν.
+          <br><br>
+          Για να αναπαράξετε ένα βίντεο, τοποθετήστε τον σύνδεσμο του video στο πλαίσιο δίπλα από το κουμπί "Αναπαραγωγή". Πατώντας το κουμπί "Αναπαραγωγή", το βίντεο θα αναπαραχθεί.
+          <br><br>
+          Με τα πλήκτρα "[-]" και "[+]" μπορείτε να μειώσετε και να αυξήσετε την ταχύτητα προβολής αντίστοιχα.
+          <br><br>
+          Εάν θέλετε να κατεβάσετε το βίντεο που αναπαράγεται, πατήστε "Δεξί clik στο video > Αποθήκευση video".<br><br>
+          Ο κώδικας πάρθηκε από τον <a href="http://users.uoa.gr/~sma1900089/">sma1900089</a>.
+        </div>
+      </div>  
+    <div class="maincolumns">
+      <div class="content_title" id="chap1">Πρόγραμμα προβολής</i></div>
+      <div class="text">
+    <div id="renderVideoDiv">
+      <video id="renderVideo" controls="">
+        <source id="videoSource" type="video/mp4">
+      </video>
+    </div>
+    <br>
+    
+    <button class="speedButton" id="minusButton">-</button>
+    <button class="speedButton" id="plusButton">+</button>
+    <input id="currSpeed" type="number" readonly="true" value="1.0">
+    <br><br>
+    <button id="setVideoButton" onclick="setVideo()">Αναπαραγωγή</button>
+    <input type="text" id="videoURL">
+    <script>
+    
+    var vid = document.getElementById("renderVideo");
+    var minusButton = document.getElementById("minusButton");
+    var plusButton = document.getElementById("plusButton");
+    var currSpeed = document.getElementById("currSpeed");
+    
+    function setNewVal(val) {
+      vid.playbackRate = val;
+      currSpeed.value = val.toFixed(2);
+    }
+    
+    minusButton.onclick = function() {
+      var currVal = parseFloat(currSpeed.value);
+      var newVal = currVal - 0.1;
+      setNewVal(newVal);
+    }
+    
+    plusButton.onclick = function() {
+      var currVal = parseFloat(currSpeed.value)
+      var newVal = currVal + 0.1;
+      setNewVal(newVal);
+    }
+    
+    function setVideo() {
+      var url = document.getElementById("videoURL").value;
+      var videoID = url.split("=").pop();
+      var newSource = "https://delos-media.uoa.gr:443/delosrc/resources/vl/" +
+                      videoID + "/" + videoID + ".mp4";
+      document.getElementById("videoSource").src = newSource;
+      vid.load();
+      vid.play();
+    }
+    
+    </script> 
+
+  </div>
+  </div>
+</body>
+
+</html>
