@@ -9,7 +9,7 @@
 </head>
 <style>
 html {
-  margin-top: 785px;
+  margin-top: 713px;
 	transform: scale(1.27, 1.27);
 }</style>
 <meta name="viewport" content="width=device-width, initial-scale=0.33, 
@@ -33,7 +33,7 @@ user-scalable=yes">
     <a href="#chap3">Σχετικά πρώτοι και πιθανότητες</a>
     <a href="#chap4">Η συνάρτηση \(ω\) και τα αθροίσματά της</a>
     <a href="#chap5">Το \(\cos x\) ως άθροισμα ημιτόνων</a>
-    <a href="#chap6">Το θεώρημα του Kronecker</a>
+    <a href="index2.html#chap6">Το θεώρημα του Kronecker</a>
     <a href="index2.html#chap7">Αναπαραμετρίσεις καμπυλών</a>
     <a href="index2.html#chap8">Αναπαραμετρίσεις μοναδιαίας ταχύτητας</a>
     <a href="index2.html#chap9">Απομονώνοντας σημεία στον \(\mathbb{R}^n\)</a>
@@ -261,30 +261,6 @@ $$b_k(f) = \begin{cases} \dfrac{8m}{4k^2-1},~k = 2m\\ 0,~ k=2m+1 \end{cases}$$
 Αποδεικνύεται λοιπόν η ζητούμενη γραφή του \(\cos x\) ως άθροισμα ημιτόνων.
 $$\lim_{n \to \infty} \dfrac{8}{π}\sum_{m=1}^n \dfrac{4m}{4m^2+1}\sin(2mx) = \cos x \Rightarrow \cos x = \dfrac{8}{π}\sum_{m=1}^\infty \dfrac{4m}{4m^2+1}\sin(2mx)$$
     </div>
-</div>
-<div class="maincolumns">
-  <div class="content_title" id="chap6">Το θεώρημα του Kronecker</div>
-  <div class="text">
-    <b>Θεώρημα (Kronecker):</b> <i>Έστω \(F\) ένα σώμα και \(f\) ένα πολυώνυμο στον δακτύλιο \(F[x]\), με \(\deg f \geqslant 1\). Υπάρχει επέκταση του \(F\) στην οποία το \(f\) έχει ρίζα.</i>
-<br>
-<br>
-<i>Απόδειξη:</i> Θεωρούμε ανάγωγο πολυώνυμο \(p\) το οποίο διαιρεί το \(f\) και \(Ι := \langle p \rangle\) το κύριο ιδεώδες του \(F[x]\) που παράγεται από το \(p\). Ορίζουμε την ενεικονική συνάρτηση:
-$$φ: a/I \mapsto \begin{cases} a,~ a \in F\\ a/I,~ a \not \in F \end{cases}$$
-και συμβολίζουμε \(Κ:=φ[F[x]/I]\). Στο σύνολο \(K\) θα ορίσουμε πράξεις τέτοιες ώστε σε αυτό να προσδίδεται δομή σώματος - συγκεκριμένα, για κάθε \(a,b \in K\):
-$$a \oplus b := φ\big(φ^{-1}(a)+φ^{-1}(b)\big) ~\&~ a \odot b := φ\big(φ^{-1}(a) \cdot φ^{-1}(b)\big)$$
-Ο ορισμός των πράξεων είναι λογικός: για να κάνουμε πράξεις σε δύο αριθμούς τους \(Κ\), τους 'μεταφέρουμε' στο \(F[x]/I\) το οποίο έχει ήδη δομή σώματος, κι έπειτα 'ξαναμεταφέρουμε' το αποτέλεσμα των πράξεων στο \(Κ\). Είναι υπόθεση ρουτίνας κανείς να ελέγξει ότι η δομή \((Κ, \oplus, \odot)\) πράγματι γίνεται σώμα.
-<br>
-<br>
-Το \(Κ\) λοιπόν, εξ ορισμού του, αποτελεί επέκταση του \(F\). Επιπλέον, στο \(Κ[x]\) το \(f\) έχει ρίζα το \(x/I\), αφού:
-\begin{align*}
-f(x/I) &= [x^{\deg f}]_f \odot (x/I)^{\deg f} \oplus [x^{\deg f-1}]_f \odot (x/I)^{\deg f-1} \oplus \cdots \oplus [x^0]_f\\
-&=φ\Big(\big[[x^{\deg f}]_f \cdot x^{\deg f} + [x^{\deg f-1}]_f \cdot x^{\deg f-1} + \cdots + [x^0]_f\big/I\Big)\\
-&=φ(f(x)/I)\\
-&=φ(0/Ι)\\
-&=0
-\end{align*}
-όπου η προτελευταία ισότητα δικαιολογείται από το ότι \(p|f\). Αποδεικνύεται λοιπόν η ύπαρξη ενός σώματος \(Κ\), στο οποίο το \(f\) έχει ρίζα.
-</div>
 </div>
 <div class="maincolumns">
   <div class="content_title">Σελίδες:</div>
