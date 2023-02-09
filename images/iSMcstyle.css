@@ -183,3 +183,8 @@ table, th, td {
 	width: 31em;
 	padding: 20px;
   }
+  @media only screen and (max-width: 600px) {
+	body {
+	  font-size: 05px;
+	}
+  }
