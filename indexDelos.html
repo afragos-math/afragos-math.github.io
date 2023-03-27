@@ -1,105 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<html>
 <head>
 <title>Anastasios Fragkos</title>
-<link rel="icon" href="images/quasiperiodictilings.png">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="images/iSMcstyle.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="icon" href="images/quasiperiodictiling.png">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+<link href="default.css" rel="stylesheet" type="text/css" />
+
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
-<style>
-html {
-  margin-top: 100px;
-	transform: scale(1.27, 1.27);
-}</style>
-<meta name="viewport" content="width=device-width, initial-scale=0.33, 
-user-scalable=yes">
-
-  <body>
-    <div id="main">
-      <div id="headtitle"> <br><br>Πρόγραμμα Προβολής
-      </div>
-      <div id="columns">
-        <div id="menuheader"></div>
-        <a href="index.html">Αρχική</a>
-        <a href="indexFiles.html">Λίστα Αρχείων</a>
-        <a href="" style="color: black">Πρόγ/μα Προβολής</a>
-        <a href="indexStuff.html">Νέα - Σεμινάρια</a>
-        <a href="indexVol.html">Ομάδα Εθελοντών</a>
-        <div id="menufooter"></div>
-        <div id="menuheader"></div>
-        <a href="https://delos.uoa.gr/opendelos/" target="_blank">Ιστοσελίδα του «Delos»</a>
-        <div id="menufooter"></div>
-      </div>
-      <div id="seccolumns">
-        <h3>Χρήση του προγράμματος</h3>
-        <div class="text_2" id="chap3">
-          Με το παρόν πρόγραμμα μπορείτε να αναπαράγετε video από την πλατφόρμα του <i>Delos</i> (σε κανονική, μειωμένη ή αυξημένη ταχύτητα). Είναι επίσης δυνατόν να κατεβάσετε βίντεο του <i>Delos</i> που σας ενδιαφέρουν.
-          <br><br>
-          Για να αναπαράξετε ένα βίντεο, τοποθετήστε τον σύνδεσμο του video στο πλαίσιο δίπλα από το κουμπί «Αναπαραγωγή». Πατώντας το κουμπί «Αναπαραγωγή», το βίντεο θα αναπαραχθεί.
-          <br><br>
-          Με τα πλήκτρα «[-]» και «[+]» μπορείτε να μειώσετε και να αυξήσετε την ταχύτητα προβολής αντίστοιχα.
-          <br><br>
-          Εάν θέλετε να κατεβάσετε το βίντεο που αναπαράγεται, πατήστε «Δεξί clik στο video > Αποθήκευση video».<br><br>
-          Ο κώδικας πάρθηκε από τον <a href="http://users.uoa.gr/~sma1900089/">sma1900089</a>.
-        </div>
-      </div>  
-    <div class="maincolumns">
-      <div class="content_title" id="chap1">Πρόγραμμα προβολής</i></div>
-      <div class="text">
-    <div id="renderVideoDiv">
-      <video id="renderVideo" controls="">
-        <source id="videoSource" type="video/mp4">
-      </video>
+<body>
+<div id="header">
+  <h1>Πρόγραμμα Προβολής</h1>
+</div>
+<div id="content">
+  <br><br>
+  <div id="colOne">
+    <h3>&#10066; Χάρτης</h3>
+    <div class="bg1">
+      <ul>
+        <li class="first"><a href="index.html">Αρχική</a></li>
+        <li><a href="indexFiles.html">Λίστα Αρχείων</a></li>
+        <li><a href="indexStuff.html">Νέα - Σεμινάρια</a></li>
+        <li><a href="indexVol.html">Ομάδα Εθελοντών</a></li>
+        <li>Πρόγραμμα Προβολής</li>
+        <li><a href="indexLinks.html">Χρήσιμοι Σύνδεσμοι</a></li>
+      </ul>
     </div>
-    <br>
-    
-    <button class="speedButton" id="minusButton">-</button>
-    <button class="speedButton" id="plusButton">+</button>
-    <input id="currSpeed" type="number" readonly="true" value="1.0">
-    <br><br>
-    <button id="setVideoButton" onclick="setVideo()">Αναπαραγωγή</button>
-    <input type="text" id="videoURL">
-    <script>
-    
-    var vid = document.getElementById("renderVideo");
-    var minusButton = document.getElementById("minusButton");
-    var plusButton = document.getElementById("plusButton");
-    var currSpeed = document.getElementById("currSpeed");
-    
-    function setNewVal(val) {
-      vid.playbackRate = val;
-      currSpeed.value = val.toFixed(2);
-    }
-    
-    minusButton.onclick = function() {
-      var currVal = parseFloat(currSpeed.value);
-      var newVal = currVal - 0.1;
-      setNewVal(newVal);
-    }
-    
-    plusButton.onclick = function() {
-      var currVal = parseFloat(currSpeed.value)
-      var newVal = currVal + 0.1;
-      setNewVal(newVal);
-    }
-    
-    function setVideo() {
-      var url = document.getElementById("videoURL").value;
-      var videoID = url.split("=").pop();
-      var newSource = "https://delos-media.uoa.gr:443/delosrc/resources/vl/" +
-                      videoID + "/" + videoID + ".mp4";
-      document.getElementById("videoSource").src = newSource;
-      vid.load();
-      vid.play();
-    }
-    
-    </script> 
-
+    <h3>&#10066; Ιστοσελίδα του Delos</h3>
+    <div class="bg1">
+      <ul>
+        <a href="https://delos.uoa.gr/opendelos/" target="_blank" class="first">Σύνδεσμος</a>
+      </ul>
+    </div>
   </div>
+  <div id="colTwo">
+    <h3>Πρόγραμμα Προβολής</h3>
+    <div class="bg1">
+      <p>
+        <div id="renderVideoDiv">
+          <video id="renderVideo" controls="">
+            <source id="videoSource" type="video/mp4">
+          </video>
+        </div>
+        <br>
+        
+        <button class="speedButton" id="minusButton">-</button>
+        <button class="speedButton" id="plusButton">+</button>
+        <input id="currSpeed" type="number" readonly="true" value="1.0">
+        <br><br>
+        <button id="setVideoButton" onclick="setVideo()">Αναπαραγωγή</button>
+        <input type="text" id="videoURL">
+      </p>
+    </div>
+    <h3>Χρήση</h3>
+    <div class="bg1">
+      <p>
+        Με το παρόν πρόγραμμα μπορείτε να αναπαράγετε video από την πλατφόρμα του Delos (σε κανονική, μειωμένη ή αυξημένη ταχύτητα). Είναι επίσης δυνατόν να κατεβάσετε video του Delos που σας ενδιαφέρουν.
+      </p>
+      <p>
+          Για να αναπαράξετε ένα βίντεο, τοποθετήστε τον σύνδεσμο του video στο πλαίσιο δίπλα από το κουμπί «<button>Αναπαραγωγή</button>». Πατώντας το κουμπί «<button>Αναπαραγωγή</button>», το βίντεο θα αναπαραχθεί.
+      </p>
+          Με τα πλήκτρα «<button>-</button>» και «<button>+</button>» μπορείτε να μειώσετε και να αυξήσετε την ταχύτητα προβολής αντίστοιχα.
+      </p>
+      <p>
+          Εάν θέλετε να κατεβάσετε το βίντεο που αναπαράγεται, πατήστε «Δεξί clik στο video > Αποθήκευση video».
+      </p>
+    </div>
   </div>
+</div>
+<div id="footer">
+  <p><i>HTML Design: <a href="https://www.free-css.com/free-css-templates/page13/isometric">Isometric</a>.</i></p>
+</div>
+<script>
+  var vid = document.getElementById("renderVideo");
+  var minusButton = document.getElementById("minusButton");
+  var plusButton = document.getElementById("plusButton");
+  var currSpeed = document.getElementById("currSpeed");
+  
+  function setNewVal(val) {
+    vid.playbackRate = val;
+    currSpeed.value = val.toFixed(2);
+  }
+  
+  minusButton.onclick = function() {
+    var currVal = parseFloat(currSpeed.value);
+    var newVal = currVal - 0.1;
+    setNewVal(newVal);
+  }
+  
+  plusButton.onclick = function() {
+    var currVal = parseFloat(currSpeed.value)
+    var newVal = currVal + 0.1;
+    setNewVal(newVal);
+  }
+  
+  function setVideo() {
+    var url = document.getElementById("videoURL").value;
+    var videoID = url.split("=").pop();
+    var newSource = "https://delos-media.uoa.gr:443/delosrc/resources/vl/" +
+                    videoID + "/" + videoID + ".mp4";
+    document.getElementById("videoSource").src = newSource;
+    vid.load();
+    vid.play();
+  }
+  </script>
 </body>
-
 </html>
