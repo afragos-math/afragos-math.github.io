@@ -1,0 +1,124 @@
+\input{template-I_structure.tex}
+%------------------------------------------------------------------------------
+\begin{document}
+%Εδώ ξεκινά η σελίδα του τίτλου.
+\newgeometry{
+	paper=a4paper,
+	top=2cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+	headheight=12pt,
+	footskip=1.2cm,
+	headsep=11pt,
+}
+
+\begingroup
+\thispagestyle{empty} 
+\begin{titlepage}
+{$^{~}$\\ \\ \\ \\ $^{~}$\hfill \textbf{\fontsize{40pt}{46pt}\selectfont Ένας}\\ \\ $^{~}$\hfill \textbf{\fontsize{40pt}{46pt}\selectfont Τίτλος}}
+\vspace{2\baselineskip}
+
+{\flushleft \Large Ο/Η συγγραφέας}\\ 
+{\flushleft Τμήμα τάδε\\ Πανεπιστήμιο τάδε}\\
+\vspace{6\baselineskip}
+
+\begin{center}
+{Μία εικόνα} %Αλλιώς αφαιρέστε στο center.
+\end{center}
+
+\vfill~
+\end{titlepage}
+
+\restoregeometry
+\newpage
+%Εδώ τελειώνει η σελίδα του τίτλου.
+
+ %Σελίδα copyright - Μπορείτε αν θέλετε να την αφαιρέστε την αν ΔΕΝ χρησιμοποιείτε για επιχειρηματικό σκοπό το template.
+\thispagestyle{empty}
+~\vfill
+
+{\large {\flushleft Τα} πνευματικά δικαιώματα της γραμματοσειράς ανήκουν στο Τμ. Μαθηματικών του Παν. Αιγαίου. Περισσότερες πληροφορίες μπορείτε να βρείτε εδώ:
+\begin{center}
+\href{http://iris.math.aegean.gr/kerkis/}{http://iris.math.aegean.gr/kerkis/}\\~\\
+\begin{tabular}{l}
+\hline
+ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ\\
+αβγδεζηθικλμνξοπρστυφχψω\\
+\emph{ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ}\\
+\emph{αβγδεζηθικλμνξοπρστυφχψω}\\
+\textbf{ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ}\\
+\textbf{αβγδεζηθικλμνξοπρστυφχψω}\\
+ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+abcdedghijklmnopqrstuvwxyz\\
+\emph{BCDEFGHIJKLMNOPQRSTUVWXYZ}\\
+\emph{abcdedghijklmnopqrstuvwxyz}\\
+\textbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\\
+\textbf{abcdedghijklmnopqrstuvwxyz}\\
+0123456789,./:``''()[]\{\}<>-!\@\#\$\%\&*\\
+\emph{0123456789,./:``''()[]<>\{\}-!\@\#\$\%\&*}\\
+\textbf{0123456789,./:``''()[]<>\{\}-!\@\#\$\%\&*}\\
+\hline
+\end{tabular}
+\end{center}
+Κέρκης \copyright~ Τμήμα Μαθηματικών, Πανεπιστήμιο Αιγαίου.\\ \\ \\ \\
+Το template αυτής της παρουσίασης μπορεί να βρεθεί εδώ:\\ \href{https://afragos-math.github.io/files/latex/template-I.html}{https://afragos-math.github.io/files/latex/template-I.html}.}
+
+\vfill~
+\newpage
+%Τέλος σελίδας copyright. 
+
+%Περιεχόμενα.
+\tableofcontents
+%Τέλος Περιεχομένων.
+
+%Αρχή του κύριου κειμένου
+\chapter{Κεφάλαιο}
+\section{Παράγραφος}
+\subsection{Υποπαράγραφος}
+
+\begin{exercise}[Προαιρετικό όνομα της άσκησης] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{exercise}
+
+\begin{theorem}[Προαιρετικό όνομα του θεωρήματος] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{theorem}
+sadsad
+\begin{lemma}[Προαιρετικό όνομα του λήμματος] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{lemma}
+
+\begin{definition}[Προαιρετικό όνομα του ορισμού] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{definition}
+
+\begin{remark}[Προαιρετικό όνομα της παρατήρησης] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{remark}
+
+\begin{corollary}[Προαιρετικό όνομα του πορίσματος] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{corollary}
+
+\begin{proposition}[Προαιρετικό όνομα της πρότασης] %Αν δεν θέλετε όνομα, βγάζετε τα [  ].
+Λόγια λόγια λόγια
+\end{proposition}
+
+\emph{Απόδειξη:} Λόγια λόγια
+
+~\hfill\qed\par
+
+Παράγραφος! Λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια.
+Παράγραφος! Λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια λόγια. %Δείτε ότι αφήνουμε κενή γραμμή για να αλλάξουμε παράγραφο. Αλλιώς θα μπορούσαμε να γράψουμε \par.
+
+Επίσης, υπάρχουν δύο καλλιγραφικές γραμματοσειρές: $\mathcal{CAL}$ και $\pazocal{CAL}$.
+
+%Βιβλιογραφία
+\addcontentsline{toc}{chapter}{Βιβλιογραφία}
+\begin{thebibliography}{9}
+\bibitem[Ca]{Ca} Carney Sean: \emph{\textbf{Fourier Analysis}} (Σημειώσεις UCLA, 2021)
+\end{thebibliography}
+
+%Τέλος του κύριου κειμένου
+\end{document}
