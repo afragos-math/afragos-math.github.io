@@ -16,6 +16,12 @@ a{
 a:hover{
 	text-decoration: none;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .text{
   margin-top: 40pt;
   margin-left: 50pt;
@@ -29,6 +35,13 @@ a:hover{
   font-size: 16pt;
   font-family: 'Old English Five', sans-serif;
   color: #ffffff;
+}
+.smalloldt{
+  margin-bottom: 10pt;
+  margin-left: 50pt;
+  font-size: 16pt;
+  font-family: 'Old English Five', sans-serif;
+  color: #000000;
 }
 .title{
   margin-top: 45%;
@@ -44,6 +57,15 @@ a:hover{
   font-size: 24pt;
   font-family: 'Old English Five', sans-serif;
   color: #000000;
+}
+.container{
+  position: relative;
+  color: #ffffff;
+}
+.center-right{
+  position: absolute;
+  top: 37%;
+  left: 80pt;
 }
 .page {
   width: 40vw;
