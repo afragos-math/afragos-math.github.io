@@ -6,16 +6,17 @@
             The Equilibrium Game
         </title>
         <meta charset="utf-8">
+        <meta http-equiv="refresh" content="1.3; url='#start'">
         <link href="../structure.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.cdnfonts.com/css/old-english-five" rel="stylesheet">
         <link rel="icon" href="../images/equilibrium.ico">
     </head>
-    <body>
+    <body id="start">
         <div class="chapter" style="color:#ffffff;">
            The Cosmos of &ldquo;Equilibrium&bdquo;
         </div>
         <div class="text">
-            <a href="../index.html">&#8689;</a> Go Back<br><br>
+            <a href="#end" onclick="javascript:delay('../index.html#end')">&#8689;</a> Go Back<br><br>
             <div class="smallold">
                Realms
             </div>
@@ -53,5 +54,12 @@
                 mountains and dungeons, Terra is the home 
                 of Dwarves.
         </div>
+        <div style="margin-top: 225%;"></div>
+        <div id="end"></div>
     </body>
+    <script>
+        function delay (URL) {
+        setTimeout( function() { window.location = URL }, 700 );
+        }
+    </script>
 </html>
