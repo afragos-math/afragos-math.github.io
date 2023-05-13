@@ -3,10 +3,15 @@
   top: 20%;
   left: 47%;
 }
-.darklands{
+.paterna{
   position: absolute;
-  top: 10%;
-  left: 27%;
+  top: 11%;
+  left: 55%;
+}
+.scythiannomads{
+  position: absolute;
+  top: 14%;
+  left: 64%;
 }
 .drakenslya{
   position: absolute;
@@ -17,4 +22,54 @@
   position: absolute;
   top: 21%;
   left: 62%;
+}
+.iacchuswilds{
+  position: absolute;
+  top: 23.5%;
+  left: 53%;
+}
+.holylands{
+  position: absolute;
+  top: 27%;
+  left: 65%;
+}
+.crystalspires{
+  position: absolute;
+  top: 30%;
+  left: 59%;
+}
+.swampsofcruentus{
+  position: absolute;
+  top: 28%;
+  left: 34%;
+}
+.levant{
+  position: absolute;
+  top: 35%;
+  left: 49%;
+}
+.reptantdominion{
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}
+.eramaa{
+  position: absolute;
+  top: 42%;
+  left: 55%;
+}
+.darklands{
+  position: absolute;
+  top: 10%;
+  left: 27%;
+}
+.dragonclaw{
+  position: absolute;
+  top: 21%;
+  left: 7%;
+}
+.desregrado{
+  position: absolute;
+  top: 33%;
+  left: 35%;
 }
