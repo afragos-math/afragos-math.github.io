@@ -15,40 +15,33 @@
 </head>
 <body>
 <div id="header">
-  <h1>Καλωσήλθατε στην προσωπική σελίδα του Αναστάσιου Φράγκου</h1>
+  <h1>Welcome my personal Webpage</h1>
 </div>
 <div id="content">
   <br><br>
   <div id="colOne">
-    <h3>&#10066; Χάρτης</h3>
+    <h3>&#10066; Map</h3>
     <div class="bg1">
       <ul>
-        <li class="first">Αρχική</li>
-        <li><a href="indexFiles.html">Λίστα Αρχείων</a></li>
-        <li><a href="indexStuff.html">Νέα - Σεμινάρια</a></li>
-        <li><a href="indexVol.html">Ομάδα Εθελοντών</a></li>
-        <li><a href="indexDelos.html">Πρόγραμμα Προβολής</a></li>
-        <li><a href="indexLinks.html">Χρήσιμοι Σύνδεσμοι</a></li>
+        <li class="first">Home</li>
+        <li><a href="indexFiles.html">Notes and Books</a></li>
+        <li><a href="indexStuff.html">News and Seminars</a></li>
+        <li><a href="indexVol.html">Volunteer Team (NKUA)</a></li>
+        <li><a href="indexLinks.html">Useful Links</a></li>
       </ul>
     </div>
-    <h3>&#10066; Ευρετήριο</h3>
+    <h3>&#10066; Index</h3>
     <div class="bg1">
       <ul>
-        <li class="first"><a href="#chap0">Ένα καλωσόρισμα</a></li>
-        <li><a href="#chap1">H σφαίρα του Riemann τοπολογικά</a></li>
-        <li><a href="#chap2">Σχετικά πρώτοι και πιθανότητες</a></li>
-        <li><a href="#chap3">Η συνάρτηση \(ω\) και τα αθροίσματά της</a></li>
-        <li><a href="index2html#chap4">Το \(\cos x\) ως άθροισμα ημιτόνων</a></li>
-        <li><a href="index2.html#chap5">Το θεώρημα του Kronecker</a></li>
-        <li><a href="index2.html#chap6">Αναπαραμετρίσεις καμπυλών</a></li>
-        <li><a href="index3.html#chap7">Αναπαραμετρίσεις μοναδ. ταχύτητας</a></li>
-        <li><a href="index3.html#chap8">Απομονώνοντας σημεία στον \(\mathbb{R}^n\)</a></li>
+        <li class="first"><a href="#chap0">A poem of Vrettakos</a></li>
+        <li><a href="#chap2">Relatively prime numbers and probab.</a></li>
+        <li><a href="#chap1">Isolating points in \(\mathbb{R}^n\)</a></li>
       </ul>
     </div>
   </div>
   <div id="colTwo">
     <div class="bg2">
-      <h2 id="chap0"><em>Ένα καλωσόρισμα<em></h2>
+      <h2 id="chap0"><em>A poem of Vrettakos<em></h2>
       <p><img src="images/quasiperiodictiling.png" alt="" width="105" height="105" class="image" /></p>
       <p>
         Χωρὶς τὴ μαθηματικὴ τάξη, δὲν στέκει τίποτε: Οὔτε οὐρανὸς ἔναστρος, οὔτε ρόδο. Προπαντὸς ἕνα ποίημα. Κι εὐτυχῶς ὅτι μ᾿ ἔκανε ἡ μοῖρα μου γνώστη τῶν μουσικῶν ἀριθμῶν ὅτι κρέμασε μίαν ἀχτίνα ἐπὶ πλέον τὸ ἄστρο τῆς ἡμέρας στὴν ὅρασή μου καὶ κάνοντας τὰ γόνατά μου τραπέζι ἐργάζομαι, ὡς νά ῾ταν νὰ φτιάξω ἕναν ἔναστρο οὐρανό, ἢ ἕνα ρόδο.
@@ -56,131 +49,91 @@
         Νικηφόρος Βρεττάκος.
       </p>
     </div>
-    <div class="select"><b>Σελίδες | <b>1</b> | <a href="index2.html">2</a> | <a href="index3.html">3</a> |</b></div><br>
-    <h3 id="chap1">Η σφαίρα του Riemann τοπολογικά</h3>
-    <div class="bg1">
-    <p>
-      Ως σφαίρα του Riemann ορίζουμε το επεκταμένο μιγαδικό επίπεδο \(\hat{\mathbb{C}} := \mathbb{C} \cup \{\infty\}\), όπου το "\(\infty\)" αντιπροσωπεύει το άπειρο. Πρακτικά, κανείς μπορεί να φαντάζεται το επεκταμένο μιγαδικό επίπεδο ως σφαίρα, καθώς τοπολογικά είναι η \(2-\)σφαίρα:
-      $$\mathbb{S}^2 = \big\{(x,y,z) \in \mathbb{R}^3 ~|~ x^2+y^2+z^2 = 1\big\}$$
-      Πράγματι, αυτό κανείς μπορεί να το δει μέσω της συνήθους στερεογραφικής προβολής - η στερεογραφική προβολή \(σ: \mathbb{S}^2 \to [\mathbb{R}^2 \times \{0\}] \cup \{\infty\} \approx \mathbb{R}^2 \cup \{\infty\} =: \mathbb{C}\) είναι αμφιμονοσήμαντη, συνεχής και αμφισυνεχής.
-    </p>
-    <p>
-      Έστω \(Ν\) ο βόρειος πόλος της σφαίρας (δηλαδή \(Ν = (0,0,1)\)). Εάν \(B\) είναι ένα σημείο \(Β \in \mathbb{S}^2\backslash\{N\}\), η στερεoγραφική προβολή \(σ\) ορίζεται σε κάθε τέτοιο \(Β\) ως:
-      $$σ(Β) = \underleftrightarrow{NB} \cap^* [\mathbb{R}^2 \times \{0\}]$$
-      και στο \(Ν\), \(σ(Ν) = \infty\), όπου \(\underleftrightarrow{NB}\) είναι η σημειοσειρά της ευθείας που διέρχεται από τα \(Ν\) και \(Β\), και \(\underleftrightarrow{NB} \cap^* [\mathbb{R}^2 \times \{0\}]\) το σημείο τομής της ευθείας \(\underleftrightarrow{NB}\) με το επίπεδο \(\mathbb{R}^2 \times \{0\}\).
-    </p>
-    <p>
-      Για να μελετήσουμε εν συνεχεία τις ιδιότητες του αμφιμονοσημάντου, της συνέχειας και της αμφισυνέχειας της \(σ\), θα αναζητήσουμε έναν κλειστό τύπο γι' αυτήν. Έστω λοιπόν \(B = (x,y,z) \in \mathbb{S}^2\backslash\{N\}\), \(σ(Β) = \underleftrightarrow{NB} \cap^* [\mathbb{R}^2 \times \{0\}]\) και \(Κ_ΒΒ\) το κάθετο ευθύγραμμο τμήμα προς την διάμετρο που διέρχεται από το \(Ν\). Παρατηρούμε ότι τα ορθογώνια τρίγωνα \(\overset{\triangle}{Κ_ΒΒΝ}\) και \(\overset{\triangle}{Οσ(Β)Ν}\) είναι μεταξύ τους όμοια, οπότε οι ακόλουθες αναλογίες αληθεύουν:
-      $$\dfrac{||K_BB||}{||K_BN||} = \dfrac{||σ(Β)||}{||ON||} \Rightarrow ||σ(Β)|| = \dfrac{\sqrt{x^2+y^2}}{1-z}$$
-      απ' όπου το μήκος του \(σ(Β)\) προσδιορίζεται. Η διεύθυνσή του δε είναι γνωστή, οπότε ουσιαστικά το προηγούμενο αρκεί ώστε να προσδιοριστεί πλήρως:
-      $$σ(Β) = \dfrac{\sqrt{x^2+y^2}}{1-z} \cdot \dfrac{1}{\sqrt{x^2+y^2}} (x,y,0) = \dfrac{1}{1-z}(x,y,0)$$
-      Η τιμή \(σ(Ν)\) έχει οριστεί άπειρη, οπότε έτσι έχουμε βρει κλειστό τύπο για την \(σ\). Σε αυτό το σημείο κανείς παρατηρεί ότι η συνολοθεωρητική αντίστροφη της \(σ\) είναι η απεικόνιση η οποία ορίζεται για κάθε \(Τ = (κ,λ,0) \in \mathbb{R}^2 \times \{0\}\):
-      $$σ^{-1}(T) = \left(\dfrac{κ}{\sqrt{κ^2+λ^2}}, \dfrac{λ}{\sqrt{κ^2+λ^2}}, 1-\dfrac{1}{\sqrt{κ^2+λ^2}}\right) ~\&~ σ^{-1}(\infty) = N$$
-      και επίσης οι \(σ\), \(σ^{-1}\) είναι συνεχείς, εξαιρώντας τα "ιδιάζοντα" σημεία \(Ν\), \(\infty\). Δείχνοντας τη συνέχεια και σε αυτά, αποδεικνύουμε την τοπολογική σχέση:
-      $$\mathbb{S}^2 \approx [\mathbb{R}^2 \times \{0\}] \cup \{\infty\} \approx \mathbb{R}^2 \cup \{\infty\} =: \mathbb{C} \cup \{\infty\} \Rightarrow \mathbb{S}^2 \approx \hat{\mathbb{C}}$$
-      Έστω \((Β_n)_{n \in \mathbb{N}},~ Β_n = (x_n, y_n, z_n)\) μια ακολουθία στη σφαίρα \(\mathbb{S}^2\), η οποία συγκλίνει προς το \(Ν\). Καθώς \(Β_n \to N\), θα πρέπει \(z_n \to 1\), οπότε \(σ(Β_n) \to \infty = σ(Ν)\) (η \(σ\) αποδεικνύεται συνεχής και στο \(Ν\)). Επιπλέον, εάν \((Τ_n)_{n \in \mathbb{N}},~ T_n = (κ_n, λ_n, 0)\) είναι μία ακολουθία του \(\mathbb{R}^2 \times \{0\}\) η οποία συγκλίνει στο \(\infty\), καθώς \(Τ_n \to \infty\) θα πρέπει \(\sqrt{κ_n^2+λ_n^2} \to \infty\). Κατ' επέκταση, \(σ^{-1}(Τ_n) \to (0,0,1) = Ν = σ^{-1}(\infty)\) (η \(σ^{-1}\) αποδεικνύεται συνεχής και στο \(\infty\)). Με αυτά αποδεικνύεται η εν λόγω σχέση.
-    </p>
-    </div>
-    <h3 id="chap2">Σχετικά πρώτοι αριθμοί και πιθανότητες</h3>
+    <div class="select"><b>Pages | <b>1</b> | <a href="index2.html">2</a> | <a href="index3.html">3</a> |</b></div><br>
+    <h3 id="chap2">Relatively prime numbers and probabilities</h3>
     <div class="bg1">
       <p>
-        Στην αναλυτική θεωρία αριθμών αποδεικνύεται ένα θαυμαστό αποτέλεσμα σχετικά με την πιθανότητα κανείς να επιλέξει δύο αριθμούς σχετικά πρώτους μεταξύ τους. Αποδεικνύεται συγκεκριμένα ότι, δεδομένου θετικού ακέραιου \(Τ\):
+        In Analytic Number Theory, a marvelous (to me at least) result is proven, about the probability of choosing at random two relatively prime numbers. It is proven that, given a positive integer \(Τ\):
         $$\lim_{T \to \infty}\dfrac{\#N_T}{T^2}= \dfrac{6}{π^2}$$
-        όπου \(N_T = \{(m,n) ~|~ 1 \leqslant m \leqslant T,~ 1 \leqslant n \leqslant T,~ \gcd(m,n)=1\}\).
+        where \(N_T = \{(m,n) ~|~ 1 \leqslant m \leqslant T,~ 1 \leqslant n \leqslant T,~ \gcd(m,n)=1\}\).
       </p>
       <p>
-        <b>Λήμμα 1ο:</b>
-        <i>Δεδομένων δύο αριθμητικών συναρτήσεων \(f,g\), ορίζουμε:
+        <b>Lemma 1:</b>
+        <i>Given two arithmetic functions \(f,g\), we define:
           $$F(x) = \sum_{n \leqslant x} f(n) ~\&~ G(x) = \sum_{n \leqslant x} g(n)$$
-          Τότε, για κάθε \(1 \leqslant y \leqslant x\) έχουμε:
+          Then, for every \(1 \leqslant y \leqslant x\) we have:
           $$\sum_{n \leqslant x} (f*g)(n) = \sum_{d \leqslant y} g(d)F\left(\dfrac{x}{d}\right)+\sum_{m \leqslant x/y} f(m)G\left(\dfrac{x}{m}\right)-F\left(\dfrac{x}{y}\right)G(y)$$
         </i>
       </p>
       <p>
-        <i>Απόδειξη:</i> Είναι σύνηθες τέχνασμα στην αναλυτική θεωρία αριθμών να αναπαριστούμε τα αθροίσματα Dirichlet αθροισμάτων ως εξής:
+        <i>Proof:</i> It is a well-known method in Analytic Number Theory to represent the sums of Dirichlet products as follows:
         $$\sum_{n \leqslant x} (f*g)(n) = \sum_{md \leqslant x} f(m)g(d)$$
-        Για τυχόν λοιπόν \(y \leqslant x\):
+        So for \(y \leqslant x\):
         \begin{align*} \sum_{md \leqslant x} f(m)g(d) &= \sum_{\begin{matrix} md \leqslant x \\ d \leqslant y \end{matrix}} f(m)g(d) + \sum_{\begin{matrix} md \leqslant x \\ d>y \end{matrix}} f(m)g(d)\\
         &= \sum_{d \leqslant y} g(d) \sum_{m \leqslant x/d} f(m) + \sum_{m \leqslant x/y} f(m) \sum_{y < d\leqslant x/m} g(d)\\
         &= \sum_{d \leqslant y} g(d) F\left(\dfrac{x}{d}\right)+\sum_{m \leqslant x/y} f(m) \left[ G\left(\dfrac{x}{m}\right)-G(y) \right]\\
         &= \sum_{d \leqslant y} g(d) F\left(\dfrac{x}{d}\right) + \sum_{m \leqslant x/y} G\left(\dfrac{x}{m}\right)-G(y)\sum_{m \leqslant x/y} f(m)\\
         &= \sum_{d \leqslant y} g(d)F\left(\dfrac{x}{d}\right)+\sum_{m \leqslant x/y} f(m)G\left(\dfrac{x}{m}\right)-F\left(\dfrac{x}{y}\right)G(y) \end{align*}
-        Η τελευταία είναι βέβαια η ζητούμενη σχέση, οπότε το λήμμα αποδεικνύεται.
+        The last is what we wanted to prove, so the Lemma is proven.
       </p>
       <p>
-        <b>Λήμμα 2ο:</b>
-        <i>Έστω \(φ\) η συνάρτηση του Euler. Για κάθε \(x>1\):
+        <b>Lemma 2:</b>
+        <i>Let \(φ\) be the Euler function. For every \(x>1\):
           $$\sum_{n \leqslant x} φ(n) = \dfrac{3}{π^2}x^2+O(x^{3/2})$$  
         </i>
       </p>
       <p>
-        <i>Απόδειξη:</i> Εφαρμόζουμε το πρώτο λήμμα για \(f=N\) και \(g=μ\), επειδή ακριβώς \(φ=μ*Ν\). Έχουμε ότι:
+        <i>Proof:</i> We apply the first Lemma for \(f=N\) and \(g=μ\), because \(φ=μ*Ν\). We get that:
         $$\sum_{n \leqslant x} φ(n) = \sum_{n \leqslant y} μ(n)F\left(\dfrac{x}{n}\right)+\sum_{m \leqslant x/y} N(m)G\left(\dfrac{x}{m}\right)-F\left(\dfrac{x}{y}\right)G(y)$$
-        όπου φυσικά οι συμβολισμοί \(F,G\) είναι ακριβώς αυτοί του προηγούμενου λήμματος:
+        where the symbols \(F,G\) are exactly those from the first Lemma:
         $$F(x) = \sum_{n \leqslant x} N(n) = \dfrac{x^2}{2}+O(x) ~\&~ G(x) = \sum_{n \leqslant x} μ(n) = O(x)$$
-        Συνεπώς:
+        Hence:
         \begin{align*} \sum_{n \leqslant x} φ(n) = \dfrac{1}{2}\sum_{n \leqslant y} μ(n)\left(\dfrac{x}{n}\right)^2+O\left(\left|\sum_{n \leqslant y} μ(n)\right|x\right)&+O\left(\sum_{m \leqslant x/y} m\dfrac{x}{m}\right)\\
         &+O\left(\left( \dfrac{x}{y} \right)^2 y\right)\end{align*}
-        Χρησιμοποιώντας τώρα για \(y = \sqrt{x}\) τα στοιχειώδη φράγματα:  
+        Now, using \(y = \sqrt{x}\), the trivial bounds:  
         $$\left|\sum_{n \leqslant \sqrt{x}} μ(n) \right| \leqslant \sqrt{x} ~\&~ \sum_{m \leqslant \sqrt{x}} m\dfrac{x}{m} \leqslant x^{3/2}$$
-        παίρνουμε ότι:
+        give us that:
         $$\sum_{n \leqslant x} φ(n) = \dfrac{x^2}{2} \sum_{n \leqslant \sqrt{x}} \dfrac{μ(n)}{n^2}+O(x^{3/2})$$
-        Τώρα, θεωρώντας γνωστή τη σχέση:
+        By the known formula:
         $$ζ(2)\sum_{n=1}^\infty \dfrac{μ(n)}{n^2}=1$$
-        παρατηρούμε ότι:
+        we also have that:
         \begin{align*} \sum_{n \leqslant \sqrt{x}} \dfrac{μ(n)}{n^2} = \sum_{n=1}^\infty \dfrac{μ(n)}{n^2} - \sum_{n>\sqrt{x}} \dfrac{μ(n)}{n^2} &= \dfrac{6}{π^2}+Ο\left(\sum_{n>\sqrt{x}} \dfrac{1}{n^2}\right)\\
         & = \dfrac{6}{π^2}+Ο(x^{-1/2})\end{align*}
-        Αυτό ολοκληρώνει την απόδειξη του λήμματος, αφού το ζητούμενο προκύπτει από μια απλή αντικατάσταση.
+        This concludes the proof of the Lemma, as the result follows from a substitution.
       </p>
       <p>
-        Δεδομένου του δεύτερου λήμματος, μπορεί να δοθεί απόδειξη για το όριο:
+        Given the second Lemma, a proof of the limit:
         $$\lim_{T \to \infty}\dfrac{\#N_T}{T^2}= \dfrac{6}{π^2}$$
-        Πράγματι, αληθεύει ότι:
+        can be given. Indeed:
         $$\sum_{N_T} = 1+2\sum_{\begin{matrix} n < m \leqslant T \\ \gcd(m,n) = 1\end{matrix}} = 1+2\sum_{m \leqslant T} φ(m) = \dfrac{6}{π^2}Τ^2+Ο(Τ^{3/2})$$
-        το οποίο αποδεικνύει το εν λόγω όριο.
+        which proves the Lemma.
       </p>
     </div>
-    <h3 id="chap3">Η συνάρτηση \(ω\) και τα αθροίσματά της</h3>
+    <h3 id="chap8">Isolating points in \(\mathbb{R}^n\)</h3>
     <div class="bg1">
       <p>
-        Έστω \(n\) ένας θετικός ακέραιος και:
-        $$n = \prod_{p} p^{a_p},~ p \in \mathbb{P},~ a_p \in \mathbb{Z}^+$$
-        μια αναπαράσταση του \(n\) σε γινόμενο πρώτων. Συμβολίζουμε με \(ω(n)\) το πλήθος των διακεκριμένων πρώτων διαιρετών του \(n\). Αυστηρότερα, η \(ω\) είναι μια αριθμητική συνάρτηση \(ω: \mathbb{N} \to \mathbb{R}\) με τύπο:
-        $$ω(n) = \sum_{p|n}$$
-        Για το άθροισμα της \(ω\) αληθεύει η σχέση:
-        $$\sum_{n \leqslant x} ω(n) = x \log \log x +O(x)$$
-        <b>Υπενθύμιση:</b>
+        <b>Lemma:</b>
         <i>
-          Το άθροισμα των αντιστρόφων των πρώτων έχει τάξη μεγέθους:
-          $$\sum_{p \leqslant x} \dfrac{1}{p} = \log \log x + A + O\left(\dfrac{1}{\log x}\right)$$
-          για κάποια σταθερά \(Α \in \mathbb{R}\).
+          Let \(\{ω_k\}_{k=1}^m\) be a finate collection of points in \(\mathbb{R}^n\). There exists a hyperplane \(H \simeq \mathbb{R}^{n-1}\) of \(\mathbb{R}^n\) which separates the space into two sets \(Χ,Ψ\), with the property:
+          $$ω_j \in X \backslash H ~\&~ \{ω_k\}_{k \neq j} \subset Ψ \backslash H$$
+          for some \(j \in [m]\).
         </i>
       </p>
       <p>
-        <b>Λήμμα:</b>
-        <i>
-          Για τη συνάρτηση \(\sum_{n \leqslant x} ω(n)\) ισχύει:
-          $$\sum_{n \leqslant x} ω(n) = \sum_{p \leqslant x} \left\lfloor \dfrac{x}{p} \right\rfloor$$
-        </i>
-      </p>
-      <p>
-        <i>Απόδειξη:</i> Πράγματι, εάν \(χ_\mathbb{P}\) είναι η δείκτρια συνάρτηση των πρώτων:
-        $$\sum_{n \leqslant x} ω(n) = \sum_{n \leqslant x} \sum_{p|n} = \sum_{n \leqslant x} \sum_{d|n} χ_\mathbb{P}(d)$$
-        Επομένως:
-        $$\sum_{n \leqslant x} ω(n) = \sum_{d \leqslant x} χ_\mathbb{P}(d) \left\lfloor \dfrac{x}{d} \right\rfloor = \sum_{p \leqslant x} \left\lfloor \dfrac{x}{p} \right\rfloor$$
-        Αυτό αποδεικνύει το λήμμα.
-      </p>
-      <p>
-        Τώρα γράφουμε:
-        $$\sum_{n \leqslant x} ω(n) = \sum_{p \leqslant x} \dfrac{x}{p} - \sum_{p \leqslant x} \left\{ \dfrac{x}{p} \right\}$$
-        και παρατηρούμε ότι \(\sum_{p \leqslant x} \left\{ x/p \right\}=Ο(x)\). Επομένως:
-        $$\sum_{n \leqslant x} ω(n) = x\sum_{p \leqslant x} \dfrac{1}{p}+O(x)$$
-        Από την υπενθύμιση προκύπτει η εν λόγω τάξη μεγέθους των αθροισμάτων της \(ω\):
-        \begin{align*} \sum_{n \leqslant x} ω(n) &= x \log \log x + \overbrace{Ax+O\left( \dfrac{x}{\log x} \right)+O(x)}^{O(x)}\\
-        &= x \log \log x + O(x)\end{align*}
+        <i>Proof:</i> We will assume that \(m \geqslant 2\), as the other cases are simple. We consider the functions \(D_k(ω_\ell) = || ω_k - ω_\ell ||_2\) and we chose \(j \in [m]\) so that it maximizes:
+        $$\max \{D_x(ω_t) ~|~ t \in [m]\}$$
+        (i.e. when \(x=j\) the above maximizes). Basically, for point \(ω_j\), some point \(ω_t\) can be found so the distance \(||ω_j-ω_t||_2\) maximizes in \(\{ω_k\}_{k=1}^m\).
+        <p style="text-align: center"><img src="images/math/9.1.svg" width = 330px></p>
+        We notice that, by definition of \(ω_j, ω_t\), all the points of \(\{ω_k\}_{k=1}^m\) must be located in close balls \(Β\big(ω_j, D_j(ω_t)\big)\), \(Β\big(ω_t, D_t(ω_j)\big)\), therefore they are located in the intersection:
+        $$Λ = Β\big(ω_j, D_j(ω_t)\big) \cap Β\big(ω_t, D_t(ω_j)\big)$$
+        (\(Λ\) is from «Λemon»). We choose a point \(ω_r\) for which the distance from \(ω_j\) minimizes, and we notice that:
+        $$\{ω_k\}_{k \neq j} \subset Λ \backslash S\big(ω_j, D_j(ω_r)\big)$$
+        One step remains for the proof to be complete. The two spheres \(\partial Β\big(ω_j, D_j(ω_t)\big)\), \(\partial Β\big(ω_t, D_t(ω_j)\big)\) intersect in a «sphere of \(\mathbb{R}^{n-1}\)», which we name \(Τ\). Sphere \(Τ\) contains at least \(n-1\) points, so a hyperplane can be defined which contains \(Τ\). Let \(ω_j \in Χ', Ψ'\) be the half-spaces the hyperplane defines in space. We find a (parallel) hyperplane \(ε\), which intersects:
+        $$\big[S\big(ω_j, D_j(ω_r)\big) \cap Λ \cap X'\big] \backslash \{ω_j\}$$
+        and we notice that \(ε\) is the hyperplane of the Lemma we sought.
       </p>
     </div>
-    <div class="select"><b>Σελίδες: | <b>1</b> | <a href="index2.html">2</a> | <a href="index3.html">3</a> |</b></div><br>
+    <div class="select"><b>Pages | <b>1</b> | <a href="index2.html">2</a> | <a href="index3.html">3</a> |</b></div><br>
   </div>
 </div>
 <div id="footer">
