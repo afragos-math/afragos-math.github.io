@@ -103,14 +103,14 @@
         If we now enclose each \(B_k\) in a cube \(Q_k\) of side length \(s_k = \mathrm{diam}(B_k)\) (parallel to the axes), we notice that each \(x-\)cut \((Q_k)_x\) is, in most cases, \(s_k\sqrt{d-1}\) (because this is the diameter of a \((d-1)-\)dimensional cube of side length \(s_k\)). There is also another case, where the \(x-\)cut is empty, and then \(\mathrm{diam}((Q_k)_x)=0\). In any case, we can write:
         $$\dfrac{1}{(\sqrt{d-1})^{δ-1}}\int_{\mathbb{R}}\sum_{\{x ~|~ (Q_k)_x \neq \emptyset\}} \mathrm{diam}^{δ-1}\big((Q_k)_x\big)~d\mathscr{L}(x) = \sum_{k=1}^{|(B_k)_{k \in \mathbb{N}}|} \big(s_k^{δ-1} \cdot s_k\big) = \sum_{k=1}^\infty \mathrm{diam}^{δ}(B_k)$$
         This, in turn, means that:
-        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}_ε\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}_ε^δ\big(Α \cap B(0,R)\big)+η$$
-        where \(c_{δ,d} = 1/(\sqrt{d-1})^{δ-1}\). Taking \(ε \downarrow 0\), because \(\mathscr{H}_ε^δ(\cdot) \nearrow \mathscr{H}^δ(\cdot)\), by the monotone convergence theorem:
-        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)+η$$
+        $$2c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}_ε\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}_ε^δ\big(Α \cap B(0,R)\big)+η$$
+        where \(2c_{δ,d} = 1/(\sqrt{d-1})^{δ-1}\). Taking \(ε \downarrow 0\), because \(\mathscr{H}_ε^δ(\cdot) \nearrow \mathscr{H}^δ(\cdot)\), by the monotone convergence theorem:
+        $$2c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)+η$$
         Taking \(η \to 0\), the inequality:
-        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)$$
+        $$2c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)$$
         is shown. Summing in rings, the previous inequality becomes:
         $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}(Α_x)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ(Α)$$
-        and thus, the theorem is proven.
+        because \(\mathscr{H}^δ\big(A \cap B(0,R+1)\big) \leqslant \mathscr{H}^δ \big(A \cap B(0,R)\big) + \mathscr{H}^δ\Big(A \cap \big(B(0,R+1) \backslash B(0,R)\big)\Big)\). The theorem has now been proven.
       </p>
     </div>
     <h3 id="chap2">Relatively prime numbers and probabilities</h3>
