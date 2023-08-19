@@ -34,6 +34,7 @@
     <div class="bg1">
       <ul>
         <li class="first"><a href="#chap0">A poem of Vrettakos</a></li>
+        <li><a href="#chap3">The Marstrand slicing problem</a></li>
         <li><a href="#chap2">Relatively prime numbers and probab.</a></li>
         <li><a href="#chap1">Isolating points in \(\mathbb{R}^n\)</a></li>
       </ul>
@@ -58,6 +59,58 @@
       </p>
     </div>
     <div class="select" id="pagetop"><b>Pages | <b>1</b> | <a href="index2.html#pagetop">2</a> | <a href="index3.html">3</a> |</b></div><br>
+    <h3 id="chap3">The Marstrand slicing problem</h3>
+    <div class="bg1">
+      <p>Let \(A \subseteq \mathbb{R}^d\) be a set and \(\mathscr{L}^d\) the \(d-\)dimensional Lebesgue measure on \(\mathbb{R}^d\). The fact that "small sets" \(A\), such as linear spaces of dimension \(δ \leqslant d\), have \(\mathscr{L}^d(A)=0\), while \(\mathscr{L}^δ(Α) \neq 0\),
+        can give rise to a generalised dimension definition. We can say that a set \(A\) has dimension \(δ\) if \(δ \in \mathbb{N}_0\) is the smallest integer such that \(\mathscr{L}^δ(A) \neq 0\), and this will agree with the well-known algebraic definition of the demension, while extending it to other type of sets.
+      </p>
+      <p>
+        This definition describes the dimension of sets that are not nessesarily linear spaces, however it does not differenciate many sets that should (intuitively) not be "of the same dimension". For example, consider a set of finate points \(A\) and the triadic Cantor set \(C\). While it seems that \(C\) is "dense enough" to contain some complexity (it contains a significant part of the segment \([0,1]\)),
+        one can show that:
+        $$\mathscr{L}^1(A) = \mathscr{L}^1(C) = 0$$
+        so the Lebesgue measure cannot measure the complexity of sets like the Cantor set. One measure that is practically built for measuring the complexity of sets is the Hausdorff measure.
+      </p>
+      <p>
+        <b>Definition:</b> <i>Let \(δ \in \mathbb{R}^+\), \(ε \in (0,\infty]\) and \(A \subseteq \mathbb{R}^d\) be a set. We define the \(ε-\)Hausdorff content of \(A\) to be:</i>
+        $$\mathscr{H}^δ_ε(A) = \inf\bigg\{ \sum_{k=1}^{\infty} \mathrm{diam}(U_k) ~|~ A \subseteq \bigcup_{k=1}^{\infty} U_k,~ \mathrm{diam}(U_k) < ε \bigg\}$$
+        If the limit \(\lim_{ε \to 0} \mathscr{H}^δ_ε(A)\) exists, we define the Hausdorff measure of \(A\):
+        $$\mathscr{H}^δ(A) = \lim_{ε \to 0} \mathscr{H}^δ_ε(A)$$
+      </p>
+      <p>
+        This measure is -in a way- better at calculating dimensions. For example, the triadic Cantor set now has dimension:
+        $$0 < \mathrm{dim}_{\mathscr{H}}(C) = \dfrac{\log 2}{\log 3} < 1$$
+        which diferentiates it from finate sets. Using this measure and its induced dimension, one can prove the following:
+      </p>
+      <p> <b>Theorem: (Marstrand slicing problem).</b> <i>Let \(A \subseteq \mathbb{R}^d\), \(d>1\), with \(\dim_{\mathscr{H}}(A) \geqslant 1\). If:
+        $$A_x = \big\{y \in \mathbb{R}^{d-1} ~|~ (x,y) \in A \big\}$$
+        is the "\(x-\)cut" of \(A\), then:
+        $$\mathrm{dim}_{\mathscr{H}}(A_x) \leqslant \mathrm{dim}_{\mathscr{H}}(A)-1$$
+        for \(\mathscr{L}-\)almost every \(x\).
+      </i>
+      </p>
+      <p>
+        <i>Proof:</i> We will show that for every \(1< δ < d\):
+        $$\mathscr{H}^δ(A) \geqslant c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}(A_x)~d\mathscr{L}(x)$$
+        This will give us a proof, because for \(δ > \mathrm{dim}_{\mathscr{H}}(A)\):
+        $$0=\mathscr{H}^δ(A) \geqslant c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}(A_x)~d\mathscr{L}(x)$$
+        This means that for \(\mathscr{L}-\)almost every \(x\), \(\mathscr{H}^{δ-1}(Α_x)=0\), thus \(\mathrm{dim}_{\mathscr{H}}(A_x) < δ-1\) for every \(δ > \mathrm{dim}_{\mathscr{H}}(A)\).
+      </p>
+      <p>
+        So, let \(ε,η > 0\). Because of the definition of the Hausdorff measure and its induced dimension, we can find a cover \((B_k)_{k \in \mathbb{N}}\) of balls, of the set \(A \cap B(0,R),~R>0\), with diameter \(< ε\), such that:
+        $$\sum_{k=1}^\infty \mathrm{diam}^δ(B_k) \leqslant \mathscr{H}_ε^δ\big(Α \cap B(0,R)\big) + η$$
+        If we now enclose each \(B_k\) in a cube \(Q_k\) of side length \(s_k = \mathrm{diam}(B_k)\) (parallel to the axes), we notice that each \(x-\)cut \((Q_k)_x\) is, in most cases, \(s_k\sqrt{d-1}\) (because this is the diameter of a \((d-1)-\)dimensional cube of side length \(s_k\)). There is also another case, where the \(x-\)cut is empty, and then \(\mathrm{diam}((Q_k)_x)=0\). In any case, we can write:
+        $$\dfrac{1}{(\sqrt{d-1})^{δ-1}}\int_{\mathbb{R}}\sum_{\{x ~|~ (Q_k)_x \neq \emptyset\}} \mathrm{diam}^{δ-1}\big((Q_k)_x\big)~d\mathscr{L}(x) = \sum_{k=1}^{|(B_k)_{k \in \mathbb{N}}|} \big(s_k^{δ-1} \cdot s_k\big) = \sum_{k=1}^\infty \mathrm{diam}^{δ}(B_k)$$
+        This, in turn, means that:
+        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}_ε\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}_ε^δ\big(Α \cap B(0,R)\big)+η$$
+        where \(c_{δ,d} = 1/(\sqrt{d-1})^{δ-1}\). Taking \(ε \downarrow 0\), because \(\mathscr{H}_ε^δ(\cdot) \nearrow \mathscr{H}_ε^δ(\cdot)\), by the monotone convergence theorem:
+        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)+η$$
+        Taking \(η \to 0\), the inequality:
+        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}\big(Α_x \cap B(0,R)\big)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ\big(Α \cap B(0,R)\big)$$
+        is shown. Summing in rings, the previous inequality becomes:
+        $$c_{δ,d} \int_{\mathbb{R}} \mathscr{H}^{δ-1}(Α_x)~d\mathscr{L}(x) \leqslant \mathscr{H}^δ(Α)$$
+        and thus, the theorem is proven.
+      </p>
+    </div>
     <h3 id="chap2">Relatively prime numbers and probabilities</h3>
     <div class="bg1">
       <p>
@@ -114,7 +167,7 @@
         $$\lim_{T \to \infty}\dfrac{\#N_T}{T^2}= \dfrac{6}{π^2}$$
         can be given. Indeed:
         $$\sum_{N_T} = 1+2\sum_{\begin{matrix} n < m \leqslant T \\ \gcd(m,n) = 1\end{matrix}} = 1+2\sum_{m \leqslant T} φ(m) = \dfrac{6}{π^2}Τ^2+Ο(Τ^{3/2})$$
-        which proves the Lemma.
+        which shows the result.
       </p>
     </div>
     <h3 id="chap1">Isolating points in \(\mathbb{R}^n\)</h3>
