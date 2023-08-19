@@ -71,10 +71,12 @@
         so the Lebesgue measure cannot measure the complexity of sets like the Cantor set. One measure that is practically built for measuring the complexity of sets is the Hausdorff measure.
       </p>
       <p>
-        <b>Definition:</b> <i>Let \(δ \in \mathbb{R}^+\), \(ε \in (0,\infty]\) and \(A \subseteq \mathbb{R}^d\) be a set. We define the \(ε-\)Hausdorff content of \(A\) to be:</i>
+        <b>Definition:</b> <i>Let \(δ \in \mathbb{R}^+\), \(ε \in (0,\infty]\) and \(A \subseteq \mathbb{R}^d\) be a set. We define the \(ε-\)Hausdorff content of \(A\) to be:
         $$\mathscr{H}^δ_ε(A) = \inf\bigg\{ \sum_{k=1}^{\infty} \mathrm{diam}(U_k) ~|~ A \subseteq \bigcup_{k=1}^{\infty} U_k,~ \mathrm{diam}(U_k) < ε \bigg\}$$
-        If the limit \(\lim_{ε \to 0} \mathscr{H}^δ_ε(A)\) exists, we define the Hausdorff measure of \(A\):
+        If the limit \(\lim_{ε \to 0} \mathscr{H}^δ_ε(A)\) exists, we define the Hausdorff (outer) measure of \(A\):
         $$\mathscr{H}^δ(A) = \lim_{ε \to 0} \mathscr{H}^δ_ε(A)$$
+        This outer measure defines a measure, as every outer measure does.
+        </i>
       </p>
       <p>
         This measure is -in a way- better at calculating dimensions. For example, the triadic Cantor set now has dimension:
