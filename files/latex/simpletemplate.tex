@@ -1,0 +1,38 @@
+\documentclass[A4]{article}
+
+%Πακέτα, χρήσιμα στη LaTeX
+
+%Κάπως κύρια
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{alphabeta}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%Κάπως δευτερεύοντα
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+%(Προαιρετικό) Φτιάχνουμε τα links, ώστε να είναι πιο όμορφα.
+\hypersetup{
+    colorlinks=true, 
+    linktoc=all,
+    linkcolor=blue,      
+}
+
+\begin{document}
+%Κατασκευή του τίτλου
+	\title{\textbf{Απλό template στη \LaTeX}}
+	\author{Κουκουδάκης Ν.\footnote{\href{mailto://nicolaskoukoudakis@gmail.com}{nicolaskoukoudakis@gmail.com}}, Φράγκος Α\footnote{\href{mailto://afragos@math.uoa.gr}{afragos@math.uoa.gr}}.}
+	\date{Πέμπτη 14 Δεκεμβρίου 2023}
+	\maketitle
+	
+%Περιεχόμενα (Φτιάχνονται αυτόματα)
+	%Αλλαγή του ονόματος των περιεχομένων, από Contents σε Περιεχόμενα.
+	\renewcommand*\contentsname{\textbf{Περιεχόμενα}}
+	\tableofcontents
+
+\section{Παράγραφος}
+\subsection{Υποπαράγραφος}
+\end{document}
