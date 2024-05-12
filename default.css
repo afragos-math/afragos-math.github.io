@@ -135,13 +135,13 @@ a:hover {
 /* Content */
 
 #content {
-	width: 1000px;
+	width: 80%;
 	margin: 0 auto;
 }
 
 #colOne {
 	float: left;
-	width: 280px;
+	width: 28%;
 }
 
 #colOne ul {
@@ -160,7 +160,7 @@ a:hover {
 
 #colTwo {
 	float: right;
-	width: 686px;
+	width: 69%;
 }
 
 /* Footer */
