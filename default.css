@@ -188,3 +188,13 @@ a:hover {
 #renderVideo {
 	width: 650px;
   }
+
+@media screen and (max-width: 950px) {
+	#colOne{
+		width: 100%;
+	}
+
+	#colTwo{
+		width: 100%;
+	}
+}
