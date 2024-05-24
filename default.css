@@ -25,8 +25,8 @@ h2 em {
 
 h3 {
 	height: 25px;
-	background: #0077A7 url(images/img3.gif) repeat-x left bottom;
-	padding: 13px 0 0 20px;
+	background: #005599 url(images/img3.gif) repeat-x left bottom;
+	padding: 13px 0 5px 20px;
 	font-size: 14px;
 	font-family: "Computer Modern Serif", serif;
 	font-style: normal;
@@ -189,7 +189,7 @@ a:hover {
 	width: 650px;
   }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	#colOne{
 		width: 100%;
 		float: none;
@@ -198,5 +198,18 @@ a:hover {
 	#colTwo{
 		width: 100%;
 		float: none;
+	}
+	
+	#header{
+		width: 100%;
+		margin-left: 4%;
+	}
+
+	#header h2{
+		display: none;
+	}
+
+	h3{
+		height: 35px;
 	}
 }
