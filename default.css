@@ -189,12 +189,14 @@ a:hover {
 	width: 650px;
   }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 850px) {
 	#colOne{
 		width: 100%;
+		float: none;
 	}
 
 	#colTwo{
 		width: 100%;
+		float: none;
 	}
 }
