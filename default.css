@@ -189,7 +189,7 @@ a:hover {
 	width: 650px;
   }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
 	#colOne{
 		width: 100%;
 		float: none;
