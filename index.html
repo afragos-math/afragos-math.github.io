@@ -35,9 +35,10 @@
     <div class="bg1">
       <ul>
         <li class="first"><a href="#chap0">A poem of Vrettakos</a></li>
+        <!--<li><a href="#chap4">Spectral decompositions</a></li>-->
         <li><a href="#chap3">The Marstrand slicing problem</a></li>
         <li><a href="#chap2">Relatively prime numbers and probab.</a></li>
-        <li><a href="#chap1">Isolating points in \(\mathbb{R}^n\)</a></li>
+        <li><a href="index2.html#chap1">Isolating points in \(\mathbb{R}^n\)</a></li>
       </ul>
     </div>
   </div>
@@ -45,7 +46,7 @@
     <div class="bg2">
       <h2 id="chap0"><em>Welcome to my Webpage!<em></h2>
       <p><img src="images/quasiperiodictiling.png" alt="" width="105" height="105" class="image" /></p>
-      <p> Hello! My name is Anastasios Fragkos and I'm a graduate student of Pure Mathematics in NKUA. Here you can mainly find:
+      <p> Hello! My name is Anastasios (Tassos) Fragkos and I'm a postgraduate student of Pure Mathematics in NKUA. Here you can mainly find:
         <ul>
           <li>In the "Home" tab, things I'm working on or currently studying.</li>
           <li>In the "Notes and Books" tab, lecture notes or books that I have written, as well as some recomendations of others' material. I will try to upload some of the \(\LaTeX\) templates I'm using.</li>
@@ -58,8 +59,19 @@
         <br>
         Νικηφόρος Βρεττάκος.
       </p>
+      <p>
+        <marquee width="100%" style="font-weight: bold; color: blue;">
+          Don't miss out on the "Mathematics Study Group" for postgraduate and undergraduate students! More information in the "News ans Seminars" tab!
+        </marquee>
+      </p>
     </div>
     <div class="select" id="pagetop"><b>Pages | 1 | <a href="index2.html#pagetop">2</a> | <a href="index3.html">3</a> |</b></div><br>
+    <!-- <h3 id="chap4">Spectral decompositions</h3>
+    <div class="bg1">
+      <p>
+        $$\int^\oplus_{\mathrm{spec}(A)} \mathcal{H}_x~d\mathscr{M}(x)$$
+      </p>
+    </div> -->
     <h3 id="chap3">The Marstrand slicing problem</h3>
     <div class="bg1">
       <p>Let \(A \subseteq \mathbb{R}^d\) be a set and \(\mathscr{L}^d\) the \(d-\)dimensional Lebesgue measure on \(\mathbb{R}^d\). The fact that "small sets" \(A\), such as linear spaces of dimension \(δ \leqslant d\), have \(\mathscr{L}^d(A)=0\), while \(\mathscr{L}^δ(Α) \neq 0\),
@@ -171,30 +183,6 @@
         can be given. Indeed:
         $$\sum_{N_T} = 1+2\sum_{\begin{matrix} n < m \leqslant T \\ \gcd(m,n) = 1\end{matrix}} = 1+2\sum_{m \leqslant T} φ(m) = \dfrac{6}{π^2}Τ^2+Ο(Τ^{3/2})$$
         which shows the result.
-      </p>
-    </div>
-    <h3 id="chap1">Isolating points in \(\mathbb{R}^n\)</h3>
-    <div class="bg1">
-      <p>
-        <b>Lemma:</b>
-        <i>
-          Let \(\{ω_k\}_{k=1}^m\) be a finate collection of points in \(\mathbb{R}^n\). There exists a hyperplane \(H \simeq \mathbb{R}^{n-1}\) of \(\mathbb{R}^n\) which separates the space into two sets \(Χ,Ψ\), with the property:
-          $$ω_j \in X \backslash H ~\&~ \{ω_k\}_{k \neq j} \subset Ψ \backslash H$$
-          for some \(j \in [m]\).
-        </i>
-      </p>
-      <p>
-        <i>Proof:</i> We will assume that \(m \geqslant 2\), as the other cases are simple. We consider the functions \(D_k(ω_\ell) = || ω_k - ω_\ell ||_2\) and we chose \(j \in [m]\) so that it maximizes:
-        $$\max \{D_x(ω_t) ~|~ t \in [m]\}$$
-        (i.e. when \(x=j\) the above maximizes). Basically, for point \(ω_j\), some point \(ω_t\) can be found so the distance \(||ω_j-ω_t||_2\) maximizes in \(\{ω_k\}_{k=1}^m\).
-        <p style="text-align: center"><img src="images/math/9.1.svg" width = 330px></p>
-        We notice that, by definition of \(ω_j, ω_t\), all the points of \(\{ω_k\}_{k=1}^m\) must be located in close balls \(Β\big(ω_j, D_j(ω_t)\big)\), \(Β\big(ω_t, D_t(ω_j)\big)\), therefore they are located in the intersection:
-        $$Λ = Β\big(ω_j, D_j(ω_t)\big) \cap Β\big(ω_t, D_t(ω_j)\big)$$
-        (\(Λ\) is from «Λemon»). We choose a point \(ω_r\) for which the distance from \(ω_j\) minimizes, and we notice that:
-        $$\{ω_k\}_{k \neq j} \subset Λ \backslash S\big(ω_j, D_j(ω_r)\big)$$
-        One step remains for the proof to be complete. The two spheres \(\partial Β\big(ω_j, D_j(ω_t)\big)\), \(\partial Β\big(ω_t, D_t(ω_j)\big)\) intersect in a «sphere of \(\mathbb{R}^{n-1}\)», which we name \(Τ\). Sphere \(Τ\) contains at least \(n-1\) points, so a hyperplane can be defined which contains \(Τ\). Let \(ω_j \in Χ', Ψ'\) be the half-spaces the hyperplane defines in space. We find a (parallel) hyperplane \(ε\), which intersects:
-        $$\big[S\big(ω_j, D_j(ω_r)\big) \cap Λ \cap X'\big] \backslash \{ω_j\}$$
-        and we notice that \(ε\) is the hyperplane of the Lemma we sought.
       </p>
     </div>
     <div class="select" id="pagebot"><b>Pages | 1 | <a href="index2.html#pagebot">2</a> | <a href="index3.html">3</a> |</b></div><br>
