@@ -14,7 +14,7 @@ h2, h3, h4, h5, h6 {
 h2 {
 	font-size: 20px;
 	font-weight: normal;
-	color: #31576F;
+	color: #005299;
 }
 
 h2 em {
@@ -74,7 +74,7 @@ a:hover {
 .select {
 	height: 25px;
 	background: #ABBA47 url(images/img2.gif) repeat-x;
-	padding: 13px 0 0 20px;
+	padding: 10px 0 0 20px;
 	font-size: 14px;
 	font-style: normal;
 	font-family: "Computer Modern Serif", serif;
