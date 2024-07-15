@@ -220,6 +220,10 @@ b{
         width: 100%;
     }
 
+    .navbar a{
+        padding: 10px 0px 10px;
+    }
+
     .overlay a{
         font-size: 25px;
     }
