@@ -114,6 +114,10 @@ b{
     text-align: center;
 }
 
+#abstract{
+    vertical-align: top;
+}
+
 .present #presentLtop{
     font-size: 60px;
 }
