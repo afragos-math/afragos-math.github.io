@@ -187,6 +187,10 @@ b{
         font-size: 18px;
     }
 
+    h1{
+        font-size: 40px;
+    }
+
     .present #presentLtop{
         font-size: 40px;
     }
@@ -210,5 +214,9 @@ b{
 
     #poster{
         width: 100%;
+    }
+
+    .overlay a{
+        font-size: 25px;
     }
 }
