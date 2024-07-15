@@ -185,6 +185,12 @@ b{
     font-size: 60px;
 }
 
+#we{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 900px) {
     body{
         text-align: left;
@@ -221,7 +227,7 @@ b{
     }
 
     .navbar a{
-        padding: 6px 0px 10px;
+        padding: 5px 0px 10px;
     }
 
     .overlay a{
