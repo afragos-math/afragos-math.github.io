@@ -61,6 +61,11 @@ a:hover {
 	margin: 0 20px 0 0;
 }
 
+#displayimg{
+	border: #ABBA47 2px solid;
+	width: 60%;
+}
+
 .bg1 {
 	padding: 0 20px 20px 20px;
 	border-top: 1px solid #FFFFFF;
@@ -223,5 +228,9 @@ a:hover {
 
 	h3{
 		height: 35px;
+	}
+
+	#displayimg {
+		width: 80%;
 	}
 }
