@@ -206,3 +206,17 @@ b{
         margin-top: 45%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .content{
+        margin-top: 35%;
+    }
+
+    #BACK{
+        top: 10%;
+    }
+
+    #BACKspacing{
+        margin-top: 45%;
+    }
+}
