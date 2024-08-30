@@ -114,6 +114,7 @@ b{
 .dropdown-content {
     display: none;
     width: 400px;
+    max-width: 100vw;
     position: absolute;
     border: black 2px solid;
     background-color: white;
