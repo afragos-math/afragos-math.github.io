@@ -161,23 +161,19 @@ b{
 
 @media screen and (max-width: 967px) {
     .content{
-        margin-top: 15%;
-    }
-
-    #BACK{
-        top: 5.4%;
+        margin-top: 10%;
     }
 
     #BACKspacing{
         margin-top: 20%;
     }
+
+    #mapcollapse{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .content{
-        margin-top: 13%;
-    }
-
     #BACKspacing{
         margin-top: 25%;
     }
@@ -185,7 +181,7 @@ b{
 
 @media screen and (max-width: 660px) {
     .content{
-        margin-top: 18%;
+        margin-top: 15%;
     }
 
     #BACKspacing{
@@ -194,29 +190,17 @@ b{
 }
 
 @media screen and (max-width: 505px) {
-    .content{
-        margin-top: 26%;
-    }
-
-    #BACK{
-        top: 10%;
-    }
-
     #BACKspacing{
-        margin-top: 45%;
+        margin-top: 35%;
     }
 }
 
 @media screen and (max-width: 400px) {
     .content{
-        margin-top: 37%;
-    }
-
-    #BACK{
-        top: 10%;
+        margin-top: 20%;
     }
 
     #BACKspacing{
-        margin-top: 56%;
+        margin-top: 45%;
     }
 }
