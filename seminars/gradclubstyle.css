@@ -137,6 +137,23 @@ b{
     color: rgb(112, 146, 190);
 }
 
+.present #presentRmid{
+    font-size: 38px;
+    color: rgb(112, 146, 190);
+    text-align: center;
+}
+
+.present #presentRmid2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.present #presentRmid2col{
+    font-size: 25px;
+    color: rgb(112, 146, 190);
+    text-align: center;
+}
+
 .present #presentRbot{
     font-size: 20px;
 }
