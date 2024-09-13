@@ -2,94 +2,83 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Anastasios Fragkos</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Anastasios Fragkos
+    </title>
 
-<link rel="icon" href="images/quasiperiodictiling.png">
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-<link href="../../default.css" rel="stylesheet" type="text/css" />
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="../../style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../../images/quasiperiodictiling.png">
 </head>
-<body>
-<div id="header">
-  <h1>Ένα template στη \(\mathrm{\LaTeX}\)</h1>
-  <h2>Template-I</h2>
-</div>
-<div id="content">
-  <br><br>
-  <div id="colOne">
-    <h3>&#10066; Ευρετήριο</h3>
-    <div class="bg1">
-      <ul>
-        <li class="first"><a href="#chap1">Το αρχείο</a></li>
-        <li><a href="#chap2">Χρήση</a></li>
-        <li><a href="#chap3">Γνωστά προβλήματα</a></li>
-      </ul>
-    </div>
-    <h3>&#10066; Εργασίες μ' αυτό το template</h3>
-    <div class="bg1">
-      <ul>
-        <li class="first"><a href="../analysis/schauder.pdf">Βάσεις Schauder - Μια μικρή ανάλυση</a></li>
-        <li><a href="../geometry/multilin.pdf">Γεωμετρική Πλειογραμμική Άλγεβρα</a></li>
-        <li><a href="../algebra/heis.pdf">Η άλγεβρα και η ομάδα του Heisenberg</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="colTwo">
-    <h3 id="chap1">Το αρχείο</h3>
-    <div class="bg1">
-      <p>
-        <ul>
-          <li> <a href="template-I.rar">[&#x27B7;]</a> template-I.rar</li>
-        </ul>
-        Εναλλακτικά:
-        <ul>
-          <li> <a href="template-I.tex">[&#x27B7;]</a> template-I.tex</li>
-          <li> <a href="template-I_structure.tex">[&#x27B7;]</a> template-I_stucture.tex</li>
-        </ul>
-        Φυσικά δεν έχω κανένα πρόβλημα να χρησιμοποιήσετε αυτό το template χωρίς να αναφέρετε το όνομά μου, εάν το επιθυμείτε. Παρόλα αυτά έχετε υπόψη σας ότι η γραμματοσειρά (Κέρκης) έχει coryright, κι αν την χρησιμοποιήσετε για εμπορικό σκοπό πρέπει να το αναφέρετε (δείτε στον σύνδεσμο: <a href="http://iris.math.aegean.gr/kerkis/">http://iris.math.aegean.gr/kerkis/</a>).
-      </p>
-    </div>
-    <h3 id="chap2">Χρήση</h3>
-    <div class="bg1">
-      <p>
-        <b>Tα βασικά:</b>
-      </p>
-      <p>
-        Για να χρησιμοποιήσετε αυτό το template, κατ' αρχάς θα χρειαστεί να κατεβάσετε το «template.rar» και να το αποσυμπιέσετε. Το αρχείο «template-I_structure.tex» δεν χρειάζετε να το πειράξετε, το κείμενο γράφεται στο «template-I.tex».
-      </p>
-      <p>
-        Εναλλακτικά μπορείτε να κατεβάσετε ξεχωριστά τα δύο αρχεία «template-I.tex», «template-I_structure.tex» και να τα βάλετε σε έναν φάκελο.
-      </p>
-      <p>
-        Στον <i>φάκελο που βρίσκονται τα δύο αρχεία «template-I.tex», «template-I_structure.tex»</i>, χρειάζεται να φτιάξετε -αν δεν υπάρχει ήδη- έναν φάκελο που θα τον ονομάσετε «pictures». Εκεί θα εναποθέτετε τις εικόνες που ενδεχομένως θέλετε να βάλετε στην εργασία σας. Αν δεν θέλετε εικόνες στην εργασία, δεν χρειάζετε να φτιάξετε αυτόν τον φάκελο.
-      </p>
-      <p>
-        <b>Επιπλέον:</b>
-      </p>
-      <p>
-        <ul>
-          <li>Υπάρχει ήδη το πακέτο tikz, δεν χρειάζεται να το προσθέσετε.</li>
-          <li>Υπάρχουν δύο μαθηματικές καλλιγραφικές γραμματοσειρές, τις οποίες χρησιμοποιείτε με τα «\mathcal{}» και «\pazocal{}».</li>
-        </ul>
-      </p>
-    </div>
-    <h3 id="chap3">Γνωστά προβλήματα</h3>
-    <div class="bg1">
-      <p>
-        <ul>
-          <li>Εάν μετά από κάποιο λάθος (δεν έγινε compile σωστά) δεν μπορεί να ξαναγίνει compile (φαίνεται συνεχώς να υπάρχει κάποιο λάθος), δοκιμάστε να πατήσετε «enter» στην κονσόλα, ή να γράψετε «return» και μετά να πατήσετε «enter».</li>
-      </p>
-    </div>
-  </div>
-</div>
-<div id="footer">
-  <p><i>HTML Design: <a href="https://www.free-css.com/free-css-templates/page13/isometric">Isometric</a>.</i></p>
-</div>
 
+<body>      
+    <div class="content">
+        <h1>&#10081; Template-I</h1>
+        <div class="box">
+            <div class="title">
+                Το αρχείο
+            </div>
+            <p>
+                Μπορείτε να καταβάσετε το .tex (κύριο) και το .tex (αρχείο δομής) ή εναλλακτικά τη συμπιεσμένη μορφή .rar.
+            </p>
+            <p>
+                <div class="box-noborder">
+                    <div class="dropdown" id="OPEN">
+                        &#10146;ΑΡΧΕΙΟ:
+                        <div class="dropdown-content">
+                        <a href="/files/diffequations/geomRD.pdf">.TEX (Κύριο)</a>
+                        <a href="/files/diffequations/geomRD.pdf">.TEX (Αρχείο δομής)</a>
+                        <a href="/files/diffequations/geomRD.pdf" download="geomRD">.RAR (Συμπιεσμένο)</a>
+                        </div>
+                    </div>
+                    Template-I
+                </div>
+            </p>
+            <p>
+                Φυσικά δεν έχω κανένα πρόβλημα να χρησιμοποιήσετε αυτό το template χωρίς να αναφέρετε το όνομά μου ή με τροποποιήσεις, προσθήκες. Παρόλα αυτά έχετε υπόψη σας ότι η γραμματοσειρά (Κέρκης) έχει coryright, κι αν την χρησιμοποιήσετε για εμπορικό σκοπό πρέπει να το αναφέρετε (δείτε στον σύνδεσμο: <a href="http://iris.math.aegean.gr/kerkis/">http://iris.math.aegean.gr/kerkis/</a>).
+            </p>
+        </div>
+        <div class="box">
+            <div class="title">
+                Χρήση
+            </div>
+            <p>
+                Για να χρησιμοποιήσετε αυτό το template, θα χρειαστεί να κατεβάσετε το «template.rar» και να το αποσυμπιέσετε. Το αρχείο «template-I_structure.tex» δεν χρειάζετε να το πειράξετε, το κείμενο γράφεται στο «template-I.tex».
+            </p>
+            <p>
+                Εναλλακτικά μπορείτε να κατεβάσετε ξεχωριστά τα δύο αρχεία «template-I.tex», «template-I_structure.tex» και να τα βάλετε σε έναν φάκελο.
+            </p>
+            <p>
+                Στον φάκελο που βρίσκονται τα δύο αρχεία «template-I.tex», «template-I_structure.tex», χρειάζεται να φτιάξετε -αν δεν υπάρχει ήδη- έναν φάκελο που θα τον ονομάσετε «pictures». Εκεί θα εναποθέτετε τις εικόνες που ενδεχομένως θέλετε να βάλετε στην εργασία σας. Αν δεν θέλετε εικόνες στην εργασία, δεν χρειάζετε να φτιάξετε αυτόν τον φάκελο.
+            </p>
+            <p>
+                Σημειώστε ότι:
+                <ul>
+                    <li>Υπάρχει ήδη το πακέτο tikz, δεν χρειάζεται να το προσθέσετε.</li>
+                    <li>Υπάρχουν δύο μαθηματικές καλλιγραφικές γραμματοσειρές, τις οποίες χρησιμοποιείτε με τα «\mathcal{}» και «\pazocal{}».</li>
+                </ul>
+            </p>
+        </div>
+        <div class="box">
+            <div class="title">
+                Εργασίες με αυτό το template
+            </div>
+            <p>
+                <ul>
+                    <li><a href="../algebra/heis.pdf">Η άλγεβρα και η ομάδα του Heisenberg</a></li>
+                    <li><a href="../geometry/multilin.pdf">Γεωμετρική Πλειογραμμική Άλγεβρα</a></li>
+                    <li><a href="../analysis/schauder.pdf">Βάσεις Schauder - Μια μικρή ανάλυση</a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="flc">
+            <p>
+                <i>Hosting service: <a href="https://github.com">Github</a></i>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
