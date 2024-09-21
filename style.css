@@ -114,6 +114,7 @@ b{
     display: none;
     width: 400px;
     max-width: 70vw;
+    font-size: 14pt;
     position: absolute;
     border: black 2px solid;
     background-color: white;
