@@ -142,9 +142,15 @@ b{
     font-size: 12pt;
 }
 
+@media screen and (max-width: 1300px) {
+    .content{
+        margin-top: 8%;
+    }
+}
+
 @media screen and (max-width: 967px) {
     .content{
-        margin-top: 11%;
+        margin-top: 12%;
     }
 
     #mapcollapse{
@@ -160,6 +166,6 @@ b{
 
 @media screen and (max-width: 400px) {
     .content{
-        margin-top: 21%;
+        margin-top: 22%;
     }
 }
