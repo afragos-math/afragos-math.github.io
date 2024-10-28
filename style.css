@@ -36,6 +36,12 @@ h4{
     color: #004080;
 }
 
+hr {
+        height: 1.5px;
+        background-color: #004080;
+        border: none;
+}
+
 li{
     list-style-position: outside;
 }
