@@ -9,7 +9,7 @@
 }
 
 body {
-	margin: 0;
+	margin: 1px;
 	padding: 0;
 	background: #FFFFFF url(images/back.png) repeat-y;
     background-size: 100%;
