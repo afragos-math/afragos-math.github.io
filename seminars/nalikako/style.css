@@ -31,7 +31,7 @@ body {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 94%;
     border: rgb(241, 158, 123) 5px solid;
     background-color: rgb(255,255,199);
     padding-top: 2%;
@@ -48,13 +48,23 @@ body {
     border: rgb(241, 158, 123) 5px solid;
 }
 
+.title2{
+    margin-top: 3%;
+}
+
+.main {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 .foot {
-    display: block;
-    width: 100%;
-    padding-left: 7%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    width: 92%;
+    padding-left: 4%;
+    padding-right:4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: rgb(255,207,148);
     border-top: rgb(241, 158, 123) 15px solid;
 }
@@ -73,11 +83,11 @@ h2, h4{
 }
 
 a {
-	color: rgb(183, 75, 185);
+	color: rgb(251, 0, 255);
 }
 
 a:hover{
-    color: rgb(251, 0, 255);
+    color: rgb(253, 157, 255);
 }
 
 b{
@@ -118,7 +128,7 @@ b{
     animation: linkanim .5s cubic-bezier(1,0,0,1) infinite;
 }
 
-.navbar {
+.mapmobile {
     overflow: hidden;
     display: none;
     border: rgb(0, 0, 0) 3px solid;
@@ -133,7 +143,7 @@ b{
     font-size: 30px;
 }
 
-.navbar span {
+.mapmobile span {
     overflow: hidden;
     float: left;
     display: block;
@@ -146,11 +156,11 @@ b{
     text-decoration: none;
 }
   
-.navbar span:hover {
+.mapmobile span:hover {
     background: rgb(255,255,255);
 }
 
-.navbar a {
+.mapmobile a {
     float: left;
     display: block;
     border-radius: 50px;
@@ -162,7 +172,7 @@ b{
     text-decoration: none;
 }
   
-.navbar a:hover {
+.mapmobile a:hover {
     background: rgb(255,255,255);
 }
 
@@ -266,11 +276,15 @@ b{
     text-align: right;
 }
 
-.main {
-    margin-left: 15%;
-    margin-right: 5%;
-    margin-top: 4%;
-    margin-bottom: 4%;
+.coffee{
+    border: rgb(241, 158, 123) 3px solid;
+    box-shadow: 10px 10px rgb(241, 158, 123);
+    padding: 10pt;
+    margin-bottom: 15pt;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(241, 158, 123);
 }
 
 @media screen and (max-width: 900px) {
@@ -279,7 +293,7 @@ b{
         font-size: 18px;
     }
 
-    .navbar {
+    .mapmobile {
         display: block;
     }
 
