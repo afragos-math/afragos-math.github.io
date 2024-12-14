@@ -287,6 +287,13 @@ b{
     color: rgb(241, 158, 123);
 }
 
+.imgcenter{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
 @media screen and (max-width: 900px) {
     body{
         text-align: left;
@@ -323,5 +330,9 @@ b{
     
     .present #presentRbot{
         font-size: 18px;
+    }
+
+    .imgcenter{
+        width: 100%;
     }
 }
