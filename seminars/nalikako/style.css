@@ -9,7 +9,7 @@
 }
 
 body {
-	margin: 1px;
+	margin: 0;
 	padding: 0;
 	background: #FFFFFF url(images/back.png) repeat-y;
     background-size: 100%;
@@ -288,6 +288,7 @@ b{
 }
 
 .imgcenter{
+    display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
