@@ -110,6 +110,12 @@ b{
     text-align: center;
 }
 
+.fanos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
 .box-noborder{
     display: flex;
     padding: 1%;
