@@ -1,0 +1,339 @@
+@font-face {
+    font-family: GFSNeoh;
+    src:url("fonts/GFSNeohellenic.ttf");
+}
+
+@keyframes linkanim{
+    0% {color: rgb(241, 158, 123);}
+    100% {color: rgb(255,255,199);}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/back.png) repeat-y;
+    background-size: 100%;
+	text-align: justify;
+	font-family: "GFSNeoh";
+	font-size: 20px;
+}
+
+.container {
+    display: block;
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    border-bottom: rgb(241, 158, 123) 15px solid;
+  }
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    border: rgb(241, 158, 123) 5px solid;
+    background-color: rgb(255,255,199);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titlemobile{
+    display: none;
+}
+
+.titlemobile img{
+    border: rgb(241, 158, 123) 5px solid;
+}
+
+.title2{
+    margin-top: 3%;
+}
+
+.main {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.foot {
+    width: 92%;
+    padding-left: 4%;
+    padding-right:4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(255,207,148);
+    border-top: rgb(241, 158, 123) 15px solid;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(241, 158, 123);
+}
+
+h2, h4{
+    color: rgb(241, 158, 123);
+}
+
+.title h3{
+    color: black;
+}
+
+a {
+	color: rgb(251, 0, 255);
+}
+
+a:hover{
+    color: rgb(253, 157, 255);
+}
+
+b{
+    color: rgb(241, 158, 123);
+}
+
+.foot b{
+    color: black;
+}
+
+.foot th,td {
+    padding: 7px;
+}
+
+.map{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    top:0%;
+    left:0%;
+    padding: 7pt;
+    border-top: rgb(241, 158, 123) 15px solid;
+    border-bottom: rgb(241, 158, 123) 5px solid;
+    background-color: rgb(255,255,199);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3pt;
+}
+
+.map a{
+    color: rgb(241, 158, 123);
+    text-decoration: none;
+}
+
+.map a:hover{
+    animation: linkanim .5s cubic-bezier(1,0,0,1) infinite;
+}
+
+.mapmobile {
+    overflow: hidden;
+    display: none;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 50px;
+    background-color: rgb(251,148,123);
+    position: fixed;
+    z-index: 1;
+    right: 3%;
+    bottom: 6%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.mapmobile span {
+    overflow: hidden;
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: rgb(0,0,0);
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 8px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile span:hover {
+    background: rgb(255,255,255);
+}
+
+.mapmobile a {
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: rgb(0,0,0);
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 12px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile a:hover {
+    background: rgb(255,255,255);
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(239,228,176);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(241, 158, 123);
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: rgb(255,255,255);
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.boxtitle{
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
+    border-left: rgb(241, 158, 123) 5px solid;
+    color: rgb(241, 158, 123);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box{
+    display: block;
+    padding: 10px;
+}
+
+.present{
+    width: 100%;
+    margin: 10px;
+}
+
+.present th{
+    width: 20%;
+    border-right: rgb(241, 158, 123) 5px solid;
+    color: rgb(241, 158, 123);
+    padding: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.present #presentLtop{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.present #presentLbot{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.present td{
+    width: 77%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.present #presentRtop{
+    font-size: 25px;
+    color: rgb(241, 158, 123);
+    font-weight: bold;
+}
+
+.present #presentRbot{
+    font-size: 20px;
+}
+
+#footer{
+    text-align: right;
+}
+
+.coffee{
+    border: rgb(241, 158, 123) 3px solid;
+    box-shadow: 10px 10px rgb(241, 158, 123);
+    padding: 10pt;
+    margin-bottom: 15pt;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(241, 158, 123);
+}
+
+.imgcenter{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .mapmobile {
+        display: block;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .titlemobile{
+        display: block;
+    }
+
+    .present #presentLtop{
+        font-size: 40px;
+    }
+    
+    .present #presentLbot{
+        font-size: 18px;
+    }
+
+    .present #presentRtop{
+        font-size: 25px;
+    }
+    
+    .present #presentRbot{
+        font-size: 18px;
+    }
+
+    .imgcenter{
+        width: 100%;
+    }
+}

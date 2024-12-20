@@ -6,7 +6,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #FFFFFF url(gradclubfiles/gradclubback.png) repeat-y;
     background-size: 100%;
 	text-align: justify;
 	font-family: "GFSNeoh";
@@ -15,23 +14,6 @@ body {
 
 h1{
     font-size: 50px;
-    color: rgb(112, 146, 190);
-}
-
-h2, h4{
-    color: rgb(112, 146, 190);
-}
-
-a {
-	color: rgb(112, 146, 190);
-}
-
-a:hover{
-    color: rgb(153,217,234);
-}
-
-b{
-    color: rgb(112, 146, 190);
 }
 
 .main {
@@ -45,7 +27,6 @@ b{
     display: block;
     border: rgb(0, 0, 0) 3px solid;
     border-radius: 50px;
-    background-color: rgb(153,217,234);
     position: fixed;
     right: 3%;
     bottom: 6%;
@@ -89,8 +70,6 @@ b{
 .boxtitle{
     display: block;
     padding: 10px;
-    border-left: rgb(112, 146, 190) 3px solid;
-    color: rgb(112, 146, 190);
     font-size: 25px;
     font-weight: bold;
 }
@@ -107,8 +86,6 @@ b{
 
 .present th{
     width: 20%;
-    border-right: rgb(112, 146, 190) 3px solid;
-    color: rgb(112, 146, 190);
     padding: 10px;
     font-weight: normal;
     text-align: center;
@@ -134,12 +111,10 @@ b{
 
 .present #presentRtop{
     font-size: 25px;
-    color: rgb(112, 146, 190);
 }
 
 .present #presentRmid{
     font-size: 38px;
-    color: rgb(112, 146, 190);
     text-align: center;
 }
 
@@ -150,7 +125,6 @@ b{
 
 .present #presentRmid2col{
     font-size: 25px;
-    color: rgb(112, 146, 190);
     text-align: center;
 }
 
@@ -186,7 +160,6 @@ b{
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: rgb(112, 146, 190);
     display: block;
     transition: 0.3s;
 }
@@ -228,7 +201,6 @@ b{
 
     .present #presentRtop{
         font-size: 25px;
-        color: rgb(112, 146, 190);
     }
     
     .present #presentRbot{

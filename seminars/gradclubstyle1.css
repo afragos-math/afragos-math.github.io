@@ -1,1 +1,54 @@
-/*TO BE DONE*/
+body {
+	background: #FFFFFF url(gradclubfiles/gradclubback.png) repeat-y;
+    background-size: 100%;
+}
+
+h1{
+    color: rgb(112, 146, 190);
+}
+
+h2, h4{
+    color: rgb(112, 146, 190);
+}
+
+a {
+	color: rgb(112, 146, 190);
+}
+
+a:hover{
+    color: rgb(153,217,234);
+}
+
+b{
+    color: rgb(112, 146, 190);
+}
+
+.navbar {
+    background-color: rgb(153,217,234);
+}
+
+.boxtitle{
+    border-left: rgb(112, 146, 190) 3px solid;
+    color: rgb(112, 146, 190);
+}
+
+.present th{
+    border-right: rgb(112, 146, 190) 3px solid;
+    color: rgb(112, 146, 190);
+}
+
+.present #presentRtop{
+    color: rgb(112, 146, 190);
+}
+
+.present #presentRmid{
+    color: rgb(112, 146, 190);
+}
+
+.present #presentRmid2col{
+    color: rgb(112, 146, 190);
+}
+  
+.overlay a {
+    color: rgb(112, 146, 190);
+}
