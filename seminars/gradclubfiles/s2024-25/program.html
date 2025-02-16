@@ -6,41 +6,184 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-<link rel="icon" href="../../../images/quasiperiodictiling.png">
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-<link href="../../gradclubstyle.css" rel="stylesheet" type="text/css" />
-<link href="../../gradclubstyle2.css" rel="stylesheet" type="text/css" />
-
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="icon" href="../logo2.png">
+<link href="../../style.css" rel="stylesheet" type="text/css" />
 
 </head>
+
 <body>
-  <div class="navbar">
-    <a href="../../gradclub2.html#chap3">&#8617;</a>
+  <div class="map">
+    <a href="../../gradclub2.html">ΑΡΧΙΚΗ</a> &nbsp;&nbsp; <a href="program.html">ΠΡΟΓΡΑΜΜΑ</a> &nbsp;&nbsp; <a href="propositions.html">ΘΕΜΑΤΑ</a> &nbsp;&nbsp; <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ & SOCIAL</a>
   </div>
+  <div class="mapmobile">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9778;</span>
+  </div>
+  <div id="mapmobilecontent" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../gradclub2.html" onclick="closeNav()">Αρχική</a>
+        <a href="program.html" onclick="closeNav()">Πρόγραμμα</a>
+        <a href="propositions.html" onclick="closeNav()">Θέματα</a>
+        <a href="contact.html" onclick="closeNav()">Επικοινωνία & Social</a>
+      </div>
+  </div>
+  <div class="container"></div>
   <div class="main">
-    <img src="../gradclublogo2.png" width="45%" id="logo">
-    <h1>Λέσχη Μαθηματικών</h1>
-    <h4>Πρόγραμμα: Εαρινό εξάμηνο 2024-25</h4>
-    <p>
-      ---
-    </p>
-    <h2>Φεβρουάριος</h2>
-    <p>
-      <b>ΧΧ/02/2025 Ημέρα</b>
-    </p>
-    <p>
-      <b>ΩΩ:ΛΛ (ΑΧΧ):</b> Άγγελος Γάτος: Το Θεώρημα Gelfand-Naimark (I/I)<br>
-    </p>
-    <p>
-      <b>ΧΧ/02/2025 Ημέρα</b>
-    </p>
-    <p>
-      <b>ΩΩ:ΛΛ (ΑΧΧ):</b> Κωνσταντίνος Γρίβας: Το Θεώρημα του Mordell (I/IV)<br>
-    </p>
+    <div class="box">
+      <img src="../gradclublogo2.png" id="logo">
+      <h1>
+        Λέσχη Μαθηματικών
+      </h1>
+      <p>
+        <b>Εαρινό εξάμηνο 2024-25, Τμ. Μαθηματικών ΕΚΠΑ</b>
+      </p>
+    </div>
+    <div class="boxtitle">
+      Πρόγραμμα
+    </div>
+    <div class="box">
+      <div class="present">
+        <table>
+          <tr>
+            <th>
+              <p id="presentLtop">
+                ΗΗ<br>ΜΜ
+              </p>
+              <p id="presentLbot">
+                Αίθουσα Α31
+              </p>
+              <p id="presentLbot">
+                Ώρα ΩΩ:ΛΛ
+              </p>
+            </th>
+            <td>
+              <p id="presentRtop">
+                Το Θεώρημα Gelfand-Naimark
+              </p>
+              <p id="presentRbot">
+                Άγγελος Γάτος
+              </p>
+              <p id="presentRbot">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              </p>
+              <p id="footer">
+                <a href="agatos(GN).html">Δείτε περισσότερα...</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="box">
+      <div class="present">
+        <table>
+          <tr>
+            <th>
+              <p id="presentLtop">
+                25<br>02
+              </p>
+              <p id="presentLbot">
+                Αίθουσα Α31
+              </p>
+              <p id="presentLbot">
+                Ώρα 13:15
+              </p>
+            </th>
+            <td>
+              <p id="presentRtop">
+                Το Θεώρημα του Mordell
+              </p>
+              <p id="presentRbot">
+                Κωνσταντίνος Γρίβας
+              </p>
+              <p id="presentRbot">
+                Το Θεώρημα του Mordell για τα ρητά σημεία των ελλειπτικών καμπυλών είναι ένα από τα πιο σημαντικά αποτελέσματα στην αριθμητική των ελλειπτικών καμπυλών. Συγκεκριμένα, μας δίνει την δομή των ρητών σημείων μιας ελλειπτικής καμπύλης. Σκοπός των διαλέξεων είναι αποδειχθεί μία στοιχειώδης διατύπωση του θεωρήματος, να γίνει μία σκιαγράφηση για την επέκτασή του και να δοθεί ένα κίνητρο για περαιτέρω μελέτη.
+              </p>
+              <p id="footer">
+                <a href="kgrivas(mordell).html">Δείτε περισσότερα...</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="box">
+      <div class="present">
+        <table>
+          <tr>
+            <th>
+              <p id="presentLtop">
+                20<br>02
+              </p>
+              <p id="presentLbot">
+                Αίθουσα Α31
+              </p>
+              <p id="presentLbot">
+                Ώρα 14:15
+              </p>
+            </th>
+            <td>
+              <p id="presentRtop">
+                Μία εισαγωγή στην Agda (Μέρος ΙΙ)
+              </p>
+              <p id="presentRbot">
+                Ανδρέας Αβουκάτος
+              </p>
+              <p id="presentRbot">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              </p>
+              <p id="footer">
+                <a href="aavoukatos(agda).html">Δείτε περισσότερα...</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="foot">
+    <table>
+      <tr>
+        <th>
+          Συντεταγμένες
+        </th>
+        <th>
+          Η ομάδα
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Πανεπιστημιούπολη Ζωγράφου<br>
+          Αθήνα, 157-84.
+        </td>
+        <td>
+          <a href="https://bizanosk.github.io/">Κ. Μπιζάνος</a>, <a href="https://www.linkedin.com/in/chrysoula-tsismetzoglou-9567b5258/">Χ. Τσισμετζόγλου</a><br>
+          <a href="http://users.uoa.gr/~goikon/">Γ. Οικονομίδης</a>, <a href="https://afragos-math.github.io/">Τ. Φράγκος</a>.
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mapmobilecontent").style.height = "100%";
+    }
+          
+    function closeNav() {
+      document.getElementById("mapmobilecontent").style.height = "0%";
+    }
+  </script>
 </body>
-</html>

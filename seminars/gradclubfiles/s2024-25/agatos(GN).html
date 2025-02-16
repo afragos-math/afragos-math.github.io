@@ -6,61 +6,108 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-<link rel="icon" href="../../../images/quasiperiodictiling.png">
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-<link href="../../gradclubstyle.css" rel="stylesheet" type="text/css" />
-<link href="../../gradclubstyle2.css" rel="stylesheet" type="text/css" />
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="icon" href="../logo2.png">
+<link href="../../style.css" rel="stylesheet" type="text/css" />
 
 </head>
+
 <body>
-  <div class="navbar">
-    <a href="../../gradclub2.html">&#8617;</a>
+  <div class="map">
+    <a href="../../gradclub2.html">ΑΡΧΙΚΗ</a> &nbsp;&nbsp; <a href="program.html">ΠΡΟΓΡΑΜΜΑ</a> &nbsp;&nbsp; <a href="propositions.html">ΘΕΜΑΤΑ</a> &nbsp;&nbsp; <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ & SOCIAL</a>
   </div>
+  <div class="mapmobile">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9778;</span>
+  </div>
+  <div id="mapmobilecontent" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../gradclub2.html" onclick="closeNav()">Αρχική</a>
+        <a href="program.html" onclick="closeNav()">Πρόγραμμα</a>
+        <a href="propositions.html" onclick="closeNav()">Θέματα</a>
+        <a href="contact.html" onclick="closeNav()">Επικοινωνία & Social</a>
+      </div>
+  </div>
+  <div class="container"></div>
   <div class="main">
-    <img src="../gradclublogo2.png" width="45%" id="logo">
-    <h1>Λέσχη Μαθηματικών</h1>
-    <h4>Εαρινό εξάμηνο 2024-25</h4>
-    <div class="present">
-      <table>
-        <tr>
-          <th id="abstract">
-            <p id="presentLtop">
-              HH<br>MM
-            </p>
-            <p id="presentLbot">
-              Αίθουσα
-            </p>
-            <p id="presentLbot">
-              Ώρα
-            </p>
-          </th>
-          <td>
-            <p id="presentRtop">
-              Το Θεώρημα Gelfand-Naimark
-            </p>
-            <p id="presentRbot">
-              Άγγελος Γάτος
-            </p>
-            <p id="presentRbot">
-              <b>Περίληψη:</b>
-            </p>
-            <p id="presentRbot">
-              <b>Abstract:</b>
-            </p>
-            <p id="presentRbot">
-              <b>Βιβλιογραφία</b>
-              <ol>
-                <li></li>
-              </ol>
-            </p>
-          </td>
-        </tr>
-      </table>
+    <div class="box">
+      <img src="../gradclublogo2.png" id="logo">
+      <h1>
+        Λέσχη Μαθηματικών
+      </h1>
+      <p>
+        <b>Εαρινό εξάμηνο 2024-25, Τμ. Μαθηματικών ΕΚΠΑ</b>
+      </p>
+    </div>
+    <div class="box">
+      <div class="present">
+        <table>
+          <tr>
+            <th id="abstract">
+              <p id="presentLtop">
+                XX<br>XX
+              </p>
+              <p id="presentLbot">
+                Αίθουσα Α31
+              </p>
+              <p id="presentLbot">
+                Ώρα ΩΩ:ΛΛ
+              </p>
+            </th>
+            <td>
+              <p id="presentRtop">
+                Το Θεώρημα Gelfand-Naimark
+              </p>
+              <p id="presentRbot">
+                Άγγελος Γάτος
+              </p>
+              <p id="presentRbot">
+                <b>Περίληψη:</b> 
+              </p>
+              <p id="presentRbot">
+                <b>Abstract:</b> 
+              </p>
+              <p id="presentRbot">
+                <b>Βιβλιογραφία</b>
+                <ol>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
-</div>
+  <div class="foot">
+    <table>
+      <tr>
+        <th>
+          Συντεταγμένες
+        </th>
+        <th>
+          Η ομάδα
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Πανεπιστημιούπολη Ζωγράφου<br>
+          Αθήνα, 157-84.
+        </td>
+        <td>
+          <a href="https://bizanosk.github.io/">Κ. Μπιζάνος</a>, <a href="https://www.linkedin.com/in/chrysoula-tsismetzoglou-9567b5258/">Χ. Τσισμετζόγλου</a><br>
+          <a href="http://users.uoa.gr/~goikon/">Γ. Οικονομίδης</a>, <a href="https://afragos-math.github.io/">Τ. Φράγκος</a>.
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mapmobilecontent").style.height = "100%";
+    }
+          
+    function closeNav() {
+      document.getElementById("mapmobilecontent").style.height = "0%";
+    }
+  </script>
 </body>
-</html>
