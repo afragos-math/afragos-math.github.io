@@ -1,0 +1,363 @@
+@font-face {
+    font-family: GFSNeoh;
+    src:url("gradclubfiles/GFSNeoh/GFSNeohellenic.ttf");
+}
+
+@keyframes linkanim{
+    0% {color: rgb(32, 40, 58);}
+    100% {color: rgb(255,203,2);}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(gradclubfiles/gradclubback3.png) repeat-y;
+    background-size: 100%;
+	text-align: justify;
+	font-family: "GFSNeoh";
+	font-size: 20px;
+}
+
+.container {
+    display: block;
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    border-bottom: rgb(107, 189, 248) 15px solid;
+  }
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    border-top: rgb(32, 40, 58) 5px solid;
+    border-bottom: rgb(255, 203, 2) 5px solid;
+    border-radius: 50%;
+    background-color: rgb(32,40,58);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titlemobile{
+    display: none;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 20px;
+    margin-bottom: 10%;
+    border-bottom: rgb(107, 189, 248) 5px solid;
+    background-color: rgb(32,40,58);
+}
+
+.title2{
+    display: block;
+}
+
+.main {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.foot {
+    width: 92%;
+    padding-left: 4%;
+    padding-right:4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(107,189,248);
+    border-top: rgb(32, 40, 58) 15px solid;
+}
+
+h1{
+    font-size: 45px;
+    color: rgb(32, 40, 58);
+}
+
+h2, h4{
+    color: rgb(32, 40, 58);
+}
+
+.title h3{
+    color: black;
+}
+
+a {
+	color: rgb(107,189,248);
+}
+
+a:hover{
+    color: rgb(5, 58, 97);
+}
+
+b{
+    color: rgb(32, 40, 58);
+}
+
+.foot b{
+    color: black;
+}
+
+.foot a{
+    color: white;
+}
+
+.foot th,td {
+    padding: 7px;
+}
+
+.map{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    top:0%;
+    left:0%;
+    padding: 7pt;
+    border-top: rgb(32, 40, 58) 15px solid;
+    border-bottom: rgb(32, 40, 58) 5px solid;
+    background-color: rgb(255,203,2);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3pt;
+}
+
+.map a{
+    color: rgb(32, 40, 58);
+    text-decoration: none;
+}
+
+.map a:hover{
+    animation: linkanim .5s cubic-bezier(1,0,0,1) infinite;
+}
+
+.mapmobile {
+    overflow: hidden;
+    display: none;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 50px;
+    background-color: rgb(107,189,248);
+    position: fixed;
+    z-index: 1;
+    right: 3%;
+    bottom: 6%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.mapmobile span {
+    overflow: hidden;
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: rgb(0,0,0);
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 8px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile span:hover {
+    background: rgb(255,255,255);
+}
+
+.mapmobile a {
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: rgb(0,0,0);
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 12px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile a:hover {
+    background: rgb(255,255,255);
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,199);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(32, 40, 58);
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: rgb(255,255,255);
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.boxtitle{
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right:-6%;
+    border-left: rgb(32, 40, 58) 5px solid;
+    border-top: rgb(32, 40, 58) 5px solid;
+    border-bottom: rgb(32, 40, 58) 5px solid;
+    border-radius: 20px 0 0 20px;
+    color: rgb(32, 40, 58);
+    background-color: rgb(255,203,2);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box{
+    display: block;
+    padding: 10px;
+}
+
+.present{
+    width: 100%;
+    margin: 10px;
+}
+
+.present th{
+    width: 20%;
+    border-right: rgb(32, 40, 58) 5px solid;
+    color: rgb(32, 40, 58);
+    padding: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.present #presentLtop{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.present #presentLbot{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.present td{
+    width: 77%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.present #presentRtop{
+    font-size: 25px;
+    color: rgb(32, 40, 58);
+    font-weight: bold;
+}
+
+.present #presentRbot{
+    font-size: 20px;
+}
+
+#footer{
+    text-align: right;
+}
+
+.imgcenter{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#poster{
+    width: 50%;
+    border: rgb(32, 40, 58) 3px solid;
+}
+
+#abstract{
+    vertical-align: top;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .mapmobile {
+        display: block;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .titlemobile{
+        display: block;
+    }
+
+    .title2{
+        display: none;
+    }
+
+    .present #presentLtop{
+        font-size: 40px;
+    }
+    
+    .present #presentLbot{
+        font-size: 18px;
+    }
+
+    .present #presentRtop{
+        font-size: 25px;
+    }
+    
+    .present #presentRbot{
+        font-size: 18px;
+    }
+
+    .imgcenter{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .boxtitle{
+        font-size: 25px;
+    }
+}
