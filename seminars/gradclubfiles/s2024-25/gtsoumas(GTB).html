@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Λέσχη Μαθηματικών 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<link rel="icon" href="../logo2.png">
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="map">
+    <a href="../../gradclub2.html">ΑΡΧΙΚΗ</a> &nbsp;&nbsp; <a href="program.html">ΠΡΟΓΡΑΜΜΑ</a> &nbsp;&nbsp; <a href="propositions.html">ΘΕΜΑΤΑ</a> &nbsp;&nbsp; <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ & SOCIAL</a>
+  </div>
+  <div class="mapmobile">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9778;</span>
+  </div>
+  <div id="mapmobilecontent" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../gradclub2.html" onclick="closeNav()">Αρχική</a>
+        <a href="program.html" onclick="closeNav()">Πρόγραμμα</a>
+        <a href="propositions.html" onclick="closeNav()">Θέματα</a>
+        <a href="contact.html" onclick="closeNav()">Επικοινωνία & Social</a>
+      </div>
+  </div>
+  <div class="container"></div>
+  <div class="main">
+    <div class="box">
+      <img src="../gradclublogo2.png" id="logo">
+      <h1>
+        Λέσχη Μαθηματικών
+      </h1>
+      <p>
+        <b>Εαρινό εξάμηνο 2024-25, Τμ. Μαθηματικών ΕΚΠΑ</b>
+      </p>
+    </div>
+    <div class="box">
+      <div class="present">
+        <table>
+          <tr>
+            <th id="abstract">
+              <p id="presentLtop">
+                08<br>04
+              </p>
+              <p id="presentLbot">
+                Google Meet <br>&<br> Αίθουσα Α31
+              </p>
+              <p id="presentLbot">
+                Ώρα 13:15
+              </p>
+            </th>
+            <td>
+              <p id="presentRtop">
+                Game Theory & Incentives in Blockchain: Fairness, Friction, and Participation
+              </p>
+              <p id="presentRbot">
+                Γιώργος Τσούμας (Pompeu Fabra University)
+              </p>
+              <p id="presentRbot">
+                <b>Link της συνάντησης (Google Meet):</b>
+                <ul>
+                  <li>
+                    <a href="https://meet.google.com/mes-mroa-pwd">https://meet.google.com/mes-mroa-pwd</a>
+                  </li>
+                </ul>
+              </p>
+              <p id="presentRbot">
+                <b>Abstract:</b> Blockchain technologies promise decentralized fairness, yet real-world dynamics often reveal strategic behavior that challenges this ideal. This talk explores how economic incentives and game theory shape blockchain ecosystems, from high-speed arbitrage in decentralized exchanges to the design of fair stake pool structures and models for user participation. We dissect the complex interplay between rational agents, network protocols, and incentive design in three key blockchain domains.
+              </p>
+              <p id="presentRbot">
+                <i>Presentation Breakdown:</i>
+                <ol>
+                  <li>Introduction to Blockchain and Mechanism Design</li>
+                  <ul>
+                    <li>What is Blockchain?</li>
+                    <li>Decentralized ledger and consensus mechanisms</li>
+                    <li>Why Game Theory Matters</li>
+                    <li>Rational actors + shared infrastructure = complex strategic behavior</li>
+                  </ul>
+                  <li>Unfair Advantages: Arbitrage and Frontrunning in DEXs (Paper: Flash Boys 2.0)</li>
+                  <ul>
+                    <li>Arbitrage Bots in Action</li>
+                    <li>Exploiting latency and fee bidding for profit</li>
+                    <li>Priority Gas Auctions (PGAs)</li>
+                    <li>Game-theoretic model: continuous-time, partial-info competition</li>
+                  </ul>
+                  <li>Designing Stake Pools for Fairness and Security (Paper: Reward Sharing Schemes for Stake Pools)</li>
+                  <ul>
+                    <li>Equilibrium-Based Pool Formation</li>
+                    <li>Incentive structures lead to fair, decentralized outcomes</li>
+                    <li>Sybil Resistance & Trade-offs</li>
+                    <li>Adjusting rewards to balance cost-efficiency and security</li>
+                  </ul>
+                  <li>Modeling Participation as a Strategic Choice (Paper: Blockchain Participation Games)</li>
+                  <ul>
+                    <li>Engagement Dilemmas</li>
+                    <li>Users choose whether to participate based on stochastic rewards</li>
+                    <li>Free-Riding & Retraction</li>
+                    <li>Modeling strategic behavior and ensuring participation through rewards</li>
+                  </ul>
+                </ol>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <table>
+      <tr>
+        <th>
+          Συντεταγμένες
+        </th>
+        <th>
+          Η ομάδα
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Πανεπιστημιούπολη Ζωγράφου<br>
+          Αθήνα, 157-84.
+        </td>
+        <td>
+          <a href="https://bizanosk.github.io/">Κ. Μπιζάνος</a>, <a href="https://www.linkedin.com/in/chrysoula-tsismetzoglou-9567b5258/">Χ. Τσισμετζόγλου</a><br>
+          <a href="http://users.uoa.gr/~goikon/">Γ. Οικονομίδης</a>, <a href="https://afragos-math.github.io/">Τ. Φράγκος</a>.
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mapmobilecontent").style.height = "100%";
+    }
+          
+    function closeNav() {
+      document.getElementById("mapmobilecontent").style.height = "0%";
+    }
+  </script>
+</body>
