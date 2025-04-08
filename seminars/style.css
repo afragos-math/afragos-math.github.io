@@ -308,6 +308,12 @@ b{
     vertical-align: top;
 }
 
+#video {
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+
 @media screen and (max-width: 900px) {
     body{
         text-align: left;
@@ -360,5 +366,9 @@ b{
 
     .boxtitle{
         font-size: 25px;
+    }
+
+    #video {
+        display: none;
     }
 }
