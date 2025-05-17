@@ -176,19 +176,6 @@ b{
     background: rgb(255,255,255);
 }
 
-marquee{
-    display: block;
-    position: fixed;
-    bottom: 0%;
-    z-index: 1;
-    width: 100%;
-    padding: .2%;
-    color: rgb(128, 0, 64);
-    border-top: rgb(128, 0, 64) 5px solid;
-    font-weight: bold;
-    background-color: rgb(255,255,199);
-}
-
 .overlay {
     height: 0%;
     width: 100%;
