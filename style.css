@@ -126,6 +126,7 @@ b{
 }
   
 .dropdown-content {
+    padding: 10px 0;
     display: none;
     width: 400px;
     max-width: 70vw;
