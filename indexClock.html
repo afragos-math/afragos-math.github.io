@@ -56,34 +56,35 @@
         let h = today.getHours();
         let m = today.getMinutes();
         let s = today.getSeconds();
+        h=checkTime(h);
         m = checkTime(m);
         s = checkTime(s);
 
         document.getElementById('clc').innerHTML =  h + ":" + m + ":" + s;
         
         //
-        let h_bon = h-1;
+        let h_bon = (24+h-1)%24;
         let m_bon = m;
         let s_bon = s;
 
         document.getElementById('clc_bon').innerHTML =  h_bon + ":" + m_bon + ":" + s_bon;
 
         //
-        let h_cam = h-2;
+        let h_cam = (24+h-2)%24;
         let m_cam = m;
         let s_cam = s;
 
         document.getElementById('clc_cam').innerHTML =  h_cam + ":" + m_cam + ":" + s_cam;
         
         //
-        let h_mis = h-8;
+        let h_mis = (24+h-8)%24;
         let m_mis = m;
         let s_mis = s;
 
         document.getElementById('clc_mis').innerHTML =  h_mis + ":" + m_mis + ":" + s_mis;
 
         //
-        let h_tor = h-7;
+        let h_tor = (24+h-7)%24;
         let m_tor = m;
         let s_tor = s;
 
@@ -95,8 +96,8 @@
 
 <script>
     function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
+        if (i < 10) {i = "0" + i};
+        return i;
     }
 </script>
 
