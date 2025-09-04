@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Anastasios Fragkos
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/quasiperiodictiling.png">
+</head>
+
+<body onload="startTime()">      
+    <div class="map">
+        <a href="index.html">&#9751; <b id="mapcollapse">Home</b></a> &#9866; <a href="indexResearch.html">&#9967; <b id="mapcollapse">Research</b></a> &#9866; <a href="indexFiles.html">&#10081; <b id="mapcollapse">Notes & Books</b></a> &#9866; <a href="indexStuff.html">&#10070; <b id="mapcollapse">News & Seminars</b></a>
+    </div>
+    <div class="content">
+        <h1>&#9684; Clocks</h1>
+        <div class="box">
+            <div class="title">
+                Clocks
+            </div>
+            <p>
+                Here I have some clocks for personal use, if there is a need to communicate with the people I know around the world.
+            </p>
+            <p>
+                <b>Athens, GR ---</b> <b id="clc"></b>
+            </p>
+            <p>
+                <b>Amsterdam, NL & Barcelona, ES & Bonn, DE & Lyon, FR & Warsaw, PL & Vienna, AUT ---</b> <b id="clc_bon"></b>
+            </p>
+            <p>
+                <b>Cambridge, UK ---</b> <b id="clc_cam"></b>
+            </p>
+            <p>
+                <b>Chicago, USA & Missouri, USA ---</b> <b id="clc_mis"></b>
+            </p>
+            <p>
+                <b>Montreal, CA & New Jersey, USA & Torronto, CA ---</b> <b id="clc_tor"></b>
+            </p>
+        </div>
+        <div class="flc">
+            <p>
+                <i>Hosting service: <a href="https://github.com">Github</a></i>
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+
+        document.getElementById('clc').innerHTML =  h + ":" + m + ":" + s;
+        
+        //
+        let h_bon = h-1;
+        let m_bon = m;
+        let s_bon = s;
+
+        document.getElementById('clc_bon').innerHTML =  h_bon + ":" + m_bon + ":" + s_bon;
+
+        //
+        let h_cam = h-2;
+        let m_cam = m;
+        let s_cam = s;
+
+        document.getElementById('clc_cam').innerHTML =  h_cam + ":" + m_cam + ":" + s_cam;
+        
+        //
+        let h_mis = h-8;
+        let m_mis = m;
+        let s_mis = s;
+
+        document.getElementById('clc_mis').innerHTML =  h_mis + ":" + m_mis + ":" + s_mis;
+
+        //
+        let h_tor = h-7;
+        let m_tor = m;
+        let s_tor = s;
+
+        document.getElementById('clc_tor').innerHTML =  h_tor + ":" + m_tor + ":" + s_tor;
+
+        setTimeout(startTime, 1000);
+    }
+</script>
+
+<script>
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+    }
+</script>
+
+</html>
