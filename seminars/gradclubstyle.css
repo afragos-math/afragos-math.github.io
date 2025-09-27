@@ -6,6 +6,7 @@
 body {
 	margin: 0;
 	padding: 0;
+    background: #FFFFFF url(gradclubfiles/gradclubback.png) repeat-y;
     background-size: 100%;
 	text-align: justify;
 	font-family: "GFSNeoh";
@@ -13,7 +14,12 @@ body {
 }
 
 h1{
+    color: rgb(112, 146, 190);
     font-size: 50px;
+}
+
+h2, h4{
+    color: rgb(112, 146, 190);
 }
 
 .main {
@@ -25,6 +31,7 @@ h1{
 .navbar {
     overflow: hidden;
     display: block;
+    background-color: rgb(153,217,234);
     border: rgb(0, 0, 0) 3px solid;
     border-radius: 50px;
     position: fixed;
@@ -46,8 +53,21 @@ h1{
     padding: 8px 0px 10px;
     text-decoration: none;
 }
-  
+
+a {
+	color: rgb(112, 146, 190);
+}
+
+a:hover{
+    color: rgb(153,217,234);
+}
+
+b{
+    color: rgb(112, 146, 190);
+}
+
 .navbar span:hover {
+    background-color: rgb(153,217,234);
     background: rgb(255,255,255);
 }
 
@@ -68,6 +88,8 @@ h1{
 }
 
 .boxtitle{
+    border-left: rgb(112, 146, 190) 3px solid;
+    color: rgb(112, 146, 190);
     display: block;
     padding: 10px;
     font-size: 25px;
@@ -87,6 +109,8 @@ h1{
 .present th{
     width: 20%;
     padding: 10px;
+    border-right: rgb(112, 146, 190) 3px solid;
+    color: rgb(112, 146, 190);
     font-weight: normal;
     text-align: center;
 }
@@ -110,10 +134,12 @@ h1{
 }
 
 .present #presentRtop{
+    color: rgb(112, 146, 190);
     font-size: 25px;
 }
 
 .present #presentRmid{
+    color: rgb(112, 146, 190);
     font-size: 38px;
     text-align: center;
 }
@@ -125,6 +151,7 @@ h1{
 
 .present #presentRmid2col{
     font-size: 25px;
+    color: rgb(112, 146, 190);
     text-align: center;
 }
 
@@ -160,6 +187,7 @@ h1{
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
+    color: rgb(112, 146, 190);
     display: block;
     transition: 0.3s;
 }
