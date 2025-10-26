@@ -20,7 +20,7 @@ body {
 
 .container {
     display: block;
-    margin-top: 3%;
+    margin-top: 2.5%;
     position: relative;
     text-align: center;
     border-bottom: rgb(128, 0, 64) 15px solid;
@@ -28,7 +28,7 @@ body {
 
 .title {
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 94%;
