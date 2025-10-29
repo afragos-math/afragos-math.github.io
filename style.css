@@ -116,6 +116,46 @@ b{
     width: 10%;
 }
 
+.featured{
+    display:inline-block;
+    width:60pt;
+    background-color: red;
+    color: white;
+    text-shadow: 1px 1px 0px #004080;
+    font-weight: bold;
+    text-align: center;
+    border: #004080 2px solid;
+    border-radius: 20px;
+    padding: .3%;
+}
+
+.new{
+    display: inline-block;
+    width:60pt;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    text-shadow: 1px 1px 0px #004080;
+    font-weight: bold;
+    text-align: center;
+    border: #004080 2px solid;
+    border-radius: 20px;
+    padding: .3%;
+}
+
+.ongoing{
+    display: inline-block;
+    width:60pt;
+    background-color: rgb(7, 227, 216);
+    color: white;
+    text-shadow: 1px 1px 0px #004080;
+    font-weight: bold;
+    text-align: center;
+    border: #004080 2px solid;
+    border-radius: 20px;
+    padding: .3%;
+}
+
+
 .box-noborder{
     display: flex;
     padding: 1%;
