@@ -76,6 +76,23 @@ b{
     margin-bottom: 15pt;
 }
 
+.boxhalfcontainer{
+	display: flex;
+	width: 100%;
+}
+
+.boxhalf{
+    width: 50%;
+	display: block;
+    border: #004080 3px solid;
+	border-radius: 10px;
+    box-shadow: 10px 10px #004080;
+    padding: 10pt;
+    margin-right: 1%;
+    margin-bottom: 15pt;
+	text-align: start;
+}
+
 .title{
     color: #004080;
     font-weight: bold;
@@ -209,6 +226,15 @@ b{
     #mapcollapse{
         display: none;
     }
+
+    .boxhalfcontainer{
+		display: block;
+	}
+
+	.boxhalf{
+		margin-bottom: 15pt;
+		width: 96%;
+	}
 }
 
 @media screen and (max-width: 660px) {
