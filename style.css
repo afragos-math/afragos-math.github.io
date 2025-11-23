@@ -5,12 +5,12 @@
 
 @keyframes linkanim{
     0% {color: #0157d7;}
-    100% {color: white;}
+    100% {color: #ffffff;}
 }
 
 @keyframes linkmapanim{
     0% {color: #004080;}
-    100% {color: white;}
+    100% {color: #ffffff;}
 }
 
 body{
@@ -68,7 +68,7 @@ b{
 }
 
 .box{
-    background-color: white;
+    background-color: #ffffff;
     border: #004080 3px solid;
     border-radius: 10px;
     box-shadow: 10px 10px #004080;
@@ -107,7 +107,7 @@ b{
     padding: 7pt;
     border-top: #004080 15px solid;
     border-bottom: #004080 3px solid;
-    background-color: white;
+    background-color: #ffffff;
     font-size: 16pt;
     font-weight: bold;
     color: #004080;
@@ -137,7 +137,7 @@ b{
     display:inline-block;
     width:60pt;
     background-color: red;
-    color: white;
+    color: #ffffff;
     text-shadow: 1px 1px 0px #004080;
     font-weight: bold;
     text-align: center;
@@ -150,7 +150,7 @@ b{
     display: inline-block;
     width:60pt;
     background-color: rgb(255, 149, 0);
-    color: white;
+    color: #ffffff;
     text-shadow: 1px 1px 0px #004080;
     font-weight: bold;
     text-align: center;
@@ -163,7 +163,7 @@ b{
     display: inline-block;
     width:60pt;
     background-color: rgb(7, 227, 216);
-    color: white;
+    color: #ffffff;
     text-shadow: 1px 1px 0px #004080;
     font-weight: bold;
     text-align: center;
@@ -191,7 +191,7 @@ b{
     position: absolute;
     border: #004080 3px solid;
     border-radius: 10px;
-    background-color: white;
+    background-color: #ffffff;
     z-index: 1;
 }
   
@@ -203,6 +203,35 @@ b{
 }
   
 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropup {
+    position: relative;
+}
+  
+.dropup-content {
+    padding: 10px 0;
+    display: none;
+    width: 400px;
+    max-width: 70vw;
+    font-size: 14pt;
+    position: absolute;
+    bottom: calc(100%);
+    border: #004080 3px solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+  
+.dropup-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-size: 200% 100%;
+}
+  
+.dropup:hover .dropup-content {
     display: block;
 }
 
