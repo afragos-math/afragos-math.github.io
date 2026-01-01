@@ -241,8 +241,12 @@ b{
     font-size: 12pt;
 }
 
-#secrmail:before{
-    content: 'afragos [-at-] math [-dot-] uoa [-dot-] gr';
+#secrmail::before{
+    content: 'afragos';
+}
+
+#secrmail::after{
+    content: 'math.uoa.gr';
 }
 
 @media screen and (max-width: 1300px) {
