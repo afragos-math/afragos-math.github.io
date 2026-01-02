@@ -242,7 +242,7 @@ b{
 }
 
 #secrmail::before{
-    content: 'afragos\0040';
+    content: 'afragos';
 }
 
 #secrmail::after{
