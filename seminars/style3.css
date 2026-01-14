@@ -1,0 +1,407 @@
+@font-face {
+    font-family: GFSNeoh;
+    src:url("gradclubfiles/GFSNeoh/GFSNeohellenic.ttf");
+}
+
+@keyframes linkanim{
+    0% {color: #20283a;}
+    100% {color: #26a269;}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(gradclubfiles/gradclubback4.png) repeat-y;
+    background-size: 100%;
+	text-align: justify;
+	font-family: "GFSNeoh";
+	font-size: 16pt;
+}
+
+.main {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.container {
+    display: block;
+    margin-top: 2.5%;
+    position: relative;
+    text-align: center;
+    border-bottom: #ca2530 15px solid;
+}
+
+.trasp{
+    margin: -5px;
+    padding: 10px;
+    height: 96%;
+    background-color: #ffffff99;
+}
+
+h1{
+    font-size: 45px;
+    color: #20283a;
+}
+
+h2, h4{
+    color: #20283a;
+}
+
+.title h3{
+    color: black;
+}
+
+a {
+	color: #7000ef;
+}
+
+a:hover{
+    color: #053a61;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    border-top: #26a269 7px solid;
+    border-left: #26a269 7px solid;
+    border-bottom: #ca2530 7px solid;
+    border-right: #ca2530 7px solid;
+    border-radius: 5px;
+    background-color: #ac87a0;
+    padding: 10px;
+}
+
+.titlemobile{
+    display: none;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 20px;
+    margin-bottom: 10%;
+    border-bottom: #ca2530 5px solid;
+    background-color: #dcc4d5;
+}
+
+.map{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    top:0%;
+    left:0%;
+    padding: 7pt;
+    border-top: #26a269 15px solid;
+    border-bottom: #ca2530 5px solid;
+    background-color: #ac87a0;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3pt;
+}
+
+.map a{
+    color: #20283a;
+    text-decoration: none;
+}
+
+.map a:hover{
+    animation: linkanim .5s cubic-bezier(1,0,0,1) infinite;
+}
+
+.mapmobile {
+    overflow: hidden;
+    display: none;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 50px;
+    background-color: #26a269;
+    position: fixed;
+    z-index: 1;
+    right: 3%;
+    bottom: 6%;
+    width: 60px;
+    height: 60px;
+    font-size: 20pt;
+}
+
+.mapmobile span {
+    overflow: hidden;
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: #000000;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 8px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile span:hover {
+    background: #ffffff;
+}
+
+.mapmobile a {
+    float: left;
+    display: block;
+    border-radius: 50px;
+    color: #000000;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 12px 0px 10px;
+    text-decoration: none;
+}
+  
+.mapmobile a:hover {
+    background: #ffffff;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #dcc4d5;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #20283a;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #26a269;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 35pt;
+}
+
+.boxtitle{
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right:-6%;
+    border-left: #26a269 5px solid;
+    border-top: #26a269 5px solid;
+    border-bottom: #ca2530 5px solid;
+    border-radius: 5px 0 0 5px;
+    background-color: #ac87a0;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.box{
+    display: block;
+    padding: 10px;
+}
+
+.foot {
+    width: 92%;
+    padding-left: 4%;
+    padding-right:4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #26a269;
+    border-top: #ca2530 15px solid;
+}
+
+.foot b{
+    color: black;
+}
+
+.foot a{
+    color: white;
+}
+
+.foot th,td {
+    padding: 7px;
+}
+
+.present{
+    display: flex;
+	width: 100%;
+    margin-top: 10px;
+}
+
+.presentinfoL{
+    display: block;
+    width: 20%;
+    padding: 1%;
+    border-left: #26a269 5px solid;
+    border-top: #26a269 5px solid;
+    border-right: #ca2530 5px solid;
+    border-bottom: #ca2530 5px solid;
+    border-radius: 5px;
+    background-color: #ac87a0;
+}
+
+.presentinfoL1{
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.presentinfoL2{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.presentinfoL3{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.presentinfoR{
+    display: block;
+    width: 75%;
+    padding: 1%;
+}
+
+.presentinfoR1{
+    font-size: 18pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.presentinfoR2{
+    font-size: 16pt;
+    font-weight: bold;
+    border-bottom: #ca2530 3px solid;
+    margin-bottom: 10px;
+}
+
+.presentinfoR2::before{
+    content: '\2654';
+}
+
+.presentfooter{
+    display: flex;
+    float: right;
+    border: #ca2530 3px solid;
+    border-radius: 5px;
+    background-color: #dcc4d5;
+    padding: 5px;
+}
+
+.presentfooter:hover{
+    color: #26a269;
+    border: #26a269 3px solid;
+}
+
+.imgcenter{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#poster{
+    width: 50%;
+    border: #20283a 3px solid;
+}
+
+#abstract{
+    vertical-align: top;
+}
+
+@media screen and (max-width:965px) {
+    body{
+        text-align: left;
+        font-size: 12pt;
+    }
+
+    .mapmobile {
+        display: block;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .titlemobile{
+        display: block;
+    }
+
+    .present{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .presentinfoL{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .presentinfoL1{
+        font-size: 30pt;
+    }
+
+    .presentinfoL2{
+        font-size: 14pt;
+    }
+
+    .presentinfoL3{
+        font-size: 14pt;
+    }
+
+    .presentinfoR{
+        width: 100%;
+    }
+
+    .presentinfoR1{
+        font-size: 14pt;
+    }
+
+    .presentinfoR2{
+        font-size: 14pt;
+    }
+
+    .imgcenter{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 20pt;
+    }
+
+    .boxtitle{
+        font-size: 14pt;
+    }
+}
