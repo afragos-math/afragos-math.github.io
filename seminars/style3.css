@@ -87,6 +87,20 @@ a:hover{
     background-color: #dcc4d5;
 }
 
+.title2{
+    display: block;
+}
+
+.title2 h1::before{
+    background: url("gradclubfiles/newgradclub-nobg2.png");
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    content: "";
+    translate: 0px 12px;
+}
+
 .map{
     display: block;
     position: fixed;
@@ -333,8 +347,44 @@ a:hover{
     border: #20283a 3px solid;
 }
 
-#abstract{
-    vertical-align: top;
+#m1::before{
+    content: 'Άννα Γεωργαντίδη, anna.georgantidis';
+}
+                      
+#m2::before{
+    content: 'Κωνσταντίνος Γρίβας, constantine12grivas';
+}
+
+#m3::before{
+    content: 'Μανώλης Λάρδας, elardas';
+}
+
+#m4::before{
+    content: 'Ορέστης Λιγνός, orelig2006';
+}
+
+#m5::before{
+    content: 'Νεκτάριος Σταυράκης, nstavrak';
+}
+
+#m1::after{
+    content: 'gmail.com';
+}
+
+#m2::after{
+    content: 'gmail.com';
+}
+
+#m3::after{
+    content: 'di.uoa.gr';
+}
+
+#m4::after{
+    content: 'gmail.com';
+}
+
+#m5::after{
+    content: 'math.uoa.gr';
 }
 
 @media screen and (max-width:965px) {
@@ -357,6 +407,11 @@ a:hover{
 
     .titlemobile{
         display: block;
+        margin-bottom: -1%;
+    }
+
+    .title2{
+        display: none;
     }
 
     .present{
