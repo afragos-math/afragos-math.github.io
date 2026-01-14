@@ -40,6 +40,13 @@ body {
     background-color: #ffffff99;
 }
 
+.trasp-long{
+    margin: -5px;
+    padding: 10px;
+    height: 98.5%;
+    background-color: #ffffff99;
+}
+
 h1{
     font-size: 45px;
     color: #20283a;
