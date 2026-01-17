@@ -31,6 +31,7 @@ body {
     position: relative;
     text-align: center;
     border-bottom: #ca2530 15px solid;
+    background-color: #ffffff;
 }
 
 .trasp{
@@ -74,13 +75,14 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 94%;
-    border-top: #26a269 7px solid;
+    /*border-top: #26a269 7px solid;
     border-left: #26a269 7px solid;
     border-bottom: #ca2530 7px solid;
     border-right: #ca2530 7px solid;
     border-radius: 5px;
-    background-color: #ac87a0;
+    background-color: #ac87a0;*/
     padding: 10px;
+    text-shadow: 3px 3px 0px white;
 }
 
 .titlemobile{
@@ -96,6 +98,7 @@ a:hover{
 
 .title2{
     display: block;
+    text-shadow: 3px 3px 0px white;
 }
 
 .title2 h1::before{
