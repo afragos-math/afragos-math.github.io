@@ -146,6 +146,10 @@ b{
     padding: .3%;
 }
 
+.featured::before{
+    content: 'Featured';
+}
+
 .new{
     display: inline-block;
     width:60pt;
@@ -157,6 +161,10 @@ b{
     border: #004080 2px solid;
     border-radius: 20px;
     padding: .3%;
+}
+
+.new::before{
+    content: 'New!';
 }
 
 .ongoing{
@@ -172,6 +180,9 @@ b{
     padding: .3%;
 }
 
+.ongoing::before{
+    content: 'Ongoing';
+}
 
 .box-noborder{
     display: flex;
