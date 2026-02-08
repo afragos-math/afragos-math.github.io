@@ -42,5 +42,5 @@
       speakerSelect.addEventListener('change', filter);
       tagSelect.addEventListener('change', filter);
 
-      talks.forEach(t => { t.tabIndex = 0; });
+      present.forEach(t => { t.tabIndex = 0; });
     })();
