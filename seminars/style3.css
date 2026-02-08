@@ -85,7 +85,6 @@ a:hover{
     padding-bottom: 2%;
     padding-left: 15%;
     padding-right: 20px;
-    margin-bottom: 10%;
     border-bottom: #ca2530 5px solid;
     background-color: #dcc4d5;
 }
@@ -431,12 +430,16 @@ select{
     }
 
     .container{
+        border: none;
+        margin-bottom: 3em;
+    }
+
+    .container *{
         display: none;
     }
 
     .titlemobile{
         display: block;
-        margin-bottom: -1%;
     }
 
     .title2{
