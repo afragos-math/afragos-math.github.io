@@ -59,100 +59,176 @@
     <p>
       Abstracts in English are also available (click on <a href="">Δείτε περισσότερα...</a> in each box).
     </p>
-    <div class="present">
-      <div class="presentinfoL">
-        <div class="trasp">
-          <div class="presentinfoL1">
-            11<br>
-            12
+    <p>
+      <input id="q" type="search" placeholder="Αναζήτηση: Λέξεις-κλειδιά" aria-label="Αναζήτηση προγράμματος" />
+      <select id="filterSpeaker" aria-label="Φίλτρο ομιλητή">
+        <option value="">Όλοι οι ομιλητές</option>
+      </select>
+      <select id="filterTag">
+        <option value="all">Όλα τα θέματα</option>
+        <option value="algebra">Άλγεβρα</option>
+        <option value="compealg">Αλγόριθμοι</option>
+        <option value="analysis">Ανάλυση</option>
+        <option value="geometry">Γεωμετρία</option>
+        <option value="statistics">Στατιστική</option>
+        <option value="physics">Φυσική</option>
+      </select>
+    </p>
+    <div id="programList">
+      <div class="present" data-speaker="Αλέξανδρος Κουτουζής" data-tags="algebra,geometry,physics,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              11<br>
+              12
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα:
+            </div>
+            <div class="presentinfoL3">
+              A11
+            </div>
+            <div class="presentinfoL2">
+              Ώρα:
+            </div>
+            <div class="presentinfoL3">
+              13:15
+            </div>
           </div>
-          <div class="presentinfoL2">
-            Αίθουσα:
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Θεωρία Gauge και μαγνητικά μονόπολα
           </div>
-          <div class="presentinfoL3">
-            A11
+          <div class="presentinfoR2">
+            Αλέξανδρος Κουτουζής
           </div>
-          <div class="presentinfoL2">
-            Ώρα:
-          </div>
-          <div class="presentinfoL3">
-            13:15
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='akoutouz(gauge).html'">
+            Δείτε περισσότερα...
           </div>
         </div>
       </div>
-      <div class="presentinfoR">
-        <div class="presentinfoR1">
-          Θεωρία Gauge και μαγνητικά μονόπολα
+      <div class="present" data-speaker="Κάποιος" data-tags="physics,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              11<br>
+              12
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα:
+            </div>
+            <div class="presentinfoL3">
+              A11
+            </div>
+            <div class="presentinfoL2">
+              Ώρα:
+            </div>
+            <div class="presentinfoL3">
+              13:15
+            </div>
+          </div>
         </div>
-        <div class="presentinfoR2">
-          Αλέξανδρος Κουτουζής
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Μία άλλη παρουσίαση
+          </div>
+          <div class="presentinfoR2">
+            Κάποιος
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='test.html'">
+            Δείτε περισσότερα...
+          </div>
         </div>
+      </div>
+      <div class="present" data-speaker="Κάποιος" data-tags="analysis,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              11<br>
+              12
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα:
+            </div>
+            <div class="presentinfoL3">
+              A11
+            </div>
+            <div class="presentinfoL2">
+              Ώρα:
+            </div>
+            <div class="presentinfoL3">
+              13:15
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Μία άλλη παρουσίαση2
+          </div>
+          <div class="presentinfoR2">
+            Κάποιος
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='test.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div id="nores">
         <p>
-          <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <i>Δεν υπάρχουν άλλα αποτελέσματα αναζήτησης. Δοκιμάστε εναλλακτικές λέξεις-κλειδιά ή θέματα.</i>
         </p>
-        <div class="presentfooter" onclick="window.location.href='akoutouz(gauge).html'">
-          Δείτε περισσότερα...
-        </div>
-      </div>
-    </div>
-    <div class="present">
-      <div class="presentinfoL">
-        <div class="trasp">
-          <div class="presentinfoL1">
-            11<br>
-            12
-          </div>
-          <div class="presentinfoL2">
-            Αίθουσα:
-          </div>
-          <div class="presentinfoL3">
-            A11
-          </div>
-          <div class="presentinfoL2">
-            Ώρα:
-          </div>
-          <div class="presentinfoL3">
-            13:15
-          </div>
-        </div>
-      </div>
-      <div class="presentinfoR">
-        <div class="presentinfoR1">
-          Θεωρία Gauge και μαγνητικά μονόπολα
-        </div>
-        <div class="presentinfoR2">
-          Αλέξανδρος Κουτουζής
-        </div>
-        <p>
-          <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <p style="text-align: center;">
+          <img src="../notfound.png" width="10%">
         </p>
-        <div class="presentfooter" onclick="window.location.href='test.html'">
-          Δείτε περισσότερα...
-        </div>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
   </div>
@@ -179,6 +255,54 @@
       </tr>
     </table>
   </div>
+  <script>
+    (function(){
+      const q = document.getElementById('q');
+      const noresval = 0;
+      const nores = document.getElementById('nores');
+      const speakerSelect = document.getElementById('filterSpeaker');
+      const tagSelect = document.getElementById('filterTag');
+      const list = document.getElementById('programList');
+
+      const present = Array.from(list.querySelectorAll('.present'));
+
+      const speakers = [...new Set(present.map(t => t.dataset.speaker).filter(Boolean))].sort();
+      speakers.forEach(s => {
+        const opt = document.createElement('option'); opt.value = s; opt.textContent = s; speakerSelect.appendChild(opt);
+      })
+
+      function filter(){
+        const txt = q.value.trim().toLowerCase();
+        const speaker = speakerSelect.value;
+        const tag = tagSelect.value;
+
+        nores.style.display = 'none'
+
+        present.forEach(t => {
+          const title = (t.querySelector('.presentinfoR .presentinfoR1')?.textContent || '').toLowerCase();
+          const sp = (t.dataset.speaker || '').toLowerCase();
+          const tags = (t.dataset.tags || '').toLowerCase();
+
+          const matchesText = !txt || title.includes(txt) || sp.includes(txt);
+          const matchesSpeaker = !speaker || (t.dataset.speaker === speaker);
+          const matchesTag = !tag || tags.split(',').includes(tag);
+
+          if(matchesText && matchesSpeaker && matchesTag){
+            t.style.display = '';
+          } else {
+            t.style.display = 'none';
+            nores.style.display = 'block';
+          }
+        })
+      }
+
+      q.addEventListener('input', filter);
+      speakerSelect.addEventListener('change', filter);
+      tagSelect.addEventListener('change', filter);
+
+      talks.forEach(t => { t.tabIndex = 0; });
+    })();
+  </script>
   <script>
     function openNav() {
       document.getElementById("mapmobilecontent").style.height = "100%";
