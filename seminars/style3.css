@@ -327,6 +327,7 @@ a:hover{
 .presentfooter{
     display: flex;
     float: right;
+    font-size: 12pt;
     border: #ca2530 3px solid;
     border-radius: 5px;
     background-color: #dcc4d5;
@@ -344,6 +345,26 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     width: 65%;
+}
+
+input{
+    width: 200px;
+    background-color: #dcc4d5;
+    font-family: "GFSNeoh";
+    font-size: 11pt;
+    border: #26a269 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+select{
+    width: 200px;
+    background-color: #dcc4d5;
+    font-family: "GFSNeoh";
+    font-size: 11pt;
+    border: #ca2530 3px solid;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #poster{
@@ -389,6 +410,10 @@ a:hover{
 
 #m5::after{
     content: 'math.uoa.gr';
+}
+
+#nores{
+    display: none;
 }
 
 @media screen and (max-width:965px) {
