@@ -339,6 +339,23 @@ a:hover{
     border: #26a269 3px solid;
 }
 
+.prevworkshop table{
+    width: 100%;
+    border-top: #26a269 4px solid;
+    border-left: #26a269 4px solid;
+    border-right: #ca2530 4px solid;
+    border-bottom: #ca2530 4px solid;
+    border-radius: 5px;
+    background-color: #ac87a0;
+    margin-top: 1%;
+}
+
+.prevworkshop th, .prevworkshop td{
+    border-radius: 5px;
+    background-color: #ffffff99;
+    padding: 3px;
+}
+
 .imgcenter{
     display: block;
     text-align: center;
