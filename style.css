@@ -206,6 +206,7 @@ b{
 }
 
 .scrlbtn{
+    display: none;
     overflow: hidden;
     position: fixed;
     right: 20px;
