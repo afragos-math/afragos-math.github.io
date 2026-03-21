@@ -5,10 +5,8 @@
     function scrlapp() {
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         btnapp.style.display = "block";
-        console.log(1);
       } else {
         btnapp.style.display = "none";
-        console.log(2);
       }
     }
   })();
