@@ -8,6 +8,9 @@ function sortfunct(val){
     const yr2d = document.getElementById("sortyr2");
     const yr3d = document.getElementById("sortyr3");
     const yr4d = document.getElementById("sortyr4");
+    const templ2 = document.getElementById("y2025-noload");
+    const templ3 = document.getElementById("y2024-noload");
+    const templ4 = document.getElementById("prev-noload");
 
     if (sortid == 2026) {
       yr1.style.display = 'block';
@@ -24,6 +27,9 @@ function sortfunct(val){
       yr2.style.display = 'block';
         yr2d.style.backgroundColor = '#004080';
         yr2d.style.color = '#ffffff';
+        if (yr2.innerHTML == '') {
+          yr2.appendChild(templ2.content.cloneNode(true));
+        };
       [yr1, yr3, yr4].forEach(yr => {
           yr.style.display = 'none';
         });
@@ -35,6 +41,9 @@ function sortfunct(val){
       yr3.style.display = 'block';
         yr3d.style.backgroundColor = '#004080';
         yr3d.style.color = '#ffffff';
+        if (yr3.innerHTML == '') {
+          yr3.appendChild(templ3.content.cloneNode(true));
+        };
       [yr1, yr2, yr4].forEach(yr => {
           yr.style.display = 'none';
         });
@@ -46,6 +55,9 @@ function sortfunct(val){
       yr4.style.display = 'block';
         yr4d.style.backgroundColor = '#004080';
         yr4d.style.color = '#ffffff';
+        if (yr4.innerHTML == '') {
+          yr4.appendChild(templ4.content.cloneNode(true));
+        };
       [yr1, yr2, yr3].forEach(yr => {
           yr.style.display = 'none';
         });
@@ -53,5 +65,5 @@ function sortfunct(val){
           yrd.style.backgroundColor = '#ffffff';
           yrd.style.color = '#004080';
         });
-    }
+    };
   };
