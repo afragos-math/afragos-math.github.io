@@ -28,6 +28,10 @@ function sortfunct(val){
         yr2d.style.backgroundColor = '#004080';
         yr2d.style.color = '#ffffff';
         if (yr2.innerHTML == '') {
+          const img = templ2.content.querySelectorAll("img");
+          img.forEach(imgno => {
+              imgno.src = imgno.getAttribute("data-src");
+            });
           yr2.appendChild(templ2.content.cloneNode(true));
         };
       [yr1, yr3, yr4].forEach(yr => {
@@ -42,6 +46,10 @@ function sortfunct(val){
         yr3d.style.backgroundColor = '#004080';
         yr3d.style.color = '#ffffff';
         if (yr3.innerHTML == '') {
+          const img = templ3.content.querySelectorAll("img");
+          img.forEach(imgno => {
+              imgno.src = imgno.getAttribute("data-src");
+            });
           yr3.appendChild(templ3.content.cloneNode(true));
         };
       [yr1, yr2, yr4].forEach(yr => {
@@ -56,6 +64,10 @@ function sortfunct(val){
         yr4d.style.backgroundColor = '#004080';
         yr4d.style.color = '#ffffff';
         if (yr4.innerHTML == '') {
+          const img = templ4.content.querySelectorAll("img");
+          img.forEach(imgno => {
+              imgno.src = imgno.getAttribute("data-src");
+            });
           yr4.appendChild(templ4.content.cloneNode(true));
         };
       [yr1, yr2, yr3].forEach(yr => {
