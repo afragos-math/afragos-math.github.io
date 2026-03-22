@@ -8,9 +8,6 @@ function sortfunct(val){
     const yr2d = document.getElementById("sortyr2");
     const yr3d = document.getElementById("sortyr3");
     const yr4d = document.getElementById("sortyr4");
-    const templ2 = document.getElementById("y2025-noload");
-    const templ3 = document.getElementById("y2024-noload");
-    const templ4 = document.getElementById("prev-noload");
 
     if (sortid == 2026) {
       yr1.style.display = 'block';
@@ -27,12 +24,12 @@ function sortfunct(val){
       yr2.style.display = 'block';
         yr2d.style.backgroundColor = '#004080';
         yr2d.style.color = '#ffffff';
-        if (yr2.innerHTML == '') {
-          const img = templ2.content.querySelectorAll("img");
+        if (yr2d.getAttribute("rem") == 0) {
+          const img = yr2.querySelectorAll("img");
           img.forEach(imgno => {
               imgno.src = imgno.getAttribute("data-src");
             });
-          yr2.appendChild(templ2.content.cloneNode(true));
+          yr2d.setAttribute("rem", 1);
         };
       [yr1, yr3, yr4].forEach(yr => {
           yr.style.display = 'none';
@@ -45,12 +42,12 @@ function sortfunct(val){
       yr3.style.display = 'block';
         yr3d.style.backgroundColor = '#004080';
         yr3d.style.color = '#ffffff';
-        if (yr3.innerHTML == '') {
-          const img = templ3.content.querySelectorAll("img");
+        if (yr3d.getAttribute("rem") == 0) {
+          const img = yr3.querySelectorAll("img");
           img.forEach(imgno => {
               imgno.src = imgno.getAttribute("data-src");
             });
-          yr3.appendChild(templ3.content.cloneNode(true));
+          yr3d.setAttribute("rem", 1);
         };
       [yr1, yr2, yr4].forEach(yr => {
           yr.style.display = 'none';
@@ -63,12 +60,12 @@ function sortfunct(val){
       yr4.style.display = 'block';
         yr4d.style.backgroundColor = '#004080';
         yr4d.style.color = '#ffffff';
-        if (yr4.innerHTML == '') {
-          const img = templ4.content.querySelectorAll("img");
+        if (yr4d.getAttribute("rem") == 0) {
+          const img = yr4.querySelectorAll("img");
           img.forEach(imgno => {
               imgno.src = imgno.getAttribute("data-src");
             });
-          yr4.appendChild(templ4.content.cloneNode(true));
+          yr4d.setAttribute("rem", 1);
         };
       [yr1, yr2, yr3].forEach(yr => {
           yr.style.display = 'none';
