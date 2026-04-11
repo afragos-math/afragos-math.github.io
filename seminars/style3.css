@@ -182,7 +182,7 @@ a:hover{
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #dcc4d5;
@@ -356,6 +356,32 @@ a:hover{
     padding: 3px;
 }
 
+.announceit{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    padding: 10px;
+    width: 12%;
+    top: 12%;
+    right:3%;
+    border-top: #26a269 4px solid;
+    border-left: #26a269 4px solid;
+    border-right: #ca2530 4px solid;
+    border-bottom: #ca2530 4px solid;
+    box-shadow: 7px 7px #45004e;
+    border-radius: 5px;
+    background-color: #dcc4d5;
+    text-align: left;
+}
+
+.announceit marquee{
+    display: block;
+}
+
+.announceit marquee{
+    display: none;
+}
+
 .imgcenter{
     display: block;
     text-align: center;
@@ -496,6 +522,21 @@ select{
 
     .presentinfoR2{
         font-size: 14pt;
+    }
+
+    .announceit{
+        width: 50%;
+        top: 82%;
+        left: 1%;
+        box-shadow: 0px 0px;
+    }
+
+    .announceit #cnt{
+        display: none;
+    }
+
+    .announceit marquee{
+        display: block;
     }
 
     .imgcenter{
