@@ -10,21 +10,21 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Λίγα λόγια για την ημερίδα, Αμφ. 24'
+              announce.innerHTML = 'Λίγα λόγια για την ημερίδα, A32'
             }
           );
         } else if(currtime >= 1205 && currtime < 1225){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Geometric Deep Learning, Αμφ. 24'
+              announce.innerHTML = 'Geometric Deep Learning, A32'
             }
           );
         } else if(currtime >= 1225 && currtime < 1250){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Μελέτη Εγκάρσιας Αστάθειας Σκοτεινών Σολιτονίων με Εφαρμογή Διαφορικής Γεωμετρίας, Αμφ. 24'
+              announce.innerHTML = 'Μελέτη Εγκάρσιας Αστάθειας Σκοτεινών Σολιτονίων με Εφαρμογή Διαφορικής Γεωμετρίας, A32'
             }
           );
         } else if(currtime >= 1250 && currtime < 1300){
@@ -38,14 +38,14 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Combinatorial Nullstellensatz, Αμφ. 24'
+              announce.innerHTML = 'Combinatorial Nullstellensatz, A32'
             }
           );
         } else if(currtime >= 1340 && currtime < 1400){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Θεωρία Galois πάνω από σώματα χαρακτηριστικής p>0, Αμφ. 24'
+              announce.innerHTML = 'Θεωρία Galois πάνω από σώματα χαρακτηριστικής p>0, A32'
             }
           );
         } else if(currtime >= 1400 && currtime < 1410){
@@ -66,14 +66,14 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Cunt`s Rose: A First Glimpse at Graph Algebras, Αμφ. 24'
+              announce.innerHTML = 'Cunt`s Rose: A First Glimpse at Graph Algebras, A32'
             }
           );
         } else if(currtime >= 1445 && currtime < 1450){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Λήξη της ημερίδας, Αμφ. 24'
+              announce.innerHTML = 'Λήξη της ημερίδας, A32'
             }
           );
         } else {
