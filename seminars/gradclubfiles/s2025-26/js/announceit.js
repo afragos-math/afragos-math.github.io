@@ -59,5 +59,7 @@
             }
           );
         };
+      } else {
+        announcebox.style.display = 'none';
       }
     })();

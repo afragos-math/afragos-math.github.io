@@ -38,7 +38,42 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Combinatorial Nullstellensatz'
+              announce.innerHTML = 'Combinatorial Nullstellensatz, Αμφ. 24'
+            }
+          );
+        } else if(currtime >= 1340 && currtime < 1400){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = 'Θεωρία Galois πάνω από σώματα χαρακτηριστικής p>0, Αμφ. 24'
+            }
+          );
+        } else if(currtime >= 1400 && currtime < 1410){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = 'Σύντομο διάλλειμα'
+            }
+          );
+        } else if(currtime >= 1410 && currtime < 1415){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = '---'
+            }
+          );
+        } else if(currtime >= 1415 && currtime < 1445){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = 'Cunt`s Rose: A First Glimpse at Graph Algebras, Αμφ. 24'
+            }
+          );
+        } else if(currtime >= 1445 && currtime < 1450){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = 'Λήξη της ημερίδας, Αμφ. 24'
             }
           );
         } else {

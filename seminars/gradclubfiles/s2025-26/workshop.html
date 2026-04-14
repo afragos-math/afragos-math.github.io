@@ -29,6 +29,12 @@
         <a href="archive.html" onclick="closeNav()">Αρχείο</a>
       </div>
   </div>
+  <div class="announceit">
+    <div class="presentinfoL2">&#9673; Αυτή τη στιγμή!</div>
+    <hr>
+    <div id="cnt"></div>
+    <marquee></marquee>
+  </div>
   <div class="titlemobile">
     <img src="../../gradclubfiles/newgradclub-nobg2.png" width="30%">
     <h1>
@@ -57,14 +63,14 @@
       <p>
         Η ημερίδα μαθηματικών είναι μία πρωτοβουλία που ξεκίνησε το 2024 από τον Ν. Σταυράκη. Από το εαρινό εξάμηνο 2025-26 προσαρτάται στη Λέσχη Μαθηματικών και το κοινό διευρύνεται: Οι παρουσιάσεις μπορούν πλέον να γίνονται από προπτυχιακούς και μεταπτυχιακούς φοιτητές.
       </p>
+      <p style="text-align: center;">
+        <b>Η ημερίδα φέτος θα γίνει 23 Απριλίου!</b>
+      </p>
       <p>
         <b>Μορφή των παρουσιάσεων:</b>
       </p>
       <p>
         Τα θέματα επιλέγονται ώστε να είναι προσιτά σε μη εξειδικευμένο κοινό (λ.χ. από άλλο τομέα ή μικρό έτος σπουδών) και μπορεί να είναι από ένα απλό θεώρημα έως κι ένα paper, αρκεί ο ομιλητής να τα βρίσκει ενδιαφέροντα. Στους σκοπούς της ημερίδας είναι η ανταλλαγή ιδεών και αντιλήψεων από διάφορους τομείς. Οι παρουσιάσεις έχουν έκταση λίγων λεπτών (~20 λεπτά). Όλες θα πραγματοποιηθούν την ίδια μέρα, με διαδοχή. 
-      </p>
-      <p>
-        Θα ενημερωθείτε για την ακριβή ημερομηνία αργότερα, έχετε όμως υπόψη σας ότι θα είναι κοντά στο Πάσχα.
       </p>
       <p>
         <b>Εκδήλωση ενδιαφέροντος:</b>
@@ -88,39 +94,70 @@
         <option value="algebra">Άλγεβρα</option>
         <option value="compealg">Αλγόριθμοι</option>
         <option value="analysis">Ανάλυση</option>
+        <option value="didactics">Διδακτική</option>
         <option value="geometry">Γεωμετρία</option>
-        <option value="statistics">Στατιστική</option>
         <option value="physics">Φυσική</option>
       </select>
     </p>
     <div id="programList">
-      <div class="present" data-speaker="Ονοματεπώνυμος" data-tags="all">
+      <div class="present" data-speaker="Νεκτάριος Σταυράκης" data-tags="all">
         <div class="presentinfoL">
           <div class="trasp">
             <div class="presentinfoL1">
-              ΗΗ<br>
-              ΜΜ
+              12:00
             </div>
             <div class="presentinfoL2">
-              Αίθουσα:
+              Ημερομηνία:
             </div>
             <div class="presentinfoL3">
-              AΧΧ
+              23/04/26
             </div>
             <div class="presentinfoL2">
-              Ώρα:
+              Αίθουσα
             </div>
             <div class="presentinfoL3">
-              ΩΩ:ΛΛ
+              Αμφ. 24
             </div>
           </div>
         </div>
         <div class="presentinfoR">
           <div class="presentinfoR1">
-            Όνομα Παρουσίασης
+            Λίγα λόγια για την ημερίδα
           </div>
           <div class="presentinfoR2">
-            Όνοματεπώνυμος
+            Νεκτάριος Σταυράκης
+          </div>
+          <p>
+            Καλωσόρισμα και ευχαριστίες.
+          </p>
+        </div>
+      </div>
+      <div class="present" data-speaker="Στέλιος Νικολουτσόπουλος" data-tags="compealg,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              12:05
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Geometric Deep Learning
+          </div>
+          <div class="presentinfoR2">
+            Στέλιος Νικολουτσόπουλος
           </div>
           <p>
             <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -142,6 +179,337 @@
           </div>
         </div>
       </div>
+      <div class="present" data-speaker="Ειρήνη Κολλιά" data-tags="analysis,physics,geometry,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              12:25
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Μελέτη Εγκάρσιας Αστάθειας Σκοτεινών Σολιτονίων με Εφαρμογή Διαφορικής Γεωμετρίας
+          </div>
+          <div class="presentinfoR2">
+            Ειρήνη Κολλιά
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='../../gradclub3.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div class="present" data-tags="all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              12:50
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Σύντομο διάλλειμα
+          </div>
+          <div class="presentinfoR2">
+            Κούραση
+          </div>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      <div class="present" data-speaker="Ορέστης Λιγνός" data-tags="algebra,geometry,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              13:00
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Combinatorial Nullstellensatz
+          </div>
+          <div class="presentinfoR2">
+            Ορέστης Λιγνός
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='../../gradclub3.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div class="present" data-speaker="Κωνσταντίνος Γρίβας" data-tags="algebra,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              13:40
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Θεωρία Galois πάνω από σώματα χαρακτηριστικής p>0
+          </div>
+          <div class="presentinfoR2">
+            Κωνσταντίνος Γρίβας
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='../../gradclub3.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div class="present" data-tags="all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              14:00
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Σύντομο διάλλειμα
+          </div>
+          <div class="presentinfoR2">
+            Κούραση
+          </div>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      <div class="present" data-speaker="Λάμπρος" data-tags="didactics,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              14:10
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            ---
+          </div>
+          <div class="presentinfoR2">
+            Λάμπρος
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='../../gradclub3.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div class="present" data-speaker="Νεκτάριος Σταυράκης" data-tags="algebra,physics,all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              14:15
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Cunt's Rose: A First Glimpse at Graph Algebras
+          </div>
+          <div class="presentinfoR2">
+            Νεκτάριος Σταυράκης
+          </div>
+          <p>
+            <b>Περίληψη:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </p>
+          <div class="presentfooter" onclick="window.location.href='../../gradclub3.html'">
+            Δείτε περισσότερα...
+          </div>
+        </div>
+      </div>
+      <div class="present" data-speaker="Νεκτάριος Σταυράκης" data-tags="all">
+        <div class="presentinfoL">
+          <div class="trasp">
+            <div class="presentinfoL1">
+              14:45
+            </div>
+            <div class="presentinfoL2">
+              Ημερομηνία:
+            </div>
+            <div class="presentinfoL3">
+              23/04/26
+            </div>
+            <div class="presentinfoL2">
+              Αίθουσα
+            </div>
+            <div class="presentinfoL3">
+              Αμφ. 24
+            </div>
+          </div>
+        </div>
+        <div class="presentinfoR">
+          <div class="presentinfoR1">
+            Λήξη της ημερίδας
+          </div>
+          <div class="presentinfoR2">
+            Νεκτάριος Σταυράκης
+          </div>
+          <p>
+            Ευχαριστίες και λήξη.
+          </p>
+        </div>
+      </div>
       <div id="nores">
         <p>
           <i>Δεν υπάρχουν άλλα αποτελέσματα αναζήτησης. Δοκιμάστε εναλλακτικές λέξεις-κλειδιά ή θέματα.</i>
@@ -153,6 +521,145 @@
         <br>
         <br>
       </div>
+      <p>
+        <b>Πρόγραμμα 2026</b>
+      </p>
+      (εκτυπώσιμη έκδοση <a onclick="printable(this)">εδώ</a>)
+        <div class="prevworkshop">
+          <table>
+            <tr>
+              <th>
+                Ώρα
+              </th>
+              <th>
+                Ομιλητής
+              </th>
+              <th>
+                Ομιλία
+              </th>
+            </tr>
+            <tr>
+              <th>
+                12:00<br>
+                12:05
+              </th>
+              <td>
+                Νεκτάριος Σταυράκης
+              </td>
+              <td>
+                Λίγα λόγια για την ημερίδα
+              </td>
+            </tr>
+            <tr>
+              <th>
+                12:05<br>
+                12:25
+              </th>
+              <td>
+                Στέλιος Νικολουτσόπουλος
+              </td>
+              <td>
+                Geometric Deep Learning
+              </td>
+            </tr>
+            <tr>
+              <th>
+                12:25<br>
+                12:50
+              </th>
+              <td>
+                 Ειρήνη Κολλιά
+              </td>
+              <td>
+                Μελέτη Εγκάρσιας Αστάθειας Σκοτεινών Σολιτονίων με Εφαρμογή Διαφορικής Γεωμετρίας
+              </td>
+            </tr>
+            <tr>
+              <th>
+                12:50<br>
+                13:00
+              </th>
+              <td>
+                Κούραση
+              </td>
+              <td>
+                Σύντομο διάλλειμα
+              </td>
+            </tr>
+            <tr>
+              <th>
+                13:00<br>
+                13:40
+              </th>
+              <td>
+                Ορέστης Λιγνός
+              </td>
+              <td>
+                Combinatorial Nullstellensatz 
+              </td>
+            </tr>
+            <tr>
+              <th>
+                13:40<br>
+                14:00
+              </th>
+              <td>
+                Κωνσταντίνος Γρίβας
+              </td>
+              <td>
+                Θεωρία Galois πάνω από σώματα χαρακτηριστικής p>0
+              </td>
+            </tr>
+            <tr>
+              <th>
+                14:00<br>
+                14:10
+              </th>
+              <td>
+                Κούραση
+              </td>
+              <td>
+                Σύντομο διάλλειμα
+              </td>
+            </tr>
+            <tr>
+              <th>
+                14:10<br>
+                14:15
+              </th>
+              <td>
+                Λάμπρος
+              </td>
+              <td>
+                ---
+              </td>
+            </tr>
+            <tr>
+              <th>
+                14:15<br>
+                14:45
+              </th>
+              <td>
+                Νεκτάριος Σταυράκης
+              </td>
+              <td>
+                Cunt's Rose: A First Glimpse at Graph Algebras
+              </td>
+            </tr>
+            <tr>
+              <th>
+                14:45<br>
+                14:50
+              </th>
+              <td>
+                Νεκτάριος Σταυράκης
+              </td>
+              <td>
+                Λήξη της ημερίδας
+              </td>
+            </tr>
+          </table>
+        </div>
     </div>
     <div class="boxtitle">
       <div class="trasp">
@@ -161,6 +668,8 @@
     </div>
     <p>
       <b>Πρόγραμμα 2025</b>
+    </p>
+    (εκτυπώσιμη έκδοση <a onclick="printable(this)">εδώ</a>)
       <div class="prevworkshop">
         <table>
           <tr>
@@ -248,9 +757,10 @@
           </tr>
         </table>
       </div>
-    </p>
     <p>
       <b>Πρόγραμμα 2024</b>
+    </p>
+    (εκτυπώσιμη έκδοση <a onclick="printable(this)">εδώ</a>)
       <div class="prevworkshop">
         <table>
           <tr>
@@ -446,7 +956,6 @@
           </tr>
         </table>
       </div>
-    </p>
   </div>
   <div class="foot">
     <table>
@@ -471,6 +980,8 @@
       </tr>
     </table>
   </div>
+  <script src="js/announceitwork.js"></script>
   <script src="js/searchfunct.js"></script>
   <script src="../js/navigation.js"></script>
+  <script src="js/printable.js"></script>
 </body>
