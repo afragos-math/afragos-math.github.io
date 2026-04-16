@@ -38,7 +38,7 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Combinatorial Nullstellensatz, A32'
+              announce.innerHTML = 'The Combinatorial Nullstellensatz and some applications in classical problems, A32'
             }
           );
         } else if(currtime >= 1340 && currtime < 1400){
