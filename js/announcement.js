@@ -2,12 +2,6 @@
       var currtime = new Date();
       const today = currtime.getFullYear()*10000+(currtime.getMonth()+1)*100+currtime.getDate();
       currtime = currtime.getHours()*100+currtime.getMinutes();
-      var ongoing = Array.from(document.getElementsByClassName("ongoing"));
-      ongoing.forEach(
-        box => {
-          box.style.display = 'none';
-        }
-      );
       var ongoingpgc26 = Array.from(document.getElementsByClassName("pgc26"));
       var ongoingfestum26 = Array.from(document.getElementsByClassName("festum26"));
       var ongoinggradclub4 = Array.from(document.getElementsByClassName("gradclub4"));

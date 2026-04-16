@@ -172,7 +172,7 @@ b{
 }
 
 .ongoing{
-    display: inline-block;
+    display: none;
     width:60pt;
     background-color: #07e3d8;
     color: #ffffff;
