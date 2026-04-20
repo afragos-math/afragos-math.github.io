@@ -6,7 +6,7 @@
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
       if(today == 20260423){
-        if(currtime >= 1200 && currtime < 1205){
+        if(currtime >= 1150 && currtime < 1205){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
@@ -66,7 +66,7 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = 'Cunt`s Rose: A First Glimpse at Graph Algebras, A32'
+              announce.innerHTML = 'Cuntz`s Rose: A First Glimpse at Graph Algebras, A32'
             }
           );
         } else if(currtime >= 1445 && currtime < 1450){
