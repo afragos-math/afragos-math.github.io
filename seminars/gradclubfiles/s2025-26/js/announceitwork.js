@@ -59,7 +59,7 @@
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
-              announce.innerHTML = '---'
+              announce.innerHTML = 'Θεωρίες Μάθησης στην Γνωστική Ψυχολογία, Α32'
             }
           );
         } else if(currtime >= 1415 && currtime < 1445){

@@ -5,12 +5,21 @@
       var announcebox = document.getElementsByClassName("announceit")[0];
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
-      if (today == 20260430){
+      if (today == 20260507){
         if (currtime >= 1150 && currtime < 1315){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
               announce.innerHTML = 'Παρουσίαση, A12'
+            }
+          );
+        };
+      } else if (today == 20260429){
+        if (currtime >= 1050 && currtime < 1215){
+          announcebox.style.display = 'block';
+          [announcetxt, announcetxtmob].forEach(
+            announce => {
+              announce.innerHTML = 'Μια εισαγωγή στο πρόβλημα του Calderόn στις 3 διαστάσεις, A12'
             }
           );
         };
