@@ -15,7 +15,7 @@
           );
         };
       } else if (today == 20260429){
-        if (currtime >= 1050 && currtime < 1215){
+        if (currtime >= 1250 && currtime < 1415){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
             announce => {
