@@ -5,16 +5,26 @@
       var announcebox = document.getElementsByClassName("announceit")[0];
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
-      if (today == 20260507){
+    
+    if (today == 20260514) {
         if (currtime >= 1150 && currtime < 1315){
-          announcebox.style.display = 'block';
-          [announcetxt, announcetxtmob].forEach(
-            announce => {
-              announce.innerHTML = 'Παρουσίαση, A12'
+            announcebox.style.display = 'block';
+            [announcetxt, announcetxtmob].forEach(
+                announce => {
+                announce.innerHTML = 'Παρουσίαση, A12'
             }
           );
         };
-      } else if (today == 20260429){
+    } else if (today == 20260507){
+        if (currtime >= 1150 && currtime < 1315){
+            announcebox.style.display = 'block';
+            [announcetxt, announcetxtmob].forEach(
+                announce => {
+                announce.innerHTML = 'Eilenberg-Steenrod Axioms, Theorem, A12'
+            }
+          );
+        };
+    } else if (today == 20260429){
         if (currtime >= 1250 && currtime < 1415){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -23,7 +33,7 @@
             }
           );
         };
-      } else if (today == 20260326){
+    } else if (today == 20260326){
         if (currtime >= 1150 && currtime < 1315){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -32,7 +42,7 @@
             }
           );
         };
-      } else if (today == 20260319){
+    } else if (today == 20260319){
         if (currtime >= 1050 && currtime < 1215){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -41,7 +51,7 @@
             }
           );
         };
-      } else if (today == 20260312){
+    } else if (today == 20260312){
         if (currtime >= 1150 && currtime < 1315){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -50,7 +60,7 @@
             }
           );
         };
-      } else if (today == 20260305){
+    } else if (today == 20260305){
         if (currtime >= 1150 && currtime < 1315){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -59,7 +69,7 @@
             }
           );
         };
-      } else if (today == 20260226){
+    } else if (today == 20260226){
         if (currtime >= 1150 && currtime < 1315){
           announcebox.style.display = 'block';
           [announcetxt, announcetxtmob].forEach(
@@ -68,7 +78,7 @@
             }
           );
         };
-      } else {
+    } else {
         announcebox.style.display = 'none';
-      }
-    })();
+    }
+})();
