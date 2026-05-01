@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Anastasios Fragkos
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="../../../style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../../../images/quasiperiodictiling.png">
+</head>
+
+<body>      
+    <div class="map">
+        <a href="../../../index.html">&#9751; <b id="mapcollapse">Home</b></a> &#9866; <a href="../../../indexResearch.html">&#9967; <b id="mapcollapse">Research</b></a> &#9866; <a href="../../../indexFiles.html">&#10081; <b id="mapcollapse">Notes & Books</b></a> &#9866; <a href="../../../indexStuff.html">&#10070; <b id="mapcollapse">News & Seminars</b></a> &#9866; <a href="../../../indexMisc.html">&#10046; <b id="mapcollapse">Misc</b></a>
+    </div>
+    <div class="content">
+        <h1>&#10046; Commands for ΛacTeX</h1>
+        <div class="boxhalfcontainer">
+            <div class="boxhalf">
+                <div class="title">
+                    Categories
+                </div>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#predoc">Before the start of the document</a>
+                        </li>
+                        <li>
+                            <a href="#basicmath">Basic math</a>
+                        </li>
+                        <li>
+                            <a href="#arrows">Arrows</a>
+                        </li>
+                        <li>
+                            <a href="#chapters">Chapters and sections</a>
+                        </li>
+                        <li>
+                            <a href="#embel">Embellishments</a>
+                        </li>
+                        <li>
+                            <a href="#env">Environments</a>
+                        </li>
+                        <li>
+                            <a href="#env_math">Environments (math)</a>
+                        </li>
+                        <li>
+                            <a href="#figures">Figures</a>
+                        </li>
+                        <li>
+                            <a href="#mat">Matrices</a>
+                        </li>
+                        <li>
+                            <a href="#operators">Operators and functions</a>
+                        </li>
+                        <li>
+                            <a href="#order">Order, equivalence and related</a>
+                        </li>
+                        <li>
+                            <a href="#sets">Sets and related</a>
+                        </li>
+                        <li>
+                            <a href="#misc">Miscellaneous</a>
+                        </li>
+                    <ul>
+                </p>
+            </div>
+            <div class="spacing"></div>
+            <div class="boxhalf">
+                <div class="flc">
+                    <a href="../LacTeX/images/LacTeX-logo.png"><img src="images/LacTeX-logo.png" width="70%"></a>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;">
+            <i style="color: red;">UNDER CONSTRUCTION, MISSING STUFF</i>
+        </p>
+        <div class="box">
+            <div class="title" id="predoc">
+                Before the start of the document
+            </div>
+            <ol>
+                <li>
+                    <i id="code">VERS</i>: Specifies the version of TeX used to compile the document. It can be <i id="code">pdflatex</i>, <i id="code">lualatex</i>, etc. 
+                </li>
+                <li>
+                    <i id="code">CLASS</i>: Specifies class.
+                </li>
+                <li>
+                    <i id="code">INPUT</i>: Inputs files. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">PAC</i>: Include packages. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">INNIT</i>: Includes pre-made code. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="basicmath">
+                Basic math
+            </div>
+            <ol>
+                <li>
+                    <i id="code">&nbsp;&nbsp;</i> (its <i id="code">&nbsp;</i>x2): Regular math mode.
+                </li>
+                <li>
+                    <i id="code">&nbsp;&nbsp;&nbsp;</i> (its <i id="code">&nbsp;</i>x3): Display math mode.
+                </li>
+                <li>
+                    <i id="code">.</i>: Is <i id="code">\cdot</i> inside math mode.
+                </li>
+                <li>
+                    <i id="code">_ a _</i>: Is <i id="code">_{a}</i>. You can also use <i id="code">_{a}</i> instead.
+                </li>
+                <li>
+                    <i id="code">^ a ^</i>: Is <i id="code">^{a}</i>. You can also use <i id="code">^{a}</i> instead.
+                </li>
+                <li>
+                    <i id="code">F/ {}{}</i>: Is <i id="code">\frac{}{}</i>.
+                </li>
+                <li>
+                    <i id="code">F// {}{}</i>: Is <i id="code">\dfrac{}{}</i>.
+                </li>
+            </ol>
+            <div class="title" id="arrows">
+                Arrows
+            </div>
+            <ol>
+                <li>
+                    <i id="code"><=</i>: Is <i id="code">\Leftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">=></i>: Is <i id="code">\Rightarrow</i>.
+                </li>
+                <li>
+                    <i id="code"><-</i>: Is <i id="code">\leftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">-></i>: Is <i id="code">\rightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;=></i>: Is <i id="code">\Leftrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-></i>: Is <i id="code">\leftrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;\</i>: Is <i id="code">\nwarrow</i>.
+                </li>
+                <li>
+                    <i id="code">/></i>: Is <i id="code">\nearrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;/</i>: Is <i id="code">\swarrow</i>.
+                </li>
+                <li>
+                    <i id="code">\></i>: Is <i id="code">\searrow</i>.
+                </li>
+                <li>
+                    <i id="code">|^</i>: Is <i id="code">\uparrow</i>.
+                </li>
+                <li>
+                    <i id="code">|v</i>: Is <i id="code">\uparrow</i>.
+                </li>
+                <li>
+                    <i id="code">||^</i>: Is <i id="code">\uparrow</i>.
+                </li>
+                <li>
+                    <i id="code">||v</i>: Is <i id="code">\uparrow</i>.
+                </li>
+                <li>
+                    <i id="code">|^v</i>: Is <i id="code">\updownarrow</i>.
+                </li>
+                <li>
+                    <i id="code">||^v</i>: Is <i id="code">\Updownarrow</i>.
+                </li>
+                <li>
+                    <i id="code">->-></i>: Is <i id="code">\rightrightarrows</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-&lt;-</i>: Is <i id="code">\leftleftarrows</i>.
+                </li>
+                <li>
+                    <i id="code">|-></i>: Is <i id="code">\mapsto</i>.
+                </li>
+                <li>
+                    <i id="code">->/2</i>: Is <i id="code">\rightharpoonup</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-/2</i>: Is <i id="code">\leftharpoonup</i>.
+                </li>
+                <li>
+                    <i id="code">c-></i>: Is <i id="code">\hookrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-c</i>: Is <i id="code">\hookleftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">>-></i>: Is <i id="code">\rightarrowtail</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-&lt;</i>: Is <i id="code">\leftarrowtail</i>.
+                </li>
+                <li>
+                    <i id="code">->></i>: Is <i id="code">\twoheadrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;&lt;-</i>: Is <i id="code">\twoheadleftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">x-></i>: Is <i id="code">\xrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;-x</i>: Is <i id="code">\xleftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">x&lt;-></i>: Is <i id="code">\xleftrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">x=></i>: Is <i id="code">\xRightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;=x</i>: Is <i id="code">\xLeftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">x&lt;=></i>: Is <i id="code">\xLeftrightarrow</i>.
+                </li>
+            </ol>
+            <div class="title" id="chapters">
+                Chapters and sections
+            </div>
+            <ol>
+                <li>
+                    <i id="code">CHAPTER</i>: Is <i id="code">\chapter</i>.
+                </li>
+                <li>
+                    <i id="code">SECTION</i>: Is <i id="code">\section</i>.
+                </li>
+                <li>
+                    <i id="code">SUBSECTION</i>: Is <i id="code">\subsection</i>.
+                </li>
+                <li>
+                    <i id="code">SUBSUBSECTION</i>: Is <i id="code">\subsection</i>.
+                </li>
+            </ol>
+            <div class="title" id="embel">
+                Embellishments
+            </div>
+            <ol>
+                <li>
+                    <i id="code">ACUTE</i>: Is <i id="code">\acute</i>.
+                </li>
+                <li>
+                    <i id="code">BAR</i>: Is <i id="code">\bar</i>.
+                </li>
+                <li>
+                    <i id="code">BREVE</i>: Is <i id="code">\breve</i>.
+                </li>
+                <li>
+                    <i id="code">DOT</i>: Is <i id="code">\dot</i>.
+                </li>
+                <li>
+                    <i id="code">DDOT</i>: Is <i id="code">\ddot</i>.
+                </li>
+                <li>
+                    <i id="code">HAT</i>: Is <i id="code">\hat</i>.
+                </li>
+                <li>
+                    <i id="code">WHAT</i>: Is <i id="code">\widehat</i>.
+                </li>
+                <li>
+                    <i id="code">GRAVE</i>: Is <i id="code">\grave</i>.
+                </li>
+                <li>
+                    <i id="code">MATHRING</i>: Is <i id="code">\mathring</i>.
+                </li>
+                <li>
+                    <i id="code">VEC</i>: Is <i id="code">\vec</i>.
+                </li>
+                <li>
+                    <i id="code">TIL</i>: Is <i id="code">\tilde</i>.
+                </li>
+                <li>
+                    <i id="code">WTIL</i>: Is <i id="code">\widetilde</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER_</i>: Is <i id="code">\underline</i>.
+                </li>
+                <li>
+                    <i id="code">OVER_</i>: Is <i id="code">\overline</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER}</i>: Is <i id="code">\underbrace</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER]</i>: Is <i id="code">\underbracket</i>.
+                </li>
+                <li>
+                    <i id="code">OVER]</i>: Is <i id="code">\overbracket</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER-></i>: Is <i id="code">\underrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">OVER-></i>: Is <i id="code">\overrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER&lt;-</i>: Is <i id="code">\underleftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">OVER&lt;-</i>: Is <i id="code">\overleftarrow</i>.
+                </li>
+                <li>
+                    <i id="code">UNDER&lt;-></i>: Is <i id="code">\underleftrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">OVER&lt;-></i>: Is <i id="code">\overleftrightarrow</i>.
+                </li>
+                <li>
+                    <i id="code">L&lt;</i>: Is <i id="code">\langle</i>.
+                </li>
+                <li>
+                    <i id="code">R></i>: Is <i id="code">\rangle</i>.
+                </li>
+                <li>
+                    <i id="code">|_</i>: Is <i id="code">\lfloor</i>.
+                </li>
+                <li>
+                    <i id="code">_|</i>: Is <i id="code">\rfloor</i>.
+                </li>
+                <li>
+                    <i id="code">|-</i>: Is <i id="code">\lceil</i>.
+                </li>
+                <li>
+                    <i id="code">-|</i>: Is <i id="code">\rceil</i>.
+                </li>
+            </ol>
+            <div class="title" id="env">
+                Environments
+            </div>
+            <ol>
+                <li>
+                    <i id="code">CENTER</i>: Is <i id="code">\begin{center}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">ENUMERATE</i>: Is <i id="code">\begin{enumerate}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">ITEMIZE</i>: Is <i id="code">\begin{itemize}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">TABULAR</i>: Is <i id="code">\begin{tabular}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">CONJ</i>: Is <i id="code">\begin{conjecture}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">COR</i>: Is <i id="code">\begin{corollary}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">DEF</i>: Is <i id="code">\begin{definition}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">EXER</i>: Is <i id="code">\begin{exercise}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">LEM</i>: Is <i id="code">\begin{lemma}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">PROP</i>: Is <i id="code">\begin{proposition}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">REM</i>: Is <i id="code">\begin{remark}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">THM</i>: Is <i id="code">\begin{theorem}</i>. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="env_math">
+                Environments (math)
+            </div>
+            <ol>
+                <li>
+                    <i id="code">ALIGN</i>: Is <i id="code">\begin{align}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">ALIGN*</i>: Is <i id="code">\begin{align*}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">EQU</i>: Is <i id="code">\begin{equation}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">EQU*</i>: Is <i id="code">\begin{equation*}</i>. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="figures">
+                Figures
+            </div>
+            <ol>
+                <li>
+                    <i id="code">FIGURE</i>: Is <i id="code">\begin{figure}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">GRAPHICS</i>: Is <i id="code">\include{graphics}</i>. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="mat">
+                Matrices
+            </div>
+            <ol>
+                <li>
+                    <i id="code">MAT</i>: Is <i id="code">\begin{matrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">PMAT</i>: Is <i id="code">\begin{pmatrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">BMAT</i>: Is <i id="code">\begin{bmatrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">BBMAT</i>: Is <i id="code">\begin{Bmatrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">VMAT</i>: Is <i id="code">\begin{vmatrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">VVMAT</i>: Is <i id="code">\begin{Vmatrix}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
+                    <i id="code">CDOTS</i>: Is <i id="code">\cdots</i>.
+                </li>
+                <li>
+                    <i id="code">DDOTS</i>: Is <i id="code">\ddots</i>.
+                </li>
+                <li>
+                    <i id="code">LDOTS</i>: Is <i id="code">\ldots</i>.
+                </li>
+                <li>
+                    <i id="code">VDOTS</i>: Is <i id="code">\vdots</i>.
+                </li>
+            </ol>
+            <div class="title" id="operators">
+                Order, equivalence and related
+            </div>
+            <p>Exist in ΛaTeX, I will include them here later</p>
+            <div class="title" id="order">
+                Order, equivalence and related
+            </div>
+            <p>Exist in ΛaTeX, I will include them here later</p>
+            <div class="title" id="sets">
+                Sets and related
+            </div>
+            <p>Exist in ΛaTeX, I will include them here later</p>
+            <div class="title" id="text">
+                Text and calligraphy
+            </div>
+            <ol>
+                <li>
+                    <i id="code">** a **</i>: Is <i id="code">\textbf{a}</i>.
+                </li>
+                <li>
+                    <i id="code">// a //</i>: Is <i id="code">\textit{a}</i>.
+                </li>
+                <li>
+                    <i id="code">BF aaa</i>: Is <i id="code">\mathbf{aaa}</i>.
+                </li>
+                <li>
+                    <i id="code">BB AAA</i>: Is <i id="code">\mathbb{AAA}</i>.
+                </li>
+                <li>
+                    <i id="code">CAL AAA</i>: Is <i id="code">\mathcal{AAA}</i>.
+                </li>
+                <li>
+                    <i id="code">FRAK AAA</i>: Is <i id="code">\mathfrak{AAA}</i>.
+                </li>
+                <li>
+                    <i id="code">RMN aaa</i>: Is <i id="code">\mathrm{aaa}</i>.
+                </li>
+                <li>
+                    <i id="code">SCR AAA</i>: Is <i id="code">\mathscr{AAA}</i>.
+                </li>
+                <li>
+                    <i id="code">TEXT</i>: Is <i id="code">\text</i>. Regular text inside math mode. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="misc">
+                Miscellaneous
+            </div>
+            <p>Exist in ΛaTeX, I will include them here later</p>
+            <p style="text-align: center;">
+                <a href="../../../images/Lua.png"><img src="../../../images/Lua.png" width="10%"></a>
+            </p>
+        </div>
+        <div class="flc">
+            <p>
+                <i>Hosting service: <a href="https://github.com">Github</a></i>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

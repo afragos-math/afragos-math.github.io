@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Anastasios Fragkos
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="../../style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../../images/quasiperiodictiling.png">
+</head>
+
+<body>      
+    <div class="map">
+        <a href="../../index.html">&#9751; <b id="mapcollapse">Home</b></a> &#9866; <a href="../../indexResearch.html">&#9967; <b id="mapcollapse">Research</b></a> &#9866; <a href="../../indexFiles.html">&#10081; <b id="mapcollapse">Notes & Books</b></a> &#9866; <a href="../../indexStuff.html">&#10070; <b id="mapcollapse">News & Seminars</b></a> &#9866; <a href="../../indexMisc.html">&#10046; <b id="mapcollapse">Misc</b></a>
+    </div>
+    <div class="content">
+        <h1>&#10046; ΛacTeX</h1>
+        <div class="boxhalfcontainer">
+            <div class="boxhalf">
+                <div class="title">
+                    Contents
+                </div>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#chap1">What is ΛacTeX?</a>
+                        </li>
+                        <li>
+                            <a href="#chap2">Where is it?</a>
+                        </li>
+                        <li>
+                            <a href="#chap3">How do I use it?</a>
+                        </li>
+                        <li>
+                            <a href="#chap4">List of commands</a>
+                        </li>
+                        <li>
+                            <a href="#chap5">How do I provide suggestions and report bugs?</a>
+                        </li>
+                        <li>
+                            <a href="#chap6">Changelog</a>
+                        </li>
+                    <ul>
+                </p>
+            </div>
+            <div class="spacing"></div>
+            <div class="boxhalf">
+                <div class="flc">
+                    <a href="LacTeX/images/LacTeX-logo.png"><img src="LacTeX/images/LacTeX-logo.png" width="70%"></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title" id="chap1">
+                What is ΛacTeX?
+            </div>
+            <p>
+                In short: ΛacTeX is a small collection of code (in <a href="https://www.lua.org/">Lua</a>) to make typesetting in LaTeX easier, by simplifying the commands used as well as the document structure.
+            </p>
+            <p>
+                Before I go on explaining more in depth, I must make some <i style="color: red;">disclaimers</i>:
+                <ul>
+                    <li>
+                        This is more of a personal project that I decided to make public and less of a tool for wide use. You may find that, while I consider it simpler and faster than standard LaTeX syntax, you don't. It's a matter of personal preference. Therefore, see this as more as a "proof of concept" or as something you can edit yourself. 
+                    </li>
+                    <li>
+                        One of the main features of ΛacTeX is that math environment delimeters like <i id="code">$</i>, <i id="code">$$</i>, <i id="code">\[ ... \]</i>, <i id="code">math</i>, <i id="code">displaymath</i> have been replaced by 2-spaces <i id="code">&nbsp;&nbsp;</i> for simple math mode and by 3-spaces <i id="code">&nbsp;&nbsp;&nbsp;</i> for display mode. This might confuse you at first or you may not want to use this kind of syntax. You can alter these in <i id="code">controls.lua</i> to use your prefered choice of delimeters.
+                    </li>
+                    <li>
+                        Spaces are important in general in ΛacTeX. Not only because of math mode, this is just one thing; but since commands do not initiate with backslashes <i id="code">\</i>, there must be some differentiating factor, in order not to confuse them with plain, regular words. This means, in practice, that (for example) you <i style="color: red;">cannot</i> do <i id="code">alpha_{i}</i> or <i id="code">α_{i}</i> but you <i style="color: olive;">can</i> do <i id="code">alpha _{i}</i> or <i id="code">α _{i}</i>. Similarly, you <i style="color: red;">cannot</i> do <i id="code">INT_{a}^{b}</i> but you <i style="color: olive;">can</i> do <i id="code">INT _{a}^{b}</i>. By the way, there exist other ways to make sub/sup-scripts; see the <a href="#chap5">List of commands</a> section bellow.
+                    </li>
+                    <li>
+                        Another important thing concerning spaces: Tabs must be registered as a sequence of 4 spaces for ΛacTeX to work "out of the box" (in order not to be confused with math mode). Usually, this is the case (such as in Visual Studio Code or in Kate editors, but not in Vim, where it is a humongus 8). If you are experiencing issues, you can:
+                        <ul>
+                            <li>
+                                Either change how many spaces your tabs are, in your editor of choice,
+                            </li>
+                            <li>
+                                Or, in <i id="code">controls.lua</i>, change how many spaces you want your tabs or math modes to be (or change the command altogether).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        I have tried to make the code readable and use a simple programming language, so feel free to modify anything to fit your needs. Find it in the <a href="#chap2">Where is it?</a> section.
+                    </li>
+                    <li>
+                        This is a preliminary version. Expect to find nasty stuff (bugs, explosions, etc).
+                    </li>
+                </ul>
+                ΛacTeX is a amalgam of the words Laconic (Λακωνικός, meaning simple, with few words) and TeX. Its purpose is to read some <i id="code">.txt</i> document with ΛacTeX commands and export another <i id="code">.tex</i> document, in LaTeX. Below, as an example, there is a simple ΛacTeX document, which:
+            </p>
+            <ul>
+                <li>Sets its version to <i id="code">lualatex</i> (this is used if you choose to compile to a pdf using <i id="code">lac.lua</i>),</li>
+                <li>Sets its document class to <i id="code">book</i>, with attributes <i id="code">[a4,12pt]</i>,
+                <li>Inputs a file <i id="code">test_file.tex</i>,</li>
+                <li>Uses some packages, say <i id="code">amsmath</i>, <i id="code">amsfonts</i>, <i id="code">amsthm</i>, <i id="code">OldStandard</i> as well as <i id="code">babel</i> and <i id="code">fontenc</i>, with attributes <i id="code">[greek,english]</i> and <i id="code">[T1]</i> respectively,</li>
+                <li>Defines theorem-like environments, such as <i id="code">theorem</i>, <i id="code">lemma</i>, <i id="code">proposition</i> et cetera,</li>
+                <li>Writes some text, some regular math, some display math and a theorem.</li>
+            </ul>
+            <p> 
+                Later on, we will see how to construct it and export it to LaTeX, in the <a href="#chap3">How do I use it?</a> section.
+            </p>
+            <a onclick="copy(this)" id="copy_button">Copy</a>
+            <div id="code">
+                VERS LUALATEX<br><br>
+                CLASS BOOK [a4,12pt]<br><br>
+                INPUT<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;test_file.tex<br>
+                END<br><br>
+                PAC<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;babel [greek,english]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;fontenc [T1]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;amsmath<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;amsfonts<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;amsthm<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;OldStandard<br>
+                END<br><br>
+                INNIT<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;THMS<br>
+                END<br><br>
+                START<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;This is some text and some math &nbsp;SUM _{ k IN |N } 1 / k&nbsp; .<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;THM [Some theorem of Fourier Analysis]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For every &nbsp;f&nbsp; in &nbsp;RMN L ^2&nbsp; it holds:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(x) = SUM _{ k IN |Z } HAT f (k) e ^{ikx}&nbsp;&nbsp;&nbsp;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where the Fourier coefficients &nbsp;HAT f (k)&nbsp; are defined as:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HAT f (k) = F// {1}{2 π } INT _{- π }^{ π } f(x) e^{-ikx} dx&nbsp;&nbsp;&nbsp;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;END<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;See, this is an equation:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;EQU<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(x) = SUM _{ k IN |Z } HAT f (k) e ^{ikx}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;END<br>
+                END
+            </div>
+            <p></p>
+            <div class="title" id="chap2">
+                Where is it?
+            </div>
+            <p>
+                All of the code is available on GitHub:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/afragos-math/LacTeX">ΛacTeX on GitHub</a>
+                </li>
+            </ul>
+            <p>
+                Feel free to download it and modify it.
+            </p>
+            <div class="title" id="chap3">
+                How do I use it?
+            </div>
+            <p>
+                Practical things first: Currently there is no <i id="code">.exe</i> or <i id="code">.AppImage</i> executable available. If a non-negligible amount of people request it, I will make it. 
+            </p>
+            <p>
+                So, to run it, you will need to have Lua installed (it's very small in size). I have tried 5.1 upwards, but you shouldn't have problems with earlier versions too. If you have Linux, you can download it from your packet manager, or check <a href="https://www.lua.org/download.html">here</a>. If you have Windows, check <a href="https://luabinaries.sourceforge.net/">here</a>. If you have MacOS, you are on your own.
+            </p>
+            <p>
+                After you have downloaded Lua and the code, you can write your ΛacTeX in <i id="code">input.txt</i> and compile in terminal <i id="code">lua lac.lua</i>. You will get your LaTeX code in <i id="code">file.tex</i>. You can change your input-output files in <i id="code">controls.lua</i>. By default, file.tex is not executed; if you want to compile your code and get a pdf, in <i id="code">controls.lua</i> change <i id="code">execute_tex = true</i>. Of course, you need to have some version of tex installed (ex. texlive).
+            </p>
+            <p>
+                How is a ΛacTeX document structured? Its about time we construct, step by step, an example. To start, use <i id="code">VERS</i> followed by the version of TeX you want to use to compile your document. As mentioned before, 
+            </p>
+            <ul>
+                <li>
+                    To start, use <i id="code">VERS</i> followed by the version of TeX you want to use to compile your document. As mentioned before, the output is not compiled by default, but you can change that on <i id="code">controls.lua</i>. If you don't include this step, the default is <i id="code">pdflatex</i>. Of course, you can change what the default is.
+                </li>
+                <li>
+                    Then, use <i id="code">CLASS</i> followed by the class name, to specify <i id="code">\documentclass{}</i>. After the class' name you can include any attributes, inside brackets, with no spaces in between. For example, <i id="code">CLASS BOOK [a4,12pt]</i> gives <i id="code">\documentclass [a4,12pt]{book}</i>. Right now you must include a class, but it will be optional in the next update.
+                </li>
+                <li>
+                    Using the following, you can input files <i id="code">\input{test_file.tex}</i>. You can also do it in-line, if you prefer.
+                </li>
+            </ul>
+            <a onclick="copy(this)" id="copy_button">Copy</a>
+            <div id="code">
+                INPUT<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;test_file.tex<br>
+                END
+            </div>
+            <ul>
+                <li>
+                    You can include packages by the following. Notice that attributes follow the package name, inside brackets, leaving no spaces in between them. You can also do it in-line, if you prefer.
+                </li>
+            </ul>
+            <a onclick="copy(this)" id="copy_button">Copy</a>
+            <div id="code">
+                PAC<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;some_package [attribute1,attribute2]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;some_other_package<br>
+                END
+            </div>
+            <ul>
+                <li>
+                    If you want to use theorem-like environments, such as <i id="code">theorem</i>, <i id="code">proposition</i>, <i id="code">lemma</i> etc, you can include the following code. (That's nifty, innit? Now you understand why I wrote innit this way). This step provides with all the code needed to use these environments inside the document, afterwards. Currently this is its only use, but I plan to enrich it so you can include other premade code.
+                </li>
+            </ul>
+            <a onclick="copy(this)" id="copy_button">Copy</a>
+            <div id="code">
+                INNIT<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;THMS<br>
+                END
+            </div>
+            <ul>
+                <li>
+                    To start the document (<i id="code">\begin{document} ... \end{document}</i>), use:
+                </li>
+            </ul>
+            <a onclick="copy(this)" id="copy_button">Copy</a>
+            <div id="code">
+                START<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                END
+            </div>
+            <p>
+                Inside the <i id="code">START</i> environment you can use the respective commands provided in the next section. <i style="color: red;">Important notice</i>: You can insert as many tabs as you want to keep your document neatly organised. Just have in mind that, after your tabs, you need to add extra spaces for math mode.
+            </p>
+            <div class="title" id="chap4">
+                List of commands
+            </div>
+            <p>
+                Constantly updating. I have tried to include much of LaTeX's utility, while also keeping the collection of commands relatively small and compact. After all, this is supposed to make things simpler, not overwhelm us.
+            <p>
+            <ul>
+                <li>
+                    <a href="LacTeX/commands.html">List of commands</a>
+                </li>
+            </ul>
+            <div class="title" id="chap5">
+                How do I provide suggestions and report bugs?
+            </div>
+            <p>
+                You can mail me at:
+            </p>
+            <ul>
+                <li id="secrmail">@</li>
+            </ul>
+            <p>
+                Or find me in person, in Zografou (Off. 120, dept. of Math.). Always mention what the problem is (roughly), don't just send <i id="code">.txt</i> files.
+            </p>
+            <div class="title" id="chap6">
+                Changelog
+            </div>
+            <div id="code">
+                <ul>
+                    <li>
+                        20260501-23:15: Included more commands, such as embellishments in math mode, arrows, basic symbols. Now you can change the input and output files in controls.lua.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        20260430-23:00: Prototype.
+                    </li>
+                </ul>
+            </div>
+            <p></p>
+            <div class="title">
+                Things to add in the future
+            </div>
+            <div id=code>
+                <ul>
+                    <li>
+                        [High] Remove the necessity to include a class.
+                    </li>
+                    <li>
+                        [Medium] Include TikZ.
+                    </li>
+                    <li>
+                        [Medium] Prepare a PDF with the complete collection of commands. Complete the List of commands in the site.
+                    </li>
+                    <li>
+                        [Medium] Add START*, which initiates the document without \begin{document} ... \end{document}, so that ΛacTeX documents can be imported to input.txt
+                    </li>
+                    <li>
+                        [Low] Include code blocks and directlua.
+                    </li>
+                    <li>
+                        [Low] Keep ΛacTeX indentation when converting to LaTeX.
+                    </li>
+                    <li>
+                        [Low] Forgot to include \part. Oops! Fix tabular, center, updownarrow on the backup.
+                    </li>
+                </ul>
+            </div>
+            <p style="text-align: center;">
+                <a href="../../images/Lua.png"><img src="../../images/Lua.png" width="10%"></a>
+            </p>
+        </div>
+        <div class="flc">
+            <p>
+                <i>Hosting service: <a href="https://github.com">Github</a></i>
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/copy.js"></script>
+
+</html>
