@@ -98,6 +98,15 @@
                 <li>
                     <i id="code">INNIT</i>: Includes pre-made code. Followed by <i id="code">END</i>.
                 </li>
+                <li>
+                    <i id="code">THMS</i>: Inside the <i id="code">INNIT</i> environment, it provides premade code for theorem-like boxes.
+                </li>
+                <li>
+                    <i id="code">NEWCOMMAND .. IS ... END</i>: Defines a new command as <i id="code">\newcommand{..}{...}</i>.
+                </li>
+                <li>
+                    <i id="code">NEWCOMMAND .. [.] IS ... END</i>: Defines a new command as <i id="code">\newcommand{..}[.]{...}</i>. More than one bracket can be used too.
+                </li>
             </ol>
             <div class="title" id="basicmath">
                 Basic math
@@ -117,6 +126,9 @@
                 </li>
                 <li>
                     <i id="code">^ a ^</i>: Is <i id="code">^{a}</i>. You can also use <i id="code">^{a}</i> instead.
+                </li>
+                <li>
+                    <i id="code">SQRT</i>: Is <i id="code">\sqrt</i>.
                 </li>
                 <li>
                     <i id="code">F/ {}{}</i>: Is <i id="code">\frac{}{}</i>.
@@ -233,6 +245,9 @@
                 Chapters and sections
             </div>
             <ol>
+                <li>
+                    <i id="code">PART</i>: Is <i id="code">\part</i>.
+                </li>
                 <li>
                     <i id="code">CHAPTER</i>: Is <i id="code">\chapter</i>.
                 </li>
@@ -352,6 +367,9 @@
                     <i id="code">ITEMIZE</i>: Is <i id="code">\begin{itemize}</i>. Followed by <i id="code">END</i>.
                 </li>
                 <li>
+                    <i id="code">ITEM</i>: Is <i id="code">\item</i>.
+                </li>
+                <li>
                     <i id="code">TABULAR</i>: Is <i id="code">\begin{tabular}</i>. Followed by <i id="code">END</i>.
                 </li>
                 <li>
@@ -443,17 +461,266 @@
                 </li>
             </ol>
             <div class="title" id="operators">
-                Order, equivalence and related
+                Operators and functions
             </div>
-            <p>Exist in ΛaTeX, I will include them here later</p>
+            <ol>
+                <li>
+                    <i id="code">ETH</i>: Is <i id="code">\eth</i>.
+                </li>
+                <li>
+                    <i id="code">NAB</i>: Is <i id="code">\nabla</i>.
+                </li>
+                <li>
+                    <i id="code">INT</i>: Is <i id="code">\int</i>.
+                </li>
+                <li>
+                    <i id="code">IINT</i>: Is <i id="code">\iint</i>.
+                </li>
+                <li>
+                    <i id="code">IIINT</i>: Is <i id="code">\iiint</i>.
+                </li>
+                <li>
+                    <i id="code">IIIINT</i>: Is <i id="code">\iiiint</i>.
+                </li>
+                <li>
+                    <i id="code">OINT</i>: Is <i id="code">\oint</i>.
+                </li>
+                <li>
+                    <i id="code">PD</i>: Is <i id="code">\partial</i>.
+                </li>
+                <li>
+                    <i id="code">PROD</i>: Is <i id="code">\prod</i>.
+                </li>
+                <li>
+                    <i id="code">COPROD</i>: Is <i id="code">\coprod</i>.
+                </li>
+                <li>
+                    <i id="code">SUM</i>: Is <i id="code">\sum</i>.
+                </li>
+                <li>
+                    <i id="code">ARCSIN</i>: Is <i id="code">\arcsin</i>.
+                </li>
+                <li>
+                    <i id="code">SIN</i>: Is <i id="code">\sin</i>.
+                </li>
+                <li>
+                    <i id="code">ARCCOS</i>: Is <i id="code">\arccos</i>.
+                </li>
+                <li>
+                    <i id="code">COS</i>: Is <i id="code">\cos</i>.
+                </li>
+                <li>
+                    <i id="code">ARCTAN</i>: Is <i id="code">\arctan</i>.
+                </li>
+                <li>
+                    <i id="code">TAN</i>: Is <i id="code">\tan</i>.
+                </li>
+                <li>
+                    <i id="code">ARCCOT</i>: Is <i id="code">\arccot</i>.
+                </li>
+                <li>
+                    <i id="code">COT</i>: Is <i id="code">\cot</i>.
+                </li>
+                <li>
+                    <i id="code">ARCSEC</i>: Is <i id="code">\arcsec</i>.
+                </li>
+                <li>
+                    <i id="code">SEC</i>: Is <i id="code">\sec</i>.
+                </li>
+                <li>
+                    <i id="code">ARCCSC</i>: Is <i id="code">\arccsc</i>.
+                </li>
+                <li>
+                    <i id="code">CSC</i>: Is <i id="code">\csc</i>.
+                </li>
+                <li>
+                    <i id="code">SINH</i>: Is <i id="code">\sinh</i>.
+                </li>
+                <li>
+                    <i id="code">COSH</i>: Is <i id="code">\cosh</i>.
+                </li>
+                <li>
+                    <i id="code">TANH</i>: Is <i id="code">\tanh</i>.
+                </li>
+                <li>
+                    <i id="code">COTH</i>: Is <i id="code">\coth</i>.
+                </li>
+                <li>
+                    <i id="code">MAX</i>: Is <i id="code">\max</i>.
+                </li>
+                <li>
+                    <i id="code">MIN</i>: Is <i id="code">\min</i>.
+                </li>
+                <li>
+                    <i id="code">SUP</i>: Is <i id="code">\sup</i>.
+                </li>
+                <li>
+                    <i id="code">INF</i>: Is <i id="code">\inf</i>.
+                </li>
+            </ol>
             <div class="title" id="order">
                 Order, equivalence and related
             </div>
-            <p>Exist in ΛaTeX, I will include them here later</p>
+            <ol>
+                <li>
+                    <i id="code">&lt;,=</i>: Is <i id="code">\leqslant</i>.
+                </li>
+                <li>
+                    <i id="code">>,=</i>: Is <i id="code">\geqslant</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;,~</i>: Is <i id="code">\lesssim</i>.
+                </li>
+                <li>
+                    <i id="code">>,~</i>: Is <i id="code">\gtrsim</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;,~~</i>: Is <i id="code">\lessapprox</i>.
+                </li>
+                <li>
+                    <i id="code">>,~~</i>: Is <i id="code">\gtrapprox</i>.
+                </li>
+                <li>
+                    <i id="code">&lt;&lt;</i>: Is <i id="code">\ll</i>.
+                </li>
+                <li>
+                    <i id="code">>></i>: Is <i id="code">\gg</i>.
+                </li>
+                <li>
+                    <i id="code">==</i>: Is <i id="code">\equiv</i>.
+                </li>
+                <li>
+                    <i id="code">~~</i>: Is <i id="code">\sim</i>.
+                </li>
+                <li>
+                    <i id="code">~~~</i>: Is <i id="code">\approx</i>.
+                </li>
+                <li>
+                    <i id="code">~=</i>: Is <i id="code">\leqslant</i>.
+                </li>
+                <li>
+                    <i id="code">NEQ</i>: Is <i id="code">\neq</i>.
+                </li>
+            </ol>
             <div class="title" id="sets">
                 Sets and related
             </div>
-            <p>Exist in ΛaTeX, I will include them here later</p>
+            <ol>
+                <li>
+                    <i id="code">ALEPH</i>: Is <i id="code">\aleph</i>.
+                </li>
+                <li>
+                    <i id="code">IN</i>: Is <i id="code">\in</i>.
+                </li>
+                <li>
+                    <i id="code">NI</i>: Is <i id="code">\ni</i>.
+                </li>
+                <li>
+                    <i id="code">MID</i>: Is <i id="code">\mid</i>.
+                </li>
+                <li>
+                    <i id="code">MODELS</i>: Is <i id="code">\models</i>.
+                </li>
+                <li>
+                    <i id="code">NEG</i>: Is <i id="code">\neg</i>.
+                </li>
+                <li>
+                    <i id="code">FORALL</i>: Is <i id="code">\forall</i>. 
+                </li>
+                <li>
+                    <i id="code">EXISTS</i>: Is <i id="code">\exists</i>.
+                </li>
+                <li>
+                    <i id="code">OPLUS</i>: Is <i id="code">\oplus</i>.
+                </li>
+                <li>
+                    <i id="code">OTIMES</i>: Is <i id="code">\otimes</i>.
+                </li>
+                <li>
+                    <i id="code">PERP</i>: Is <i id="code">\perp</i>.
+                </li>
+                <li>
+                    <i id="code">VDASH</i>: Is <i id="code">\vdash</i>.
+                </li>
+                <li>
+                    <i id="code">DASHV</i>: Is <i id="code">\dashv</i>.
+                </li>
+                <li>
+                    <i id="code">SBS</i>: Is <i id="code">\subset</i>.
+                </li>
+                <li>
+                    <i id="code">SPS</i>: Is <i id="code">\supset</i>.
+                </li>
+                <li>
+                    <i id="code">SPS=</i>: Is <i id="code">\subseteq</i>.
+                </li>
+                <li>
+                    <i id="code">SPS=</i>: Is <i id="code">\supseteq</i>.
+                </li>
+                <li>
+                    <i id="code">\</i>: Is <i id="code">\backslash</i>.
+                </li>
+                <li>
+                    <i id="code">/0</i>: Is <i id="code">\emptyset</i>.
+                </li>
+                <li>
+                    <i id="code">oo</i>: Is <i id="code">\infty</i>.
+                </li>
+                <li>
+                    <i id="code">CAP</i>: Is <i id="code">\cap</i>.
+                </li>
+                <li>
+                    <i id="code">cup</i>: Is <i id="code">\cup</i>.
+                </li>
+                <li>
+                    <i id="code">BCAP</i>: Is <i id="code">\bigcap</i>.
+                </li>
+                <li>
+                    <i id="code">BCUP</i>: Is <i id="code">\bigcup</i>.
+                </li>
+                <li>
+                    <i id="code">OR</i>: Is <i id="code">\or</i>.
+                </li>
+                <li>
+                    <i id="code">AND</i>: Is <i id="code">\and</i>.
+                </li>
+                <li>
+                    <i id="code">NOT</i>: Is <i id="code">\not</i>.
+                </li>
+                <li>
+                    <i id="code">TIMES</i>: Is <i id="code">\times</i>.
+                </li>
+                <li>
+                    <i id="code">|N</i>: Is <i id="code">\mathbb{N}</i>.
+                </li>
+                <li>
+                    <i id="code">|Z</i>: Is <i id="code">\mathbb{Z}</i>.
+                </li>
+                <li>
+                    <i id="code">|Q</i>: Is <i id="code">\mathbb{Q}</i>.
+                </li>
+                <li>
+                    <i id="code">|A</i>: Is <i id="code">\mathbb{A}</i>.
+                </li>
+                <li>
+                    <i id="code">|R</i>: Is <i id="code">\mathbb{R}</i>.
+                </li>
+                <li>
+                    <i id="code">|C</i>: Is <i id="code">\mathbb{C}</i>.
+                </li>
+                <li>
+                    <i id="code">|H</i>: Is <i id="code">\mathbb{H}</i>.
+                </li>
+                <li>
+                    <i id="code">|S</i>: Is <i id="code">\mathbb{S}</i>.
+                </li>
+                <li>
+                    <i id="code">IM</i>: Is <i id="code">\Im</i>.
+                </li>
+                <li>
+                    <i id="code">RE</i>: Is <i id="code">\Re</i>.
+                </li>
+            </ol>
             <div class="title" id="text">
                 Text and calligraphy
             </div>
@@ -489,7 +756,56 @@
             <div class="title" id="misc">
                 Miscellaneous
             </div>
-            <p>Exist in ΛaTeX, I will include them here later</p>
+            <ol>
+                <li>
+                    <i id="code">BOT</i>: Is <i id="code">\bot</i>.
+                </li>
+                <li>
+                    <i id="code">BOX</i>: Is <i id="code">\box</i>.
+                </li>
+                <li>
+                    <i id="code">CITE</i>: Is <i id="code">\cite</i>.
+                </li>
+                <li>
+                    <i id="code">HBAR</i>: Is <i id="code">\hbar</i>.
+                </li>
+                <li>
+                    <i id="code">HFILL</i>: Is <i id="code">\hfill</i>.
+                </li>
+                <li>
+                    <i id="code">LABEL</i>: Is <i id="code">\label</i>.
+                </li>
+                <li>
+                    <i id="code">LEFT</i>: Is <i id="code">\left</i>.
+                </li>
+                <li>
+                    <i id="code">NONAME</i>: Is <i id="code">\noname</i>.
+                </li>
+                <li>
+                    <i id="code">QED</i>: Is <i id="code">\qed</i>.
+                </li>
+                <li>
+                    <i id="code">REF</i>: Is <i id="code">\ref</i>.
+                </li>
+                <li>
+                    <i id="code">RIGHT</i>: Is <i id="code">\right</i>.
+                </li>
+                <li>
+                    <i id="code">SKIP</i>: Is <i id="code">\medskip</i>.
+                </li>
+                <li>
+                    <i id="code">SQUARE</i>: Is <i id="code">\square</i>.
+                </li>
+                <li>
+                    <i id="code">TOP</i>: Is <i id="code">\top</i>.
+                </li>
+                <li>
+                    <i id="code">TRIANGLE</i>: Is <i id="code">\triangle</i>.
+                </li>
+                <li>
+                    <i id="code">VFILL</i>: Is <i id="code">\vfill</i>.
+                </li>
+            </ol>
             <p style="text-align: center;">
                 <a href="../../../images/Lua.png"><img src="../../../images/Lua.png" width="10%"></a>
             </p>
