@@ -161,7 +161,7 @@
                 So, to run it, you will need to have Lua installed (it's very small in size). I have tried 5.1 upwards, but you shouldn't have problems with earlier versions too. If you have Linux, you can download it from your packet manager, or check <a href="https://www.lua.org/download.html">here</a>. If you have Windows, check <a href="https://luabinaries.sourceforge.net/">here</a>. If you have MacOS, you are on your own.
             </p>
             <p>
-                After you have downloaded Lua and the code, you can write your ΛacTeX in <i id="code">input.txt</i> and compile in terminal <i id="code">lua lac.lua</i>. You will get your LaTeX code in <i id="code">file.tex</i>. You can change your input-output files in <i id="code">controls.lua</i>. By default, file.tex is not executed; if you want to compile your code and get a pdf, in <i id="code">controls.lua</i> change <i id="code">execute_tex = true</i>. Of course, you need to have some version of tex installed (ex. texlive).
+                After you have downloaded Lua and the code, you can write your ΛacTeX in <i id="code">input.txt</i> and compile in terminal <i id="code">lua lac.lua</i>. You will get your LaTeX code in <i id="code">file.tex</i>. You can change your input-output files in <i id="code">controls.lua</i>. By default, <i id="code">file.tex</i> is not executed; if you want to compile your code and get a pdf, in <i id="code">controls.lua</i> change <i id="code">execute_tex = true</i>. Of course, you need to have some version of tex installed (ex. texlive).
             </p>
             <p>
                 How is a ΛacTeX document structured? Its about time we construct, step by step, an example. To start, use <i id="code">VERS</i> followed by the version of TeX you want to use to compile your document.
@@ -271,7 +271,7 @@
             <div id="code">
                 <ul>
                     <li>
-                        20260402-18:12: Added missing commands, such as PART. Added NEWCOMMAND functionality. Added START* so you can initiate a document without \begin{document} (needed for imports). Fixed the bug where INNIT THMS would work only in CLASS BOOK. Fixed the bug where CLASS would be saved incorrectly.
+                        20260502-18:12: Added missing commands, such as PART. Added NEWCOMMAND functionality. Added START* so you can initiate a document without \begin{document} (needed for imports). Fixed the bug where INNIT THMS would work only in CLASS BOOK. Fixed the bug where CLASS would be saved incorrectly.
                     </li>
                     <li>
                         20260501-23:15: Included more commands, such as embellishments in math mode, arrows, basic symbols. Now you can change the input and output files in controls.lua.
