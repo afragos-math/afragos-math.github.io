@@ -164,14 +164,14 @@
                 After you have downloaded Lua and the code, you can write your ΛacTeX in <i id="code">input.txt</i> and compile in terminal <i id="code">lua lac.lua</i>. You will get your LaTeX code in <i id="code">file.tex</i>. You can change your input-output files in <i id="code">controls.lua</i>. By default, <i id="code">file.tex</i> is not executed; if you want to compile your code and get a pdf, in <i id="code">controls.lua</i> change <i id="code">execute_tex = true</i>. Of course, you need to have some version of tex installed (ex. texlive).
             </p>
             <p>
-                How is a ΛacTeX document structured? Its about time we construct, step by step, an example. To start, use <i id="code">VERS</i> followed by the version of TeX you want to use to compile your document.
+                How is a ΛacTeX document structured? Its about time we construct, step by step, an example.
             </p>
             <ul>
                 <li>
                     To start, use <i id="code">VERS</i> followed by the version of TeX you want to use to compile your document. As mentioned before, the output is not compiled by default, but you can change that on <i id="code">controls.lua</i>. If you don't include this step, the default is <i id="code">pdflatex</i>. Of course, you can change what the default is.
                 </li>
                 <li>
-                    Then, use <i id="code">CLASS</i> followed by the class name, to specify <i id="code">\documentclass{}</i>. After the class' name you can include any attributes, inside brackets, with no spaces in between. For example, <i id="code">CLASS BOOK [a4,12pt]</i> gives <i id="code">\documentclass [a4,12pt]{book}</i>. If you don't include this step, the default is <i id="code">article</i>. Of course, you can change what the default is.
+                    Then, use <i id="code">CLASS</i> followed by the class name, to specify <i id="code">\documentclass{}</i>. After the class' name you can include any attributes, inside brackets, with no spaces in between. For example, <i id="code">CLASS BOOK [a4paper,12pt]</i> gives <i id="code">\documentclass [a4paper,12pt]{book}</i>.
                 </li>
                 <li>
                     Using the following, you can input files <i id="code">\input{test_file.tex}</i>. You can also do it in-line, if you prefer.
@@ -215,7 +215,9 @@
             <div id="code">
                 NEWCOMMAND BBT IS BB T END<br>
                 NEWCOMMAND FW IS SCR W _{0} END<br>
-                NEWCOMMAND ADDSQ [2] IS ( #1 + #2 )^2 END
+                NEWCOMMAND ADDSQ [2] IS ( #1 + #2 )^2 END<br>
+                DECLMATH ARCSEC IS RMN arcsec END<br>
+                DECLMATH* SUPINF IS RMN supinf END<br>
             </div>
             <ul>
                 <li>
@@ -271,6 +273,9 @@
             <div id="code">
                 <ul>
                     <li>
+                        20260505-21:30: Added some new symbols (operators, order). Added PROOF, FOOTNOTE, REDIR (\hyperref), HREF, DECLMATH, DECLMATH*. Added title pages, TITLE, AUTHOR, etc. Added TABLEOFCONTENTS. Added TIKZ, but the internal tikz-commands are unchanged for the time being (ie, same as in LaTeX). Removed obscure functions. If you want something of the form arcsec, do DECLMATH ARCSEC IS RMN arcsec END. Default class removed, since it is not really needed. EXER environment now works properly. INPUT now works inside the document too. 
+                    </li>
+                    <li>
                         20260502-18:12: Added missing commands, such as PART. Added NEWCOMMAND functionality. Added START* so you can initiate a document without \begin{document} (needed for imports). Fixed the bug where INNIT THMS would work only in CLASS BOOK. Fixed the bug where CLASS would be saved incorrectly.
                     </li>
                     <li>
@@ -288,7 +293,10 @@
             <div id=code>
                 <ul>
                     <li>
-                        [Medium] Include TikZ.
+                        [High] Add BibTeX support.
+                    </li>
+                    <li>
+                        [Medium] Should we make the internal TikZ commands easier? 
                     </li>
                     <li>
                         [Medium] Prepare a PDF with the complete collection of commands. Complete the List of commands in the site.

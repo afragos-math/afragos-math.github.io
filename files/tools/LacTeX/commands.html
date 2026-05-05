@@ -107,6 +107,21 @@
                 <li>
                     <i id="code">NEWCOMMAND .. [.] IS ... END</i>: Defines a new command as <i id="code">\newcommand{..}[.]{...}</i>. More than one bracket can be used too.
                 </li>
+                <li>
+                    <i id="code">DECLMATH .. IS ... END</i>: Defines a new operator as <i id="code">\DeclareMathOperator{..}{...}</i>.
+                </li>
+                <li>
+                    <i id="code">DECLMATH* .. IS ... END</i>: Defines a new operator with indices as <i id="code">\DeclareMathOperator*{..}{...}</i>.
+                </li>
+                <li>
+                    <i id="code">TITLE ...</i>: Is <i id="code">\title{ ... }</i>.
+                </li>
+                <li>
+                    <i id="code">AUTHOR ... </i>: Is <i id="code">\author{ ... }</i>. (Affiliations <i id="code">AUTHOR [1] ...</i> can be used to, in combination with <i id="code">AFFIL ...</i>).
+                </li>
+                <li>
+                    <i id="code">DATE ... </i>: Is <i id="code">\date{ ... }</i>. <i id="code">TODAY</i> (<i id="code">\today</i>) exists too.
+                </li>
             </ol>
             <div class="title" id="basicmath">
                 Basic math
@@ -498,6 +513,15 @@
                     <i id="code">SUM</i>: Is <i id="code">\sum</i>.
                 </li>
                 <li>
+                    <i id="code">|E</i>: Is <i id="code">\mathbb{E}</i>.
+                </li>
+                <li>
+                    <i id="code">|P</i>: Is <i id="code">\mathbb{P}</i>.
+                </li>
+                <li>
+                    <i id="code">|V</i>: Is <i id="code">\mathbb{V}</i>.
+                </li>
+                <li>
                     <i id="code">ARCSIN</i>: Is <i id="code">\arcsin</i>.
                 </li>
                 <li>
@@ -516,19 +540,10 @@
                     <i id="code">TAN</i>: Is <i id="code">\tan</i>.
                 </li>
                 <li>
-                    <i id="code">ARCCOT</i>: Is <i id="code">\arccot</i>.
-                </li>
-                <li>
                     <i id="code">COT</i>: Is <i id="code">\cot</i>.
                 </li>
                 <li>
-                    <i id="code">ARCSEC</i>: Is <i id="code">\arcsec</i>.
-                </li>
-                <li>
                     <i id="code">SEC</i>: Is <i id="code">\sec</i>.
-                </li>
-                <li>
-                    <i id="code">ARCCSC</i>: Is <i id="code">\arccsc</i>.
                 </li>
                 <li>
                     <i id="code">CSC</i>: Is <i id="code">\csc</i>.
@@ -597,6 +612,9 @@
                 </li>
                 <li>
                     <i id="code">~=</i>: Is <i id="code">\leqslant</i>.
+                </li>
+                <li>
+                    <i id="code">/=</i>: Is <i id="code">\neq</i>.
                 </li>
                 <li>
                     <i id="code">NEQ</i>: Is <i id="code">\neq</i>.
@@ -779,6 +797,9 @@
                     <i id="code">LEFT</i>: Is <i id="code">\left</i>.
                 </li>
                 <li>
+                    <i id="code">MAKETITLE</i>: Is <i id="code">\maketitle</i>.
+                </li>
+                <li>
                     <i id="code">NONAME</i>: Is <i id="code">\noname</i>.
                 </li>
                 <li>
@@ -795,6 +816,9 @@
                 </li>
                 <li>
                     <i id="code">SQUARE</i>: Is <i id="code">\square</i>.
+                </li>
+                <li>
+                    <i id="code">TABLEOFCONTENTS</i>: Is <i id="code">\tableofcontents</i>.
                 </li>
                 <li>
                     <i id="code">TOP</i>: Is <i id="code">\top</i>.
