@@ -259,6 +259,12 @@ b{
     display: block;
     background-size: 200% 100%;
 }
+
+.dropup-content div {
+    padding: 6px 5px;
+    text-decoration: none;
+    background-size: 200% 100%;
+}
   
 .dropdown:hover .dropdown-content {
     display: block;
@@ -290,6 +296,36 @@ b{
 }
   
 .dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup-child {
+    position: relative;
+}
+  
+.dropup-content-child {
+    padding: 10px 0;
+    display: none;
+    width: 400px;
+    max-width: 70vw;
+    font-size: 14pt;
+    position: absolute;
+    bottom: calc(100%);
+    left: 30pt;
+    border: #004080 3px solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+  
+.dropup-content-child a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-size: 200% 100%;
+}
+  
+.dropup-child:hover .dropup-content-child {
     display: block;
 }
 
@@ -366,6 +402,10 @@ b{
 @media screen and (max-width: 660px) {
     .content{
         margin-top: 17%;
+    }
+    
+    .dropup-content-child {
+        max-width: 62vw;
     }
 }
 
