@@ -328,6 +328,7 @@ a:hover{
     display: flex;
     float: right;
     font-size: 12pt;
+    color: #000000;
     border: #ca2530 3px solid;
     border-radius: 5px;
     background-color: #dcc4d5;
