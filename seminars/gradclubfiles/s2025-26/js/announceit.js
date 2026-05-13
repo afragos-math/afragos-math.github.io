@@ -6,7 +6,7 @@
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
     
-    if (today == 20260514) {
+    if (today == 20260521) {
         if (currtime >= 1150 && currtime < 1315){
             announcebox.style.display = 'block';
             [announcetxt, announcetxtmob].forEach(
