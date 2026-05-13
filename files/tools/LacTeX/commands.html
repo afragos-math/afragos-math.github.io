@@ -48,6 +48,9 @@
                             <a href="#env_math">Environments (math)</a>
                         </li>
                         <li>
+                            <a href="#font_size">Font size</a>
+                        </li>
+                        <li>
                             <a href="#figures">Figures</a>
                         </li>
                         <li>
@@ -114,13 +117,13 @@
                     <i id="code">DECLMATH* .. IS ... END</i>: Defines a new operator with indices as <i id="code">\DeclareMathOperator*{..}{...}</i>.
                 </li>
                 <li>
-                    <i id="code">TITLE ...</i>: Is <i id="code">\title{ ... }</i>.
+                    <i id="code">TITLE ...</i>: Is <i id="code">\title{ ... }</i>. Ends by line change.
                 </li>
                 <li>
-                    <i id="code">AUTHOR ... </i>: Is <i id="code">\author{ ... }</i>. (Affiliations <i id="code">AUTHOR [1] ...</i> can be used to, in combination with <i id="code">AFFIL ...</i>).
+                    <i id="code">AUTHOR ... </i>: Is <i id="code">\author{ ... }</i>. (Affiliations <i id="code">AUTHOR [1] ...</i> can be used to, in combination with <i id="code">AFFIL ...</i>). Ends with line change.
                 </li>
                 <li>
-                    <i id="code">DATE ... </i>: Is <i id="code">\date{ ... }</i>. <i id="code">TODAY</i> (<i id="code">\today</i>) exists too.
+                    <i id="code">DATE ... </i>: Is <i id="code">\date{ ... }</i>. <i id="code">TODAY</i> (<i id="code">\today</i>) exists too. Ends with line change.
                 </li>
             </ol>
             <div class="title" id="basicmath">
@@ -157,13 +160,13 @@
             </div>
             <ol>
                 <li>
-                    <i id="code"><=</i>: Is <i id="code">\Leftarrow</i>.
+                    <i id="code">&lt;=</i>: Is <i id="code">\Leftarrow</i>.
                 </li>
                 <li>
                     <i id="code">=></i>: Is <i id="code">\Rightarrow</i>.
                 </li>
                 <li>
-                    <i id="code"><-</i>: Is <i id="code">\leftarrow</i>.
+                    <i id="code">&lt;-</i>: Is <i id="code">\leftarrow</i>.
                 </li>
                 <li>
                     <i id="code">-></i>: Is <i id="code">\rightarrow</i>.
@@ -261,19 +264,19 @@
             </div>
             <ol>
                 <li>
-                    <i id="code">PART</i>: Is <i id="code">\part</i>.
+                    <i id="code">PART</i>: Is <i id="code">\part</i>. Ends with line.
                 </li>
                 <li>
-                    <i id="code">CHAPTER</i>: Is <i id="code">\chapter</i>.
+                    <i id="code">CHAPTER</i>: Is <i id="code">\chapter</i>. Ends with line.
                 </li>
                 <li>
-                    <i id="code">SECTION</i>: Is <i id="code">\section</i>.
+                    <i id="code">SECTION</i>: Is <i id="code">\section</i>. Ends with line.
                 </li>
                 <li>
-                    <i id="code">SUBSECTION</i>: Is <i id="code">\subsection</i>.
+                    <i id="code">SUBSECTION</i>: Is <i id="code">\subsection</i>. Ends with line.
                 </li>
                 <li>
-                    <i id="code">SUBSUBSECTION</i>: Is <i id="code">\subsection</i>.
+                    <i id="code">SUBSUBSECTION</i>: Is <i id="code">\subsection</i>. Ends with line.
                 </li>
             </ol>
             <div class="title" id="embel">
@@ -373,6 +376,9 @@
             </div>
             <ol>
                 <li>
+                    <i id="code">BIBLIOGRAPHY</i>: Is <i id="code">\begin{thebibliography}</i>. Followed by <i id="code">END</i>.
+                </li>
+                <li>
                     <i id="code">CENTER</i>: Is <i id="code">\begin{center}</i>. Followed by <i id="code">END</i>.
                 </li>
                 <li>
@@ -427,6 +433,41 @@
                 </li>
                 <li>
                     <i id="code">EQU*</i>: Is <i id="code">\begin{equation*}</i>. Followed by <i id="code">END</i>.
+                </li>
+            </ol>
+            <div class="title" id="font_size">
+                Font size
+            </div>
+            <ol>
+                <li>
+                    <i id="code">TINY</i>: Is <i id="code">\tiny</i>.
+                </li>
+                <li>
+                    <i id="code">SCRIPTSIZE</i>: Is <i id="code">\scriptsize</i>.
+                </li>
+                <li>
+                    <i id="code">FOOTNOTESIZE</i>: Is <i id="code">\footnotesize</i>.
+                </li>
+                <li>
+                    <i id="code">SMALL</i>: Is <i id="code">\small</i>.
+                </li>
+                <li>
+                    <i id="code">NORMALSIZE</i>: Is <i id="code">\normalsize</i>.
+                </li>
+                <li>
+                    <i id="code">LARGE</i>: Is <i id="code">\large</i>.
+                </li>
+                <li>
+                    <i id="code">LLARGE</i>: Is <i id="code">\Large</i>.
+                </li>
+                <li>
+                    <i id="code">LLLARGE</i>: Is <i id="code">\LARGE</i>.
+                </li>
+                <li>
+                    <i id="code">HUGE</i>: Is <i id="code">\huge</i>.
+                </li>
+                <li>
+                    <i id="code">HHUGE</i>: Is <i id="code">\Huge</i>.
                 </li>
             </ol>
             <div class="title" id="figures">
@@ -776,6 +817,9 @@
             </div>
             <ol>
                 <li>
+                    <i id="code">ADDTOCONTENTSLINE</i>: Is <i id="code">\addtocontentsline</i>.
+                </li>
+                <li>
                     <i id="code">BOT</i>: Is <i id="code">\bot</i>.
                 </li>
                 <li>
@@ -792,6 +836,9 @@
                 </li>
                 <li>
                     <i id="code">LABEL</i>: Is <i id="code">\label</i>.
+                </li>
+                <li>
+                    <i id="code">LaTeX</i>: Is <i id="code">\LaTeX{}</i>.
                 </li>
                 <li>
                     <i id="code">LEFT</i>: Is <i id="code">\left</i>.

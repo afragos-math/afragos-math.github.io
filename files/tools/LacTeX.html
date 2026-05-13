@@ -158,7 +158,7 @@
                 Practical things first: Currently there is no <i id="code">.exe</i> or <i id="code">.AppImage</i> executable available. If a non-negligible amount of people request it, I will make it. 
             </p>
             <p>
-                So, to run it, you will need to have Lua installed (it's very small in size). I have tried 5.1 upwards, but you shouldn't have problems with earlier versions too. If you have Linux, you can download it from your packet manager, or check <a href="https://www.lua.org/download.html">here</a>. If you have Windows, check <a href="https://luabinaries.sourceforge.net/">here</a>. If you have MacOS, you are on your own.
+                So, to run it, you will need to have Lua installed (it's very small in size). I have tried 5.1 upwards, but you shouldn't have problems with earlier versions too. If you have Linux, you can download it from your packet manager, or check <a href="https://www.lua.org/download.html">here</a>. If you have Windows, check <a href="https://luabinaries.sourceforge.net/">here</a> and <a href="https://www.youtube.com/watch?v=zXW7YqoMUpA">here</a>. If you have MacOS, you are on your own.
             </p>
             <p>
                 After you have downloaded Lua and the code, you can write your ΛacTeX in <i id="code">input.txt</i> and compile in terminal <i id="code">lua lac.lua</i>. You will get your LaTeX code in <i id="code">file.tex</i>. You can change your input-output files in <i id="code">controls.lua</i>. By default, <i id="code">file.tex</i> is not executed; if you want to compile your code and get a pdf, in <i id="code">controls.lua</i> change <i id="code">execute_tex = true</i>. Of course, you need to have some version of tex installed (ex. texlive).
@@ -272,6 +272,9 @@
             </div>
             <div id="code">
                 <ul>
+                    <li>
+                        20260513-23:15: Added BIBLIOGRAPHY (\begin{thebibliography}), ADDCONTENTSLINE, THISPAGESTYLE and magnifying commands, such us LARGE. PART, CHAPTER, SECTION, etc do not need braces anymore. Just write CHAPTER the_name and change line. Fixed the bug where the tail of title and date wouldn't display properly.
+                    </li>
                     <li>
                         20260505-21:30: Added some new symbols (operators, order). Added PROOF, FOOTNOTE, REDIR (\hyperref), HREF, DECLMATH, DECLMATH*. Added title pages, TITLE, AUTHOR, etc. Added TABLEOFCONTENTS. Added TIKZ, but the internal tikz-commands are unchanged for the time being (ie, same as in LaTeX). Removed obscure functions. If you want something of the form arcsec, do DECLMATH ARCSEC IS RMN arcsec END. Default class removed, since it is not really needed. EXER environment now works properly. INPUT now works inside the document too. 
                     </li>
