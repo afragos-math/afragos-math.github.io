@@ -86,8 +86,8 @@ b{
 }
 
 .boxhalf{
-    width: 50%;
 	display: block;
+    width: 50%;
     background-color: #ffffff;
     border: #004080 3px solid;
 	border-radius: 10px;
@@ -99,7 +99,7 @@ b{
 
 .spacing{
     display: block;
-    width: 13px;
+    width: 12px;
 }
 
 .title{
@@ -383,11 +383,12 @@ b{
     }
 
     .boxhalfcontainer{
-		display: block;
+        display: block;
+        width: calc(100% - 33px);
 	}
 
 	.boxhalf{
-		width: 88%;
+		width: 100%;
 	}
 
     .spacing{
