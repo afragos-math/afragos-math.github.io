@@ -6,16 +6,7 @@
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
     
-    if (today == 20260521) {
-        if (currtime >= 1150 && currtime < 1315){
-            announcebox.style.display = 'block';
-            [announcetxt, announcetxtmob].forEach(
-                announce => {
-                announce.innerHTML = 'Παρουσίαση, A12'
-            }
-          );
-        };
-    } else if (today == 20260507){
+    if (today == 20260507){
         if (currtime >= 1150 && currtime < 1315){
             announcebox.style.display = 'block';
             [announcetxt, announcetxtmob].forEach(
