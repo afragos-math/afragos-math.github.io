@@ -6,7 +6,16 @@
       var announcetxt = announcebox.children[2];
       var announcetxtmob = announcebox.children[3];
     
-    if (today == 20260528){
+    if (today == 20260602){
+        if (currtime >= 1150 && currtime < 1315){
+            announcebox.style.display = 'block';
+            [announcetxt, announcetxtmob].forEach(
+                announce => {
+                announce.innerHTML = 'KMS States of Finite Quantum Systems in Thermal Equilibrium, A12'
+            }
+          );
+        };
+    } else if (today == 20260528){
         if (currtime >= 1150 && currtime < 1315){
             announcebox.style.display = 'block';
             [announcetxt, announcetxtmob].forEach(
