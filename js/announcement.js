@@ -2,6 +2,7 @@
       var currtime = new Date();
       const today = currtime.getFullYear()*10000+(currtime.getMonth()+1)*100+currtime.getDate();
       currtime = currtime.getHours()*100+currtime.getMinutes();
+      var ongoinggeoman26 = Array.from(document.getElementsByClassName("geoman26"));
       var ongoingpgc26 = Array.from(document.getElementsByClassName("pgc26"));
       var ongoingfestum26 = Array.from(document.getElementsByClassName("festum26"));
       var ongoinggradworkshop26 = Array.from(document.getElementsByClassName("gradworkshop26"));
@@ -15,6 +16,15 @@
       if(today >= 20260918 && today <=20260920){
         if(currtime >= 830 && currtime < 2030){
           ongoingpgc26.forEach(
+            box => {
+              box.style.display = 'inline-block';
+            }
+          );
+        }
+      };
+      if(today >= 20260831 && today <=20260904){
+        if(currtime >= 830 && currtime < 2030){
+          ongoinggeoman26.forEach(
             box => {
               box.style.display = 'inline-block';
             }
@@ -39,7 +49,7 @@
           );
         }
       };
-      if(today <= 20260620){
+      if(today <= 20260602){
         ongoinggradclub4.forEach(
           box => {
             box.style.display = 'inline-block';
