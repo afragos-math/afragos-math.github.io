@@ -4,6 +4,7 @@
       currtime = currtime.getHours()*100+currtime.getMinutes();
       var ongoinggeoman26 = Array.from(document.getElementsByClassName("geoman26"));
       var ongoingpgc26 = Array.from(document.getElementsByClassName("pgc26"));
+      var ongoingacac26 = Array.from(document.getElementsByClassName("acac26"));
       var ongoingfestum26 = Array.from(document.getElementsByClassName("festum26"));
       var ongoinggradworkshop26 = Array.from(document.getElementsByClassName("gradworkshop26"));
       var ongoinggradclub4 = Array.from(document.getElementsByClassName("gradclub4"));
@@ -25,6 +26,15 @@
       if(today >= 20260831 && today <=20260904){
         if(currtime >= 830 && currtime < 2030){
           ongoinggeoman26.forEach(
+            box => {
+              box.style.display = 'inline-block';
+            }
+          );
+        }
+      };
+      if(today >= 20260825 && today <=20260826){
+        if(currtime >= 830 && currtime < 2030){
+          ongoingacac26.forEach(
             box => {
               box.style.display = 'inline-block';
             }
