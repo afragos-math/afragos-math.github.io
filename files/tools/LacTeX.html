@@ -273,6 +273,9 @@
             <div id="code">
                 <ul>
                     <li>
+                        20260831-14:45: Added bibtex. You can write on your input file BIB ... END (inside START) to create a .bib file of all your listed sources. Bibtex commands remain unchanged (ie, same as in LaTeX), as I figured (like in tikz) that this is more practical. Bibliography style is set to plain. If, in controls.lua, execute_tex = true, then bib is also compiled along with the main file.
+                    </li>
+                    <li>
                         20260830-01:10: Added an elementary error handler err.lua. It is supposed to be detecting simple syntax errors, only for ΛacTeX. The LaTeX errors are passed to the TeX engine. Added some new commands, such as RULE, HRULE, WTH (width), OVERSET. 
                     </li>
                     <li>
@@ -308,10 +311,7 @@
             <div id=code>
                 <ul>
                     <li>
-                        [High] Add BibTeX support.
-                    </li>
-                    <li>
-                        [Medium] Should we make the internal TikZ commands easier? 
+                        [Medium] Prepare a guide and some ΛacTeX examples.
                     </li>
                     <li>
                         [Medium] Prepare a PDF with the complete collection of commands. Complete the List of commands in the site.
