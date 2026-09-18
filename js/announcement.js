@@ -2,6 +2,7 @@
       var currtime = new Date();
       const today = currtime.getFullYear()*10000+(currtime.getMonth()+1)*100+currtime.getDate();
       currtime = currtime.getHours()*100+currtime.getMinutes();
+      var ongoingbism26 = Array.from(document.getElementsByClassName("bism26"));
       var ongoinggeoman26 = Array.from(document.getElementsByClassName("geoman26"));
       var ongoingpgc26 = Array.from(document.getElementsByClassName("pgc26"));
       var ongoingacac26 = Array.from(document.getElementsByClassName("acac26"));
@@ -14,6 +15,13 @@
           box.style.display = 'inline-block';
         }
       );
+      if(today == 20260923 || today ==20260925){
+        ongoingbism26.forEach(
+            box => {
+                box.style.display = 'inline-block';
+            }
+        );
+      };
       if(today >= 20260918 && today <=20260920){
         if(currtime >= 830 && currtime < 2030){
           ongoingpgc26.forEach(
