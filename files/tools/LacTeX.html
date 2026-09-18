@@ -273,6 +273,9 @@
             <div id="code">
                 <ul>
                     <li>
+                        20260918-12:00: Added LACTEX ... END, which is an INPUT for ΛacTeX files. By writing LACTEX file END, file.txt is translated into a .tex file and inputed in the main output.tex file. Note that INPUT was used only for .tex files. err.lua now handles simple loop errors. French quotation marks are now better supported.
+                    </li>
+                    <li>
                         20260901-19:17: Bibliography style can now be changed in controls.lua. Plain remains the default. A bug where TEXT was not working inside DECLMATH, DECLMATH* and NEWCOMMAND has been patched.
                     </li>
                     <li>
@@ -320,7 +323,7 @@
                         [Medium] Prepare a PDF with the complete collection of commands. Complete the List of commands in the site.
                     </li>
                     <li>
-                        [Low] Include code blocks and directlua.
+                        [Low] Include code blocks.
                     </li>
                     <li>
                         [Low] Keep ΛacTeX indentation when converting to LaTeX.
